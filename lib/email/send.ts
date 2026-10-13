@@ -9,8 +9,11 @@ type Mail = {
   replyTo?: string;
 };
 
-export function notifyAddress(): string | undefined {
-  return process.env.BOOKING_NOTIFY_EMAIL || undefined;
+/** Hierhin gehen alle Leads (Buchungen und Kontaktanfragen). Per BOOKING_NOTIFY_EMAIL überschreibbar. */
+export const DEFAULT_LEADS_EMAIL = "info@felix-ruft-an.de";
+
+export function notifyAddress(): string {
+  return process.env.BOOKING_NOTIFY_EMAIL || DEFAULT_LEADS_EMAIL;
 }
 
 /**

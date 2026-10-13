@@ -45,10 +45,6 @@ export async function submitBooking(input: BookingInput): Promise<BookingResult>
   const phoneDisplay = phone.formatInternational();
 
   const to = notifyAddress();
-  if (!to && process.env.NODE_ENV === "production") {
-    console.error("[booking] BOOKING_NOTIFY_EMAIL ist nicht gesetzt.");
-    return { ok: false, error: "generic" };
-  }
 
   // 1) Interne Benachrichtigung an das Felix-Team (immer Deutsch).
   const internalTable: [string, string][] = [
@@ -66,7 +62,7 @@ export async function submitBooking(input: BookingInput): Promise<BookingResult>
   ];
   const internalParagraphs = ["Neue Buchung über die Website:"];
   const internalOk = await sendMail({
-    to: to ?? "dev@localhost",
+    to,
     subject: `Neue Buchung: ${data.calleeName} (${de.rhythm[data.rhythm]}, ${de.timeWindow[data.timeWindow]})`,
     html: renderEmail({ paragraphs: internalParagraphs, table: internalTable }),
     text: renderText({ paragraphs: internalParagraphs, table: internalTable }),

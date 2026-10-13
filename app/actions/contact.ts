@@ -26,10 +26,6 @@ export async function submitContact(input: ContactInput): Promise<ContactResult>
   const data = parsed.data;
 
   const to = process.env.CONTACT_NOTIFY_EMAIL || notifyAddress();
-  if (!to && process.env.NODE_ENV === "production") {
-    console.error("[contact] BOOKING_NOTIFY_EMAIL ist nicht gesetzt.");
-    return { ok: false, error: "generic" };
-  }
 
   const table: [string, string][] = [
     ["Name", data.name],
@@ -40,7 +36,7 @@ export async function submitContact(input: ContactInput): Promise<ContactResult>
   ];
   const paragraphs = ["Neue Nachricht über das Kontaktformular:"];
   const ok = await sendMail({
-    to: to ?? "dev@localhost",
+    to,
     subject: `Kontaktanfrage von ${data.name}`,
     html: renderEmail({ paragraphs, table }),
     text: renderText({ paragraphs, table }),

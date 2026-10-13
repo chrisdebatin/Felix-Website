@@ -31,7 +31,7 @@ Ohne `RESEND_API_KEY` werden E-Mails in der Entwicklung **nur in der Konsole aus
 | `NEXT_PUBLIC_SITE_URL`         | ja (Prod) | Öffentliche URL, z. B. `https://www.felix-ruft-an.de`. Für Canonical, hreflang, Sitemap, OG-Bild, JSON-LD. |
 | `RESEND_API_KEY`               | ja (Prod) | API-Key von [Resend](https://resend.com). |
 | `RESEND_FROM_EMAIL`            | ja (Prod) | Absender, z. B. `Felix <hallo@felix-ruft-an.de>`. Domain muss in Resend verifiziert sein. |
-| `BOOKING_NOTIFY_EMAIL`         | ja (Prod) | Empfänger für neue Buchungen (und Kontaktanfragen). |
+| `BOOKING_NOTIFY_EMAIL`         | nein    | Empfänger für neue Buchungen und Kontaktanfragen. Standard: `info@felix-ruft-an.de`. |
 | `CONTACT_NOTIFY_EMAIL`         | nein    | Eigener Empfänger für Kontaktanfragen. |
 | `NEXT_PUBLIC_VERCEL_ANALYTICS` | nein    | `1` = cookielose Vercel Web Analytics einbinden (vorher im Vercel-Projekt aktivieren). |
 
@@ -122,7 +122,7 @@ Die Domain bleibt bei United Domains; dort werden nur zwei DNS-Einträge gesetzt
 
 1. In Resend **Domains → Add Domain** → `felix-ruft-an.de` (Region EU / Frankfurt wählen).
 2. Resend zeigt DNS-Einträge (SPF als TXT, DKIM als TXT `resend._domainkey`, MX für eine Unterdomain wie `send`). Diese **zusätzlich** in den DNS-Einstellungen bei United Domains anlegen. Bestehende MX-Einträge der Hauptdomain nicht löschen.
-3. Nach der Verifizierung einen API-Key anlegen und `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, `BOOKING_NOTIFY_EMAIL` in Vercel setzen.
+3. Nach der Verifizierung einen API-Key anlegen und `RESEND_API_KEY` sowie `RESEND_FROM_EMAIL` in Vercel setzen. Leads gehen automatisch an `info@felix-ruft-an.de`.
 4. Testbuchung auf der Live-Seite durchführen und Posteingang prüfen.
 
 ## Qualität
