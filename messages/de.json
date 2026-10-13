@@ -1,0 +1,1023 @@
+{
+  "meta": {
+    "siteName": "Felix",
+    "homeTitle": "Felix – Ein Anruf, der guttut",
+    "description": "Felix ruft regelmäßig an, hört zu und gibt Ihr Feedback an Ihren Pflegedienst weiter. Ohne App, ohne Technik – nur mit Ihrem Telefon. Erster Monat kostenlos.",
+    "ogAlt": "Felix – Ein Anruf, der guttut"
+  },
+  "og": {
+    "title": "Ein Anruf, der guttut.",
+    "subtitle": "Felix ruft regelmäßig an, hört zu und gibt Ihr Feedback an Ihren Pflegedienst weiter.",
+    "badge": "Erster Monat kostenlos"
+  },
+  "common": {
+    "skipToContent": "Zum Inhalt springen",
+    "bookCta": "Anruf von Felix buchen",
+    "bookShort": "Anruf buchen",
+    "howItWorksCta": "So funktioniert’s",
+    "contactCta": "Kontakt aufnehmen",
+    "backHome": "Zur Startseite",
+    "felix": "Felix",
+    "you": "Sie",
+    "aiDisclosure": "Felix ist eine KI – und sagt das auch.",
+    "emergencyNote": "Felix ist kein Notruf. Im Notfall wählen Sie bitte sofort die 112.",
+    "price": "10 €",
+    "perMonth": "pro Monat",
+    "trust": {
+      "trial": "Erster Monat kostenlos",
+      "cancel": "monatlich kündbar",
+      "eu": "Daten in der EU"
+    },
+    "timeWindows": {
+      "morning": {
+        "label": "Vormittags",
+        "hours": "9 bis 12 Uhr"
+      },
+      "afternoon": {
+        "label": "Nachmittags",
+        "hours": "14 bis 17 Uhr"
+      },
+      "evening": {
+        "label": "Abends",
+        "hours": "17 bis 19 Uhr"
+      }
+    },
+    "rhythms": {
+      "daily": {
+        "label": "Täglich",
+        "text": "Ein kurzes Gespräch an jedem Tag. Schön, wenn man viel allein ist."
+      },
+      "severalWeekly": {
+        "label": "Mehrmals pro Woche",
+        "text": "Zum Beispiel montags, mittwochs und freitags."
+      },
+      "weekly": {
+        "label": "Wöchentlich",
+        "text": "Ein fester Termin pro Woche, zum Beispiel jeden Dienstag."
+      }
+    },
+    "bookingFor": {
+      "self": "Für mich selbst",
+      "relative": "Für einen Angehörigen"
+    },
+    "legalDraft": {
+      "title": "Entwurf",
+      "text": "Dieser Text ist eine Vorlage. Er wird vor dem Start von einer Fachperson für Recht und Datenschutz geprüft und kann sich noch ändern."
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "howItWorks": "So funktioniert’s",
+    "pricing": "Preise",
+    "faq": "Häufige Fragen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "book": "Anruf buchen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "mainLabel": "Hauptnavigation",
+    "mobileLabel": "Menü",
+    "homeLink": "Felix – zur Startseite",
+    "language": "Sprache",
+    "languageNames": {
+      "de": "Deutsch",
+      "en": "English"
+    }
+  },
+  "footer": {
+    "tagline": "Felix ruft regelmäßig an, hört zu und gibt Ihr Feedback an Ihren Pflegedienst weiter.",
+    "navTitle": "Felix",
+    "legalTitle": "Rechtliches",
+    "contactTitle": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "withdrawal": "Widerrufsbelehrung",
+    "disclaimer": "Felix ist ein Angebot der IGS Social Tech UG i. G. Pflegeunion ist eine Marke des Pflegedienstes, mit dem Felix zusammenarbeitet.",
+    "copyright": "© {year} IGS Social Tech UG (haftungsbeschränkt) i. G."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Ihr Begleiter am Telefon",
+      "title": "Ein Anruf, der guttut.",
+      "subtitle": "Felix ruft Sie regelmäßig an, hört zu und gibt Ihr Feedback an Ihren Pflegedienst weiter. Ganz ohne App und ohne Technik – nur mit Ihrem Telefon.",
+      "callStatus": "Felix ruft an …",
+      "callTime": "Dienstag, 10:30 Uhr",
+      "felix1": "Hallo Frau Müller, hier ist Felix. Wie geht es Ihnen heute?",
+      "customer1": "Ganz gut, danke. Nur das Knie zwickt seit gestern.",
+      "felix2": "Das tut mir leid. Soll ich das an Ihren Pflegedienst weitergeben?",
+      "customerName": "Frau Müller",
+      "illustrationLabel": "Beispiel für ein Gespräch mit Felix"
+    },
+    "problem": {
+      "eyebrow": "Die Lücke",
+      "title": "Zwischen zwei Pflegebesuchen ist es oft still.",
+      "text": "Der Pflegedienst kommt, hilft – und muss weiter. Danach ist man oft allein. Kleine Dinge bleiben dann ungesagt: eine neue Schmerzstelle, Ärger über eine Uhrzeit, eine Sorge. Sie kommen nie beim Pflegedienst an.",
+      "solutionTitle": "Felix schließt diese Lücke.",
+      "solutionText": "Felix ruft zwischen den Besuchen an, fragt nach und hört zu. Was Ihnen wichtig ist, gibt Felix an Ihren Pflegedienst weiter – wenn Sie das möchten. So wird aus einer Kleinigkeit kein großes Problem.",
+      "weekTitle": "Eine Woche mit Felix",
+      "weekCaption": "Beispiel: Felix ruft an den Tagen an, an denen niemand vorbeikommt.",
+      "legendVisit": "Pflegebesuch",
+      "legendCall": "Anruf von Felix",
+      "days": {
+        "mon": "Mo",
+        "tue": "Di",
+        "wed": "Mi",
+        "thu": "Do",
+        "fri": "Fr",
+        "sat": "Sa",
+        "sun": "So"
+      },
+      "daysLong": {
+        "mon": "Montag",
+        "tue": "Dienstag",
+        "wed": "Mittwoch",
+        "thu": "Donnerstag",
+        "fri": "Freitag",
+        "sat": "Samstag",
+        "sun": "Sonntag"
+      },
+      "nothing": "kein Termin"
+    },
+    "voice": {
+      "eyebrow": "So klingt Felix",
+      "title": "Freundlich, geduldig und immer ehrlich.",
+      "intro": "Felix spricht ruhig und deutlich und lässt Ihnen Zeit. Hier sind drei kurze Ausschnitte aus typischen Gesprächen.",
+      "conversations": [
+        {
+          "label": "Die Begrüßung",
+          "customer": "Herr Schneider",
+          "lines": [
+            {
+              "who": "felix",
+              "text": "Guten Morgen, Herr Schneider! Hier ist Felix, Ihr Begleiter am Telefon. Ich bin eine künstliche Intelligenz. Haben Sie ein paar Minuten für mich?"
+            },
+            {
+              "who": "customer",
+              "text": "Ach, Felix! Ja, für Sie habe ich doch immer Zeit."
+            }
+          ]
+        },
+        {
+          "label": "Wie geht es Ihnen?",
+          "customer": "Frau Yılmaz",
+          "lines": [
+            {
+              "who": "felix",
+              "text": "Wie haben Sie letzte Nacht geschlafen, Frau Yılmaz?"
+            },
+            {
+              "who": "customer",
+              "text": "Nicht so gut. Ich mache mir Sorgen um meinen Enkel."
+            },
+            {
+              "who": "felix",
+              "text": "Das verstehe ich. Möchten Sie mir erzählen, was Sie beschäftigt?"
+            }
+          ]
+        },
+        {
+          "label": "Feedback zur Pflege",
+          "customer": "Frau Müller",
+          "lines": [
+            {
+              "who": "felix",
+              "text": "Waren Sie diese Woche mit dem Pflegedienst zufrieden?"
+            },
+            {
+              "who": "customer",
+              "text": "Eigentlich schon. Aber morgens kommen sie oft sehr spät."
+            },
+            {
+              "who": "felix",
+              "text": "Danke, dass Sie das sagen. Darf ich das an Ihren Pflegedienst weitergeben?"
+            },
+            {
+              "who": "customer",
+              "text": "Ja, gerne."
+            }
+          ]
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "In drei Schritten",
+      "title": "So einfach geht’s",
+      "items": [
+        {
+          "title": "Buchen",
+          "text": "Sie füllen ein kurzes Formular aus – für sich selbst oder für einen Angehörigen. Das dauert etwa zwei Minuten."
+        },
+        {
+          "title": "Felix ruft an",
+          "text": "Zu Ihrer Wunschzeit klingelt das Telefon. Felix plaudert mit Ihnen und fragt, wie es Ihnen geht. Festnetz oder Handy – beides geht."
+        },
+        {
+          "title": "Ihr Feedback kommt an",
+          "text": "Was Ihnen wichtig ist, gibt Felix an Ihren Pflegedienst weiter. Sie entscheiden, was weitergegeben wird."
+        }
+      ],
+      "cta": "Mehr zum Ablauf"
+    },
+    "benefits": {
+      "eyebrow": "Was Felix bringt",
+      "title": "Gut für Sie. Beruhigend für Ihre Familie.",
+      "forYou": {
+        "title": "Für Sie",
+        "items": [
+          "Ein freundliches Gespräch, auch an stillen Tagen",
+          "Jemand fragt regelmäßig nach, wie es Ihnen geht",
+          "Sorgen und Ärger einfach einmal loswerden",
+          "Ihre Wünsche kommen beim Pflegedienst an",
+          "Keine App, keine Technik – nur Ihr Telefon"
+        ]
+      },
+      "forFamily": {
+        "title": "Für Angehörige",
+        "items": [
+          "Das gute Gefühl, dass regelmäßig jemand anruft",
+          "Probleme in der Pflege werden früher erkannt",
+          "Bessere Pflege durch ehrliche Rückmeldungen",
+          "Auf Wunsch eine kurze Rückmeldung an Sie – nur mit Zustimmung Ihres Angehörigen",
+          "In zwei Minuten für Mutter oder Vater gebucht"
+        ]
+      }
+    },
+    "trust": {
+      "eyebrow": "Vertrauen",
+      "title": "Sicher, ehrlich und mit klaren Grenzen.",
+      "items": {
+        "gdpr": {
+          "title": "Datenschutz nach DSGVO",
+          "text": "Wir verarbeiten nur, was für die Anrufe nötig ist. Sie können Ihre Daten jederzeit löschen lassen."
+        },
+        "eu": {
+          "title": "Server in der EU",
+          "text": "Ihre Daten werden in der Europäischen Union gespeichert und verarbeitet."
+        },
+        "noSale": {
+          "title": "Kein Verkauf von Daten",
+          "text": "Ihre Daten gehören Ihnen. Wir verkaufen sie nicht und nutzen sie nicht für Werbung."
+        },
+        "ai": {
+          "title": "Felix sagt, dass er eine KI ist",
+          "text": "Felix ist kein Mensch und gibt sich nie als Mensch aus. Das sagt Felix zu Beginn jedes Gesprächs."
+        },
+        "emergency": {
+          "title": "Kein Notruf, keine ärztliche Beratung",
+          "text": "Felix ersetzt keinen Notruf und keine medizinische Beratung. Im Notfall wählen Sie bitte sofort die 112."
+        }
+      }
+    },
+    "pricingTeaser": {
+      "eyebrow": "Preis",
+      "title": "Ein fairer Preis. Ohne Haken.",
+      "text": "Ein Preis für alles. Keine Einrichtungsgebühr, keine versteckten Kosten.",
+      "points": [
+        "Erster Monat kostenlos",
+        "Alle Anrufe inklusive",
+        "Monatlich kündbar"
+      ],
+      "link": "Alle Details zum Preis"
+    },
+    "faqTeaser": {
+      "eyebrow": "Fragen & Antworten",
+      "title": "Was Menschen uns oft fragen",
+      "more": "Alle Fragen ansehen"
+    },
+    "finalCta": {
+      "title": "Bereit für den ersten Anruf?",
+      "text": "Buchen Sie Felix in zwei Minuten. Der erste Monat ist kostenlos – und Sie können jederzeit kündigen.",
+      "bubble": "Ich freue mich darauf, Sie kennenzulernen!"
+    }
+  },
+  "howItWorks": {
+    "meta": {
+      "title": "So funktioniert’s",
+      "description": "Wie Felix anruft, worüber Felix spricht, wie oft Felix anruft und was mit Ihrem Feedback passiert. Einfach erklärt."
+    },
+    "hero": {
+      "eyebrow": "So funktioniert’s",
+      "title": "Vom ersten Klick bis zum ersten Anruf",
+      "text": "Felix ist ganz einfach. Sie brauchen nur ein Telefon – Festnetz oder Handy. Alles andere erledigen wir."
+    },
+    "flow": {
+      "title": "Der Ablauf",
+      "steps": [
+        {
+          "title": "Sie buchen",
+          "text": "Im Formular geben Sie an, wen Felix anrufen soll, die Telefonnummer, eine passende Tageszeit und wie oft Felix anrufen soll. Sie können auch für einen Angehörigen buchen."
+        },
+        {
+          "title": "Wir bestätigen",
+          "text": "Sie bekommen eine Bestätigung per E-Mail, wenn Sie eine Adresse angegeben haben. Innerhalb von zwei Werktagen ruft Felix zum ersten Mal an."
+        },
+        {
+          "title": "Das erste Gespräch",
+          "text": "Beim ersten Anruf stellt Felix sich vor und sagt, dass er eine KI ist. Felix fragt, ob Sie einverstanden sind, und lernt Sie ein wenig kennen."
+        },
+        {
+          "title": "Regelmäßige Anrufe",
+          "text": "Danach ruft Felix in Ihrem Rhythmus an – immer in dem Zeitfenster, das Sie gewählt haben."
+        },
+        {
+          "title": "Ihr Feedback kommt an",
+          "text": "Was Ihnen wichtig ist, fasst Felix kurz zusammen und gibt es an Ihren Pflegedienst weiter. Aber nur, wenn Sie zustimmen."
+        }
+      ]
+    },
+    "topics": {
+      "title": "Worüber Felix spricht",
+      "intro": "Felix hat kein starres Programm. Felix richtet sich nach Ihnen. Typische Fragen sind:",
+      "items": [
+        "Wie geht es Ihnen heute? Wie haben Sie geschlafen?",
+        "Haben Sie Schmerzen oder fühlen Sie sich anders als sonst?",
+        "Wie war der letzte Besuch vom Pflegedienst?",
+        "Gibt es etwas, das besser laufen könnte?",
+        "Was haben Sie heute noch vor? Was hat Sie gefreut?"
+      ],
+      "note": "Sie bestimmen das Gespräch. Wenn Sie über etwas nicht sprechen möchten, sagen Sie es einfach."
+    },
+    "duration": {
+      "title": "Wie lange dauert ein Anruf?",
+      "value": "ca. 5–10 Minuten",
+      "text": "Wenn Sie wenig Zeit haben, sagen Sie es einfach – dann fasst Felix sich kurz. Und wenn Sie gerade gern erzählen, hört Felix auch etwas länger zu."
+    },
+    "rhythm": {
+      "title": "Wie oft Felix anruft, entscheiden Sie",
+      "intro": "Wählen Sie bei der Buchung einen Rhythmus und eine Tageszeit. Beides können Sie später jederzeit ändern.",
+      "timeTitle": "Zu welcher Tageszeit?"
+    },
+    "feedback": {
+      "title": "Was mit Ihrem Feedback passiert",
+      "items": [
+        "Nach jedem Gespräch schreibt Felix eine kurze Zusammenfassung.",
+        "Nur was Sie freigeben, geht an Ihren Pflegedienst. Felix fragt vorher nach.",
+        "Der Pflegedienst kann so früh reagieren – zum Beispiel eine Uhrzeit anpassen oder beim nächsten Besuch nach Ihrem Knie sehen.",
+        "Persönliches, das Sie Felix erzählen, bleibt unter Ihnen."
+      ]
+    },
+    "pause": {
+      "title": "Pausieren oder kündigen – jederzeit",
+      "text": "Sie verreisen oder sind im Krankenhaus? Dann pausieren wir die Anrufe einfach. Und wenn Sie Felix nicht mehr möchten, kündigen Sie zum Ende des Monats – per E-Mail, Telefon oder über unser Kontaktformular."
+    },
+    "photoAlt": "Platz für ein Foto: ältere Frau, die lächelnd telefoniert",
+    "cta": {
+      "title": "Möchten Sie Felix kennenlernen?",
+      "text": "Der erste Monat ist kostenlos. Sie gehen kein Risiko ein."
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Preise",
+      "description": "Felix kostet 10 € im Monat, inklusive aller Anrufe. Der erste Monat ist kostenlos, danach monatlich kündbar."
+    },
+    "hero": {
+      "eyebrow": "Preise",
+      "title": "Ein Preis. Alles drin.",
+      "text": "Keine Stufen, kein Kleingedrucktes. Felix kostet 10 € im Monat – und der erste Monat ist kostenlos."
+    },
+    "card": {
+      "name": "Felix",
+      "tagline": "Ihr Begleiter am Telefon",
+      "badge": "Erster Monat kostenlos",
+      "cancel": "Monatlich kündbar",
+      "includedTitle": "Das ist enthalten",
+      "included": [
+        "Alle Anrufe in Ihrem Rhythmus – auch täglich",
+        "Feedback an Ihren Pflegedienst, wenn Sie das möchten",
+        "Wunschzeit frei wählbar und jederzeit änderbar",
+        "Anrufe pausieren, zum Beispiel im Urlaub",
+        "Persönliche Hilfe per E-Mail und Telefon",
+        "Keine Einrichtungsgebühr, keine Technik nötig"
+      ],
+      "vat": "Preis inklusive gesetzlicher Mehrwertsteuer.",
+      "afterTrial": "Nach dem kostenlosen Monat kostet Felix 10 € pro Monat. Wenn Sie vorher kündigen, zahlen Sie nichts."
+    },
+    "notes": {
+      "title": "Gut zu wissen",
+      "items": [
+        {
+          "q": "Muss ich jetzt schon etwas bezahlen?",
+          "a": "Nein. Für die Buchung brauchen Sie keine Bank- oder Kartendaten. Vor dem Ende des kostenlosen Monats melden wir uns bei Ihnen und besprechen die Bezahlung."
+        },
+        {
+          "q": "Kosten mich die Anrufe etwas?",
+          "a": "Nein. Felix ruft Sie an. Für Sie entstehen keine Telefonkosten."
+        },
+        {
+          "q": "Was passiert nach dem kostenlosen Monat?",
+          "a": "Wenn Sie Felix behalten möchten, kostet Felix 10 € pro Monat. Wenn nicht, sagen Sie uns einfach vorher Bescheid. Dann entstehen keine Kosten."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "Häufige Fragen",
+      "description": "Antworten auf häufige Fragen zu Felix: Ist Felix ein Mensch? Welche Nummer ruft an? Was ist im Notfall? Wie kündige ich?"
+    },
+    "hero": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Fragen und Antworten",
+      "text": "Hier finden Sie Antworten auf die Fragen, die uns am häufigsten gestellt werden."
+    },
+    "items": {
+      "human": {
+        "q": "Ist Felix ein echter Mensch?",
+        "a": "Nein. Felix ist eine künstliche Intelligenz (KI) – ein Computerprogramm, das sprechen und zuhören kann. Felix sagt das zu Beginn jedes Gesprächs offen. Hinter Felix steht ein Team aus Düsseldorf, das Sie jederzeit erreichen können."
+      },
+      "number": {
+        "q": "Welche Nummer ruft an?",
+        "a": "Felix ruft immer von derselben Düsseldorfer Nummer an: [Rufnummer folgt]. Speichern Sie die Nummer am besten unter „Felix“ in Ihrem Telefon. Dann wissen Sie gleich, wer anruft."
+      },
+      "missed": {
+        "q": "Was passiert, wenn ich nicht abhebe?",
+        "a": "Das ist kein Problem. Felix versucht es nach etwa 30 Minuten noch einmal. Wenn Sie dann wieder nicht abheben, meldet sich Felix zum nächsten geplanten Termin."
+      },
+      "relative": {
+        "q": "Kann ein Angehöriger Felix für mich buchen?",
+        "a": "Ja, sehr gerne. Viele Kinder buchen Felix für ihre Eltern. Wichtig ist nur: Die Person, die angerufen wird, muss einverstanden sein. Felix fragt beim ersten Anruf noch einmal nach."
+      },
+      "recording": {
+        "q": "Hört jemand mit? Werden die Gespräche aufgezeichnet?",
+        "a": "Es hört kein Mensch live mit. Damit Felix Sie verstehen kann, wird das Gespräch während des Anrufs automatisch verarbeitet. Gespeichert wird nur eine kurze schriftliche Zusammenfassung – keine Tonaufnahme. Sie können jederzeit verlangen, dass wir Ihre Daten löschen."
+      },
+      "emergency": {
+        "q": "Was passiert in einem Notfall?",
+        "a": "Felix ist kein Notruf. Im Notfall wählen Sie bitte sofort die 112. Wenn Felix im Gespräch merkt, dass es Ihnen sehr schlecht geht, rät Felix Ihnen, die 112 oder Ihren Pflegedienst anzurufen."
+      },
+      "landline": {
+        "q": "Funktioniert Felix mit meinem Festnetz-Telefon?",
+        "a": "Ja. Felix ruft ganz normal an – auf dem Festnetz oder auf dem Handy. Sie brauchen kein Internet, keine App und kein Smartphone."
+      },
+      "cancel": {
+        "q": "Wie kündige ich?",
+        "a": "Ganz einfach: per E-Mail, per Telefon oder über unser Kontaktformular. Die Kündigung gilt zum Ende des laufenden Monats. Wenn Sie im ersten Monat kündigen, zahlen Sie gar nichts."
+      },
+      "changeTime": {
+        "q": "Kann ich die Uhrzeit oder den Rhythmus ändern?",
+        "a": "Ja, jederzeit. Schreiben Sie uns oder rufen Sie uns an. Sie können Felix auch im Gespräch sagen, dass ein anderer Zeitpunkt besser passt."
+      },
+      "languages": {
+        "q": "Spricht Felix auch andere Sprachen?",
+        "a": "Zurzeit spricht Felix Deutsch. Weitere Sprachen sind in Planung. Fragen Sie uns gern, wenn Sie eine bestimmte Sprache brauchen."
+      },
+      "costs": {
+        "q": "Was kostet Felix?",
+        "a": "Felix kostet 10 € im Monat, inklusive aller Anrufe. Der erste Monat ist kostenlos. Für Sie entstehen keine Telefonkosten."
+      },
+      "careService": {
+        "q": "Was erfährt mein Pflegedienst?",
+        "a": "Nur das, was Sie freigeben. Felix fragt nach, bevor etwas weitergegeben wird. Zum Beispiel: „Frau Müller wünscht sich, dass der Pflegedienst morgens früher kommt.“"
+      },
+      "hearing": {
+        "q": "Ich höre nicht mehr so gut. Ist das ein Problem?",
+        "a": "Felix spricht langsam und deutlich. Wenn Sie etwas nicht verstanden haben, sagen Sie einfach „Wie bitte?“ – Felix wiederholt es gern. Sie können Felix auch bitten, langsamer zu sprechen."
+      },
+      "pause": {
+        "q": "Kann ich die Anrufe pausieren?",
+        "a": "Ja, zum Beispiel wenn Sie verreisen oder im Krankenhaus sind. Sagen Sie uns einfach, für wie lange."
+      },
+      "replace": {
+        "q": "Ersetzt Felix den Kontakt zu Menschen?",
+        "a": "Nein, und das soll Felix auch nicht. Felix ist eine Ergänzung – für die Zeit zwischen den Besuchen von Pflegedienst, Familie und Freunden."
+      },
+      "data": {
+        "q": "Wo werden meine Daten gespeichert?",
+        "a": "Auf Servern in der Europäischen Union. Wir verkaufen keine Daten und nutzen sie nicht für Werbung. Mehr dazu lesen Sie in unserer Datenschutzerklärung."
+      }
+    },
+    "stillQuestions": {
+      "title": "Ihre Frage war nicht dabei?",
+      "text": "Schreiben Sie uns oder rufen Sie an. Wir helfen Ihnen gern weiter."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Über uns",
+      "description": "Felix ist ein Angebot der IGS Social Tech UG i. G. aus Düsseldorf. Warum es Felix gibt und wie wir über künstliche Intelligenz denken."
+    },
+    "hero": {
+      "eyebrow": "Über uns",
+      "title": "Niemand sollte zwischen zwei Besuchen vergessen werden.",
+      "text": "Felix ist ein Angebot der IGS Social Tech UG i. G. aus Düsseldorf. Wir entwickeln Technik, die Menschen verbindet – und sie nicht ersetzt."
+    },
+    "motivation": {
+      "title": "Warum es Felix gibt",
+      "paragraphs": [
+        "Viele ältere Menschen leben allein. Der Pflegedienst kommt, aber er hat wenig Zeit. Zwischen den Besuchen ist es oft still. Einsamkeit im Alter ist weit verbreitet – und sie schlägt auf die Gesundheit.",
+        "Gleichzeitig erfahren Pflegedienste oft zu spät, wenn etwas nicht stimmt. Wer beschwert sich schon gern bei der freundlichen Pflegekraft, die gerade vor einem steht? Kleine Sorgen werden so zu großen Problemen.",
+        "Deshalb haben wir Felix gebaut: einen geduldigen Gesprächspartner am Telefon, der zuhört, nachfragt und weitergibt, was wichtig ist."
+      ]
+    },
+    "stance": {
+      "title": "Unsere Haltung zu künstlicher Intelligenz",
+      "items": {
+        "honest": {
+          "title": "Ehrlich",
+          "text": "Felix sagt immer, dass er eine KI ist. Felix gibt sich nie als Mensch aus."
+        },
+        "complement": {
+          "title": "Ergänzung, kein Ersatz",
+          "text": "Felix ersetzt weder Pflegekräfte noch Familie, Freunde oder Ärzte. Felix ist für die Zeit dazwischen da."
+        },
+        "control": {
+          "title": "Sie behalten die Kontrolle",
+          "text": "Sie entscheiden, was Felix weitergibt. Sie können jederzeit pausieren, kündigen und Ihre Daten löschen lassen."
+        },
+        "data": {
+          "title": "Sorgsam mit Daten",
+          "text": "So wenige Daten wie möglich, gespeichert in der EU und niemals verkauft."
+        }
+      }
+    },
+    "team": {
+      "title": "Das Team hinter Felix",
+      "text": "Ein kleines Team aus Düsseldorf mit Erfahrung in Pflege, Technik und sozialer Arbeit.",
+      "photoAlt": "Platz für ein Teamfoto",
+      "members": [
+        {
+          "name": "[Name]",
+          "role": "Gründung & Geschäftsführung"
+        },
+        {
+          "name": "[Name]",
+          "role": "Pflege & Qualität"
+        },
+        {
+          "name": "[Name]",
+          "role": "Technik"
+        }
+      ]
+    },
+    "partner": {
+      "title": "Zusammenarbeit mit der Pflegeunion",
+      "text": "Felix arbeitet mit dem ambulanten Pflegedienst Pflegeunion zusammen. So kommt Ihr Feedback direkt dort an, wo es etwas bewirken kann."
+    },
+    "location": {
+      "title": "Zu Hause in Düsseldorf",
+      "text": "Sie finden uns in der Kruppstraße 108 in Düsseldorf. Wir freuen uns über Ihre Nachricht."
+    }
+  },
+  "booking": {
+    "meta": {
+      "title": "Anruf von Felix buchen",
+      "description": "Buchen Sie Felix in drei kurzen Schritten – für sich selbst oder für einen Angehörigen. Der erste Monat ist kostenlos."
+    },
+    "title": "Anruf von Felix buchen",
+    "intro": "In drei kurzen Schritten. Der erste Monat ist kostenlos.",
+    "progress": "Schritt {current} von {total}",
+    "stepNames": {
+      "who": "Für wen?",
+      "details": "Ihre Angaben",
+      "confirm": "Prüfen & absenden"
+    },
+    "step1": {
+      "title": "Für wen buchen Sie Felix?",
+      "self": {
+        "title": "Für mich selbst",
+        "text": "Felix ruft mich an."
+      },
+      "relative": {
+        "title": "Für einen Angehörigen",
+        "text": "Zum Beispiel für meine Mutter oder meinen Vater."
+      }
+    },
+    "step2": {
+      "title": "Wen soll Felix anrufen – und wann?",
+      "calleeNameSelf": "Ihr Name",
+      "calleeNameRelative": "Name der Person, die Felix anrufen soll",
+      "calleeNameHint": "So spricht Felix die Person an, zum Beispiel „Frau Müller“ oder „Hans Müller“.",
+      "phone": "Telefonnummer",
+      "phoneHint": "Festnetz oder Handy, zum Beispiel 0211 1234567",
+      "timeWindow": "Wann passt ein Anruf am besten?",
+      "rhythm": "Wie oft soll Felix anrufen?",
+      "bookerTitleRelative": "Ihre Kontaktdaten",
+      "bookerIntroRelative": "Damit wir Ihnen die Buchung bestätigen und Sie bei Fragen erreichen können.",
+      "bookerTitleSelf": "Bestätigung per E-Mail",
+      "bookerIntroSelf": "Wenn Sie möchten, schicken wir Ihnen eine Bestätigung per E-Mail. Das ist freiwillig.",
+      "bookerName": "Ihr Name",
+      "bookerEmail": "Ihre E-Mail-Adresse",
+      "optional": "freiwillig"
+    },
+    "step3": {
+      "title": "Bitte prüfen Sie Ihre Angaben",
+      "edit": "Ändern",
+      "summary": {
+        "bookingFor": "Buchung",
+        "calleeName": "Felix ruft an",
+        "phone": "Telefonnummer",
+        "timeWindow": "Tageszeit",
+        "rhythm": "Rhythmus",
+        "bookerName": "Ihr Name",
+        "bookerEmail": "Ihre E-Mail-Adresse",
+        "notProvided": "nicht angegeben"
+      },
+      "consentTitle": "Ihr Einverständnis",
+      "calleeConsent": "{name} weiß Bescheid und ist einverstanden, dass Felix anruft.",
+      "privacy": "Ich habe die <link>Datenschutzerklärung</link> gelesen. Ich bin einverstanden, dass meine Angaben und die Inhalte der Gespräche – auch Angaben zur Gesundheit – wie dort beschrieben verarbeitet werden.",
+      "terms": "Ich akzeptiere die <terms>AGB</terms> und habe die <withdrawal>Widerrufsbelehrung</withdrawal> gelesen.",
+      "priceNote": "Der erste Monat ist kostenlos. Danach kostet Felix 10 € pro Monat und ist monatlich kündbar. Sie müssen jetzt nichts bezahlen."
+    },
+    "buttons": {
+      "next": "Weiter",
+      "back": "Zurück",
+      "submit": "Jetzt kostenlos buchen",
+      "submitting": "Wird gesendet …"
+    },
+    "aside": {
+      "title": "Gut zu wissen",
+      "items": [
+        "Erster Monat kostenlos",
+        "Keine Bank- oder Kartendaten nötig",
+        "Monatlich kündbar",
+        "Felix sagt immer, dass er eine KI ist"
+      ],
+      "help": "Fragen? Rufen Sie uns an:"
+    },
+    "honeypot": "Bitte lassen Sie dieses Feld leer."
+  },
+  "bookingSuccess": {
+    "meta": {
+      "title": "Vielen Dank für Ihre Buchung"
+    },
+    "title": "Felix meldet sich!",
+    "text": "Vielen Dank für Ihre Buchung. Ihr erster Anruf kommt innerhalb von 2 Werktagen.",
+    "bubble": "Ich freue mich auf unser erstes Gespräch!",
+    "nextTitle": "So geht es weiter",
+    "next": [
+      "Wenn Sie eine E-Mail-Adresse angegeben haben, bekommen Sie gleich eine Bestätigung.",
+      "Felix ruft im gewählten Zeitfenster an und stellt sich vor.",
+      "Speichern Sie am besten die Nummer von Felix: [Rufnummer folgt]."
+    ]
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Fragen zu Felix? Schreiben Sie uns oder rufen Sie an. Wir helfen Ihnen gern weiter."
+    },
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Wir sind für Sie da",
+      "text": "Haben Sie Fragen zu Felix? Schreiben Sie uns über das Formular, per E-Mail oder rufen Sie uns an."
+    },
+    "details": {
+      "title": "So erreichen Sie uns",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "hours": "Montag bis Freitag, 9 bis 17 Uhr",
+      "address": "Adresse"
+    },
+    "form": {
+      "title": "Schreiben Sie uns",
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "message": "Ihre Nachricht",
+      "optional": "freiwillig",
+      "privacy": "Ich habe die <link>Datenschutzerklärung</link> gelesen. Meine Angaben werden nur zur Bearbeitung meiner Anfrage verwendet.",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet …",
+      "successTitle": "Vielen Dank!",
+      "successText": "Ihre Nachricht ist angekommen. Wir melden uns so schnell wie möglich – meist innerhalb eines Werktags."
+    }
+  },
+  "formErrors": {
+    "summaryTitle": "Bitte prüfen Sie Ihre Angaben:",
+    "bookingForRequired": "Bitte wählen Sie aus, für wen Sie buchen.",
+    "nameRequired": "Bitte geben Sie einen Namen ein.",
+    "tooLong": "Dieser Text ist zu lang.",
+    "phoneRequired": "Bitte geben Sie eine Telefonnummer ein.",
+    "phoneInvalid": "Diese Telefonnummer scheint nicht zu stimmen. Bitte prüfen Sie sie noch einmal.",
+    "timeWindowRequired": "Bitte wählen Sie eine Tageszeit.",
+    "rhythmRequired": "Bitte wählen Sie, wie oft Felix anrufen soll.",
+    "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein, zum Beispiel name@beispiel.de.",
+    "messageRequired": "Bitte schreiben Sie uns eine kurze Nachricht.",
+    "privacyRequired": "Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben.",
+    "termsRequired": "Bitte bestätigen Sie die AGB und die Widerrufsbelehrung.",
+    "calleeConsentRequired": "Bitte bestätigen Sie, dass die angerufene Person einverstanden ist.",
+    "generic": "Leider ist etwas schiefgelaufen. Bitte versuchen Sie es noch einmal oder rufen Sie uns an: {phone}"
+  },
+  "legal": {
+    "updated": "Stand: {date}",
+    "languageNote": "",
+    "imprint": {
+      "meta": {
+        "title": "Impressum",
+        "description": "Impressum der IGS Social Tech UG (haftungsbeschränkt) i. G., Anbieterin von Felix."
+      },
+      "title": "Impressum",
+      "sections": [
+        {
+          "heading": "Angaben gemäß § 5 DDG",
+          "paragraphs": [
+            "IGS Social Tech UG (haftungsbeschränkt) i. G.\nKruppstraße 108\n40227 Düsseldorf\nDeutschland"
+          ]
+        },
+        {
+          "heading": "Vertreten durch",
+          "paragraphs": [
+            "Geschäftsführung: [Vorname Nachname]"
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "paragraphs": [
+            "Telefon: [Telefonnummer]\nE-Mail: [E-Mail-Adresse]"
+          ]
+        },
+        {
+          "heading": "Registereintrag",
+          "paragraphs": [
+            "Die Gesellschaft befindet sich in Gründung. Die Eintragung in das Handelsregister beim Amtsgericht Düsseldorf ist beantragt. Die Registernummer ergänzen wir nach der Eintragung."
+          ]
+        },
+        {
+          "heading": "Umsatzsteuer-ID",
+          "paragraphs": [
+            "Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:\nDE [Nummer]"
+          ]
+        },
+        {
+          "heading": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+          "paragraphs": [
+            "[Vorname Nachname]\nKruppstraße 108\n40227 Düsseldorf"
+          ]
+        },
+        {
+          "heading": "Verbraucherstreitbeilegung",
+          "paragraphs": [
+            "Die Plattform der EU-Kommission zur Online-Streitbeilegung (OS-Plattform) wurde zum 20. Juli 2025 eingestellt.",
+            "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+          ]
+        },
+        {
+          "heading": "Haftung für Inhalte",
+          "paragraphs": [
+            "Wir erstellen die Inhalte dieser Website mit großer Sorgfalt. Für die Richtigkeit, Vollständigkeit und Aktualität können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir nach den allgemeinen Gesetzen für eigene Inhalte verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen. Sobald uns eine Rechtsverletzung bekannt wird, entfernen wir den betreffenden Inhalt umgehend."
+          ]
+        },
+        {
+          "heading": "Haftung für Links",
+          "paragraphs": [
+            "Unsere Website enthält Links zu externen Websites. Auf deren Inhalte haben wir keinen Einfluss. Für diese Inhalte ist stets der jeweilige Anbieter verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Wenn uns Rechtsverletzungen bekannt werden, entfernen wir solche Links umgehend."
+          ]
+        },
+        {
+          "heading": "Markenhinweis",
+          "paragraphs": [
+            "Felix ist ein Angebot der IGS Social Tech UG i. G. Pflegeunion ist eine Marke des Pflegedienstes, mit dem Felix zusammenarbeitet."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "meta": {
+        "title": "Datenschutzerklärung",
+        "description": "Wie Felix und die IGS Social Tech UG i. G. mit Ihren Daten umgehen: Buchung, Telefonanrufe, Sprachverarbeitung, Hosting und Ihre Rechte."
+      },
+      "title": "Datenschutzerklärung",
+      "intro": "Der Schutz Ihrer Daten ist uns wichtig. Hier erklären wir in einfachen Worten, welche Daten wir verarbeiten, warum wir das tun und welche Rechte Sie haben.",
+      "sections": [
+        {
+          "heading": "1. Wer ist verantwortlich?",
+          "paragraphs": [
+            "Verantwortlich für die Verarbeitung Ihrer Daten ist:\nIGS Social Tech UG (haftungsbeschränkt) i. G.\nKruppstraße 108, 40227 Düsseldorf\nE-Mail: [E-Mail-Adresse]\nTelefon: [Telefonnummer]",
+            "Datenschutzbeauftragte/r: [Name und Kontakt – falls benannt]"
+          ]
+        },
+        {
+          "heading": "2. Überblick",
+          "paragraphs": [
+            "Wir verarbeiten personenbezogene Daten nur, soweit das für den Betrieb dieser Website und für den Dienst Felix nötig ist oder Sie eingewilligt haben. Wir verkaufen keine Daten und nutzen sie nicht für Werbung."
+          ]
+        },
+        {
+          "heading": "3. Besuch dieser Website und Hosting (Vercel)",
+          "paragraphs": [
+            "Diese Website wird bei Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA, gehostet. Beim Aufruf der Website werden automatisch technische Daten verarbeitet, die Ihr Browser übermittelt: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser-Typ und Betriebssystem. Diese Daten sind nötig, um die Website sicher und stabil auszuliefern.",
+            "Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren Betrieb). Mit Vercel besteht ein Vertrag zur Auftragsverarbeitung. Vercel ist unter dem EU-US Data Privacy Framework zertifiziert; ergänzend gelten die EU-Standardvertragsklauseln. Server-Logdaten werden nach kurzer Zeit gelöscht."
+          ]
+        },
+        {
+          "heading": "4. Reichweitenmessung (Vercel Web Analytics)",
+          "paragraphs": [
+            "Um zu verstehen, wie unsere Website genutzt wird, verwenden wir Vercel Web Analytics. Dabei werden keine Cookies gesetzt und keine Nutzerprofile erstellt. Es werden nur zusammengefasste, anonymisierte Daten ausgewertet, zum Beispiel welche Seiten wie oft aufgerufen wurden. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."
+          ]
+        },
+        {
+          "heading": "5. Cookies",
+          "paragraphs": [
+            "Diese Website setzt keine Cookies zu Werbe- oder Analysezwecken. Deshalb sehen Sie auch kein Cookie-Banner."
+          ]
+        },
+        {
+          "heading": "6. Buchung von Felix",
+          "paragraphs": [
+            "Wenn Sie Felix buchen, verarbeiten wir: den Namen der angerufenen Person, ihre Telefonnummer, das gewünschte Zeitfenster und den Anrufrhythmus sowie – falls angegeben – Name und E-Mail-Adresse der buchenden Person.",
+            "Wir nutzen diese Daten, um den Vertrag zu erfüllen, die Anrufe zu planen und Sie zu kontaktieren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertrag). Bucht ein Angehöriger für eine andere Person, ist zusätzlich deren Einverständnis nötig; Felix fragt beim ersten Anruf danach."
+          ]
+        },
+        {
+          "heading": "7. Telefonanrufe und Sprachverarbeitung",
+          "paragraphs": [
+            "Felix ist eine künstliche Intelligenz. Felix sagt das zu Beginn jedes Gesprächs. Damit Felix Sie verstehen und antworten kann, wird das Gespräch während des Anrufs automatisch verarbeitet: Ihre Sprache wird in Text umgewandelt, von einem KI-Sprachmodell verarbeitet und die Antwort wieder in Sprache umgewandelt.",
+            "Dafür setzen wir folgende Dienstleister als Auftragsverarbeiter ein: [Telefonie-Anbieter, Sitz], [Anbieter Spracherkennung/Sprachausgabe, Sitz], [Anbieter KI-Sprachmodell, Sitz]. Die Verarbeitung erfolgt auf Servern in der Europäischen Union.",
+            "Es wird keine Tonaufnahme des Gesprächs gespeichert. Gespeichert werden eine schriftliche Zusammenfassung sowie technische Daten des Anrufs (Zeitpunkt, Dauer, ob der Anruf angenommen wurde). Kein Mensch hört live mit.",
+            "In den Gesprächen können Angaben zu Ihrer Gesundheit vorkommen, zum Beispiel zu Schmerzen oder zum Wohlbefinden. Das sind besonders geschützte Daten. Wir verarbeiten sie nur mit Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO in Verbindung mit Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit für die Zukunft widerrufen."
+          ]
+        },
+        {
+          "heading": "8. Weitergabe an Ihren Pflegedienst",
+          "paragraphs": [
+            "Felix gibt Rückmeldungen nur an Ihren Pflegedienst weiter, wenn Sie im Gespräch zugestimmt haben. Weitergegeben wird nur der freigegebene Inhalt, zum Beispiel: „Frau Müller wünscht sich, dass der Pflegedienst morgens früher kommt.“ Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO)."
+          ]
+        },
+        {
+          "heading": "9. Kontaktformular und E-Mail",
+          "paragraphs": [
+            "Wenn Sie uns über das Kontaktformular oder per E-Mail schreiben, verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, ggf. Telefonnummer und Ihre Nachricht), um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, wenn es um einen Vertrag geht, sonst Art. 6 Abs. 1 lit. f DSGVO."
+          ]
+        },
+        {
+          "heading": "10. E-Mail-Versand (Resend)",
+          "paragraphs": [
+            "Für den Versand von Bestätigungs-E-Mails und für die Weiterleitung von Anfragen nutzen wir den Dienst Resend (Resend, Inc., 2261 Market Street #5039, San Francisco, CA 94114, USA). Dabei werden Ihre E-Mail-Adresse und der Inhalt der E-Mail verarbeitet. Mit Resend besteht ein Vertrag zur Auftragsverarbeitung; die Übermittlung in die USA ist durch EU-Standardvertragsklauseln abgesichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO."
+          ]
+        },
+        {
+          "heading": "11. Wie lange wir Daten speichern",
+          "paragraphs": [
+            "Wir speichern Ihre Daten nur so lange, wie es für den jeweiligen Zweck nötig ist. Vertragsdaten löschen wir nach Ende des Vertrags, soweit keine gesetzlichen Aufbewahrungspflichten bestehen (zum Beispiel 6 bis 10 Jahre für Rechnungen). Gesprächszusammenfassungen löschen wir spätestens [Frist] nach dem Gespräch oder sofort, wenn Sie das verlangen."
+          ]
+        },
+        {
+          "heading": "12. Ihre Rechte",
+          "paragraphs": [
+            "Sie haben jederzeit das Recht auf:"
+          ],
+          "list": [
+            "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
+            "Berichtigung falscher Daten (Art. 16 DSGVO)",
+            "Löschung Ihrer Daten (Art. 17 DSGVO)",
+            "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+            "Datenübertragbarkeit (Art. 20 DSGVO)",
+            "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+            "Widerruf einer Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)"
+          ],
+          "after": [
+            "Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren. Für uns zuständig ist: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf."
+          ]
+        },
+        {
+          "heading": "13. Datensicherheit",
+          "paragraphs": [
+            "Diese Website nutzt eine verschlüsselte Verbindung (TLS). Sie erkennen das am Schloss-Symbol in Ihrem Browser. Wir schützen Ihre Daten mit technischen und organisatorischen Maßnahmen."
+          ]
+        },
+        {
+          "heading": "14. Änderungen",
+          "paragraphs": [
+            "Wir passen diese Datenschutzerklärung an, wenn sich unser Angebot oder die Rechtslage ändert. Es gilt die jeweils aktuelle Fassung auf dieser Seite."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "meta": {
+        "title": "Allgemeine Geschäftsbedingungen",
+        "description": "Allgemeine Geschäftsbedingungen (AGB) für den Dienst Felix der IGS Social Tech UG i. G."
+      },
+      "title": "Allgemeine Geschäftsbedingungen",
+      "sections": [
+        {
+          "heading": "§ 1 Geltungsbereich",
+          "paragraphs": [
+            "Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über den Dienst „Felix“ zwischen der IGS Social Tech UG (haftungsbeschränkt) i. G., Kruppstraße 108, 40227 Düsseldorf („wir“) und unseren Kundinnen und Kunden („Sie“)."
+          ]
+        },
+        {
+          "heading": "§ 2 Leistung",
+          "paragraphs": [
+            "Felix ist ein telefonischer Begleitdienst. Eine künstliche Intelligenz ruft die angegebene Person im vereinbarten Rhythmus und Zeitfenster an, führt ein kurzes Gespräch und holt Rückmeldungen zur Pflege ein. Mit Zustimmung der angerufenen Person geben wir diese Rückmeldungen an ihren Pflegedienst weiter.",
+            "Felix ist kein Notruf, kein Hausnotrufsystem und keine medizinische oder pflegerische Beratung. Felix stellt keine Diagnosen und gibt keine Behandlungsempfehlungen. In Notfällen ist immer die 112 zu wählen.",
+            "Wir bemühen uns um eine hohe Verfügbarkeit. Einzelne Anrufe können sich aus technischen Gründen verschieben oder ausfallen."
+          ]
+        },
+        {
+          "heading": "§ 3 Vertragsschluss",
+          "paragraphs": [
+            "Mit dem Absenden des Buchungsformulars geben Sie ein Angebot zum Abschluss eines Vertrags ab. Der Vertrag kommt zustande, wenn wir die Buchung per E-Mail oder telefonisch bestätigen oder Felix das erste Mal anruft."
+          ]
+        },
+        {
+          "heading": "§ 4 Kostenloser Monat und Preis",
+          "paragraphs": [
+            "Der erste Monat ab dem ersten Anruf ist kostenlos. Danach beträgt der Preis 10 € pro Monat inklusive gesetzlicher Mehrwertsteuer. Im Preis sind alle Anrufe im vereinbarten Rhythmus enthalten. Für die angerufene Person entstehen keine Telefonkosten.",
+            "Die Zahlungsweise wird Ihnen vor Ende des kostenlosen Monats mitgeteilt. [Zahlungsart und Fälligkeit ergänzen.]"
+          ]
+        },
+        {
+          "heading": "§ 5 Laufzeit und Kündigung",
+          "paragraphs": [
+            "Der Vertrag läuft auf unbestimmte Zeit. Sie können ihn jederzeit zum Ende des laufenden Monats kündigen – per E-Mail, telefonisch, schriftlich oder über unsere Website. Wenn Sie im kostenlosen Monat kündigen, entstehen keine Kosten.",
+            "Unser Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt."
+          ]
+        },
+        {
+          "heading": "§ 6 Ihre Pflichten",
+          "paragraphs": [
+            "Sie sorgen dafür, dass die angegebene Telefonnummer stimmt. Buchen Sie für eine andere Person, versichern Sie, dass diese mit den Anrufen einverstanden ist. Änderungen teilen Sie uns bitte zeitnah mit."
+          ]
+        },
+        {
+          "heading": "§ 7 Haftung",
+          "paragraphs": [
+            "Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper oder Gesundheit. Bei leichter Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten und begrenzt auf den vorhersehbaren, typischen Schaden. Die Haftung nach dem Produkthaftungsgesetz bleibt unberührt."
+          ]
+        },
+        {
+          "heading": "§ 8 Datenschutz",
+          "paragraphs": [
+            "Wie wir mit Ihren Daten umgehen, lesen Sie in unserer Datenschutzerklärung."
+          ]
+        },
+        {
+          "heading": "§ 9 Widerrufsrecht",
+          "paragraphs": [
+            "Als Verbraucherin oder Verbraucher haben Sie ein gesetzliches Widerrufsrecht. Einzelheiten finden Sie in unserer Widerrufsbelehrung."
+          ]
+        },
+        {
+          "heading": "§ 10 Schlussbestimmungen",
+          "paragraphs": [
+            "Es gilt das Recht der Bundesrepublik Deutschland. Zwingende Verbraucherschutzvorschriften des Landes, in dem Sie Ihren gewöhnlichen Aufenthalt haben, bleiben unberührt. Sollte eine Bestimmung unwirksam sein, bleiben die übrigen Bestimmungen wirksam."
+          ]
+        }
+      ]
+    },
+    "withdrawal": {
+      "meta": {
+        "title": "Widerrufsbelehrung",
+        "description": "Widerrufsbelehrung für Verbraucherinnen und Verbraucher und Muster-Widerrufsformular für den Dienst Felix."
+      },
+      "title": "Widerrufsbelehrung",
+      "sections": [
+        {
+          "heading": "Widerrufsrecht",
+          "paragraphs": [
+            "Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.",
+            "Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.",
+            "Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (IGS Social Tech UG (haftungsbeschränkt) i. G., Kruppstraße 108, 40227 Düsseldorf, Telefon: [Telefonnummer], E-Mail: [E-Mail-Adresse]) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.",
+            "Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden."
+          ]
+        },
+        {
+          "heading": "Folgen des Widerrufs",
+          "paragraphs": [
+            "Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.",
+            "Haben Sie verlangt, dass die Dienstleistungen während der Widerrufsfrist beginnen sollen, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen entspricht. Da der erste Monat kostenlos ist, entstehen Ihnen bei einem Widerruf innerhalb dieses Monats keine Kosten."
+          ]
+        }
+      ],
+      "form": {
+        "title": "Muster-Widerrufsformular",
+        "intro": "(Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es zurück.)",
+        "lines": [
+          "An: IGS Social Tech UG (haftungsbeschränkt) i. G., Kruppstraße 108, 40227 Düsseldorf, E-Mail: [E-Mail-Adresse]",
+          "Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung: Telefonischer Begleitdienst „Felix“",
+          "Bestellt am (*): ____________________",
+          "Name des/der Verbraucher(s): ____________________",
+          "Anschrift des/der Verbraucher(s): ____________________",
+          "Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier): ____________________",
+          "Datum: ____________________"
+        ],
+        "footnote": "(*) Unzutreffendes streichen."
+      },
+      "end": "Ende der Widerrufsbelehrung"
+    }
+  },
+  "emails": {
+    "booking": {
+      "subject": "Ihre Buchung bei Felix",
+      "preheader": "Felix meldet sich innerhalb von 2 Werktagen.",
+      "greeting": "Guten Tag {name},",
+      "introSelf": "vielen Dank für Ihre Buchung! Felix ruft Sie innerhalb von 2 Werktagen zum ersten Mal an.",
+      "introRelative": "vielen Dank für Ihre Buchung! Felix ruft {callee} innerhalb von 2 Werktagen zum ersten Mal an.",
+      "summaryTitle": "Ihre Angaben",
+      "trialNote": "Der erste Monat ist kostenlos. Danach kostet Felix 10 € pro Monat und ist monatlich kündbar.",
+      "questions": "Haben Sie Fragen oder möchten Sie etwas ändern? Antworten Sie einfach auf diese E-Mail.",
+      "signoff": "Herzliche Grüße\nIhr Felix-Team"
+    }
+  },
+  "notFound": {
+    "meta": {
+      "title": "Seite nicht gefunden"
+    },
+    "title": "Diese Seite gibt es leider nicht.",
+    "text": "Vielleicht hat sich ein Tippfehler eingeschlichen, oder die Seite wurde verschoben.",
+    "bubble": "Hallo? Ist da jemand?"
+  }
+}
