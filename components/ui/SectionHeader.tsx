@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.12em] text-brand-darker">
+    <p className="mb-4 inline-flex rounded-full bg-lime-soft px-4 py-1.5 text-sm font-extrabold uppercase tracking-[0.1em] text-forest-deep">
       {children}
     </p>
   );
@@ -26,12 +26,12 @@ export function SectionHeader({
   const alignment = align === "center" ? "mx-auto text-center" : "";
   const size =
     Heading === "h1"
-      ? "text-[2.4rem] sm:text-5xl lg:text-[3.6rem]"
-      : "text-3xl sm:text-[2.6rem]";
+      ? "text-[2.4rem] sm:text-5xl lg:text-[3.5rem]"
+      : "text-3xl sm:text-[2.5rem]";
   return (
     <div className={`max-w-2xl ${alignment}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <Heading id={id} className={`${size} font-semibold text-ink`}>
+      <Heading id={id} className={size}>
         {title}
       </Heading>
       {intro ? (

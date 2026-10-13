@@ -39,21 +39,22 @@ export default async function HowItWorksPage({ params }: Props) {
       <section className="pb-20 sm:pb-28">
         <Container className="grid gap-14 lg:grid-cols-[1.3fr_1fr]">
           <div>
-            <h2 className="text-3xl font-semibold sm:text-[2.4rem]">{t("flow.title")}</h2>
+            <h2 className="text-3xl sm:text-[2.4rem]">{t("flow.title")}</h2>
             {/* TODO(chris): Zeitraum bis zum ersten Anruf ("innerhalb von zwei Werktagen") bestätigen. */}
             <ol className="relative mt-10 space-y-10 before:absolute before:bottom-6 before:left-6 before:top-6 before:w-0.5 before:bg-line">
               {steps.map((step, i) => (
                 <li key={step.title} className="relative flex gap-6">
                   <span
                     aria-hidden="true"
-                    className="relative z-10 flex size-12 shrink-0 items-center justify-center rounded-full bg-brand-dark font-serif text-xl font-semibold text-white"
+                    className="relative z-10 flex size-12 shrink-0 items-center justify-center rounded-full bg-lime font-display text-xl font-extrabold text-forest-deep"
                   >
                     {i + 1}
                   </span>
-                  <FadeIn>
-                    <h3 className="text-2xl font-semibold">{step.title}</h3>
+                  {/* Ohne Einblenden: Die ersten Schritte stehen direkt im sichtbaren Bereich (LCP). */}
+                  <div>
+                    <h3 className="text-2xl">{step.title}</h3>
                     <p className="mt-2 text-lg text-muted">{step.text}</p>
-                  </FadeIn>
+                  </div>
                 </li>
               ))}
             </ol>
@@ -65,11 +66,11 @@ export default async function HowItWorksPage({ params }: Props) {
       </section>
 
       {/* Worüber Felix spricht */}
-      <section className="bg-surface py-20 sm:py-28">
+      <section className="bg-sage py-20 sm:py-28">
         <Container className="grid items-start gap-12 lg:grid-cols-2">
           <FadeIn>
             <SectionHeader title={t("topics.title")} intro={t("topics.intro")} />
-            <p className="mt-6 rounded-card bg-accent-soft/60 p-5 text-ink">{t("topics.note")}</p>
+            <p className="mt-6 rounded-card bg-surface p-5 text-ink shadow-soft">{t("topics.note")}</p>
           </FadeIn>
           <FadeIn delay={0.1}>
             {/* TODO(chris): Beispielfragen mit dem tatsächlichen Gesprächsleitfaden von Felix abgleichen. */}
@@ -92,32 +93,32 @@ export default async function HowItWorksPage({ params }: Props) {
           <div className="grid gap-6 lg:grid-cols-3">
             <FadeIn className="h-full">
               {/* TODO(chris): Anrufdauer (ca. 5–10 Minuten) bestätigen. */}
-              <div className="h-full rounded-[1.75rem] bg-brand-dark p-8 text-white">
+              <div className="h-full rounded-[1.75rem] bg-forest p-8 text-white">
                 <Clock aria-hidden="true" className="size-9" />
-                <h2 className="mt-5 font-sans text-xl font-semibold text-white">{t("duration.title")}</h2>
-                <p className="mt-2 font-serif text-4xl font-semibold">{t("duration.value")}</p>
+                <h2 className="mt-5 text-xl text-white">{t("duration.title")}</h2>
+                <p className="mt-2 font-display text-4xl font-extrabold text-lime">{t("duration.value")}</p>
                 <p className="mt-4 text-white">{t("duration.text")}</p>
               </div>
             </FadeIn>
             <FadeIn delay={0.08} className="h-full lg:col-span-2">
               <div className="h-full rounded-[1.75rem] border border-line bg-surface p-8 shadow-soft">
-                <CalendarClock aria-hidden="true" className="size-9 text-brand-dark" />
-                <h2 className="mt-5 text-3xl font-semibold">{t("rhythm.title")}</h2>
+                <CalendarClock aria-hidden="true" className="size-9 text-forest" />
+                <h2 className="mt-5 text-3xl">{t("rhythm.title")}</h2>
                 <p className="mt-3 text-lg text-muted">{t("rhythm.intro")}</p>
                 <ul className="mt-7 grid gap-4 sm:grid-cols-3">
                   {rhythms.map((r) => (
-                    <li key={r} className="rounded-card bg-cream p-5">
-                      <p className="font-semibold">{common(`rhythms.${r}.label`)}</p>
+                    <li key={r} className="rounded-card bg-sage p-5">
+                      <p className="font-extrabold text-forest-deep">{common(`rhythms.${r}.label`)}</p>
                       <p className="mt-1 text-base text-muted">{common(`rhythms.${r}.text`)}</p>
                     </li>
                   ))}
                 </ul>
                 {/* TODO(chris): Zeitfenster (Uhrzeiten) bestätigen – stehen in messages/*.json unter common.timeWindows. */}
-                <h3 className="mt-8 font-sans text-lg font-semibold">{t("rhythm.timeTitle")}</h3>
+                <h3 className="mt-8 text-lg">{t("rhythm.timeTitle")}</h3>
                 <ul className="mt-3 flex flex-wrap gap-3">
                   {timeWindows.map((w) => (
-                    <li key={w} className="rounded-full bg-accent-soft px-4 py-2 text-base">
-                      <span className="font-semibold">{common(`timeWindows.${w}.label`)}</span>{" "}
+                    <li key={w} className="rounded-full bg-lime-soft px-4 py-2 text-base">
+                      <span className="font-extrabold text-forest-deep">{common(`timeWindows.${w}.label`)}</span>{" "}
                       <span className="text-muted">· {common(`timeWindows.${w}.hours`)}</span>
                     </li>
                   ))}
@@ -129,21 +130,21 @@ export default async function HowItWorksPage({ params }: Props) {
       </section>
 
       {/* Feedback & Pausieren */}
-      <section className="bg-surface py-20 sm:py-28">
+      <section className="bg-sage py-20 sm:py-28">
         <Container className="grid gap-6 lg:grid-cols-2">
           <FadeIn className="h-full">
             {/* TODO(chris): Ablauf der Feedback-Weitergabe an den Pflegedienst bestätigen (Zusammenfassung, Freigabe, Kanal). */}
-            <div className="h-full rounded-[1.75rem] bg-cream p-8 sm:p-10">
-              <Send aria-hidden="true" className="size-9 text-brand-dark" />
-              <h2 className="mt-5 text-3xl font-semibold">{t("feedback.title")}</h2>
+            <div className="h-full rounded-[1.75rem] bg-surface p-8 shadow-soft sm:p-10">
+              <Send aria-hidden="true" className="size-9 text-forest" />
+              <h2 className="mt-5 text-3xl">{t("feedback.title")}</h2>
               <CheckList items={t.raw("feedback.items") as string[]} className="mt-6 text-lg" />
             </div>
           </FadeIn>
           <FadeIn delay={0.08} className="h-full">
             {/* TODO(chris): Kündigungswege und Pausieren bestätigen; vor Start Kündigungsbutton nach § 312k BGB umsetzen. */}
-            <div className="h-full rounded-[1.75rem] bg-cream p-8 sm:p-10">
-              <PauseCircle aria-hidden="true" className="size-9 text-brand-dark" />
-              <h2 className="mt-5 text-3xl font-semibold">{t("pause.title")}</h2>
+            <div className="h-full rounded-[1.75rem] bg-surface p-8 shadow-soft sm:p-10">
+              <PauseCircle aria-hidden="true" className="size-9 text-forest" />
+              <h2 className="mt-5 text-3xl">{t("pause.title")}</h2>
               <p className="mt-4 text-lg text-muted">{t("pause.text")}</p>
             </div>
           </FadeIn>

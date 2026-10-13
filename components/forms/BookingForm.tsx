@@ -176,7 +176,7 @@ export function BookingForm() {
     <div className="relative">
       {/* Fortschritt */}
       <div className="mb-10">
-        <p id="booking-progress" className="mb-3 text-lg font-semibold" aria-live="polite">
+        <p id="booking-progress" className="mb-3 text-lg font-extrabold text-forest-deep" aria-live="polite">
           {t("progress", { current: step, total: TOTAL_STEPS })}
           <span className="text-muted"> · {t(`stepNames.${stepKeys[step - 1]}`)}</span>
         </p>
@@ -190,7 +190,7 @@ export function BookingForm() {
           className="h-4 overflow-hidden rounded-full bg-line"
         >
           <div
-            className="h-full rounded-full bg-brand-dark transition-[width] duration-500 ease-out"
+            className="h-full rounded-full bg-forest transition-[width] duration-500 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -199,10 +199,10 @@ export function BookingForm() {
             <li
               key={key}
               className={`flex items-center gap-2 ${i === 1 ? "justify-center" : ""} ${i === 2 ? "justify-end" : ""} ${
-                i + 1 <= step ? "font-semibold text-ink" : "text-muted"
+                i + 1 <= step ? "font-bold text-forest-deep" : "text-muted"
               }`}
             >
-              {i + 1 < step ? <Check className="size-4 text-success" strokeWidth={3} /> : null}
+              {i + 1 < step ? <Check className="size-4 text-forest" strokeWidth={3.5} /> : null}
               {t(`stepNames.${key}`)}
             </li>
           ))}
@@ -223,7 +223,7 @@ export function BookingForm() {
 
         {step === 1 ? (
           <div>
-            <h2 ref={headingRef} tabIndex={-1} className="mb-6 text-3xl font-semibold focus:outline-none">
+            <h2 ref={headingRef} tabIndex={-1} className="mb-6 text-3xl focus:outline-none">
               {t("step1.title")}
             </h2>
             <ChoiceCards
@@ -239,13 +239,13 @@ export function BookingForm() {
                   value: "self",
                   label: t("step1.self.title"),
                   description: t("step1.self.text"),
-                  icon: <User aria-hidden="true" className="size-5 text-brand-dark" />,
+                  icon: <User aria-hidden="true" className="size-5 text-forest" />,
                 },
                 {
                   value: "relative",
                   label: t("step1.relative.title"),
                   description: t("step1.relative.text"),
-                  icon: <Users aria-hidden="true" className="size-5 text-brand-dark" />,
+                  icon: <Users aria-hidden="true" className="size-5 text-forest" />,
                 },
               ]}
             />
@@ -254,7 +254,7 @@ export function BookingForm() {
 
         {step === 2 ? (
           <div className="space-y-8">
-            <h2 ref={headingRef} tabIndex={-1} className="text-3xl font-semibold focus:outline-none">
+            <h2 ref={headingRef} tabIndex={-1} className="text-3xl focus:outline-none">
               {t("step2.title")}
             </h2>
             <TextField
@@ -306,8 +306,8 @@ export function BookingForm() {
               }))}
             />
 
-            <div className="rounded-2xl bg-cream p-5 sm:p-6">
-              <h3 className="font-sans text-xl font-semibold">
+            <div className="rounded-2xl bg-sage p-5 sm:p-6">
+              <h3 className="text-xl">
                 {isRelative ? t("step2.bookerTitleRelative") : t("step2.bookerTitleSelf")}
               </h3>
               <p className="mt-1 text-muted">
@@ -344,7 +344,7 @@ export function BookingForm() {
 
         {step === 3 ? (
           <div>
-            <h2 ref={headingRef} tabIndex={-1} className="mb-6 text-3xl font-semibold focus:outline-none">
+            <h2 ref={headingRef} tabIndex={-1} className="mb-6 text-3xl focus:outline-none">
               {t("step3.title")}
             </h2>
             <dl className="divide-y divide-line rounded-2xl border border-line">
@@ -367,12 +367,12 @@ export function BookingForm() {
               ).map(([key, value, target]) => (
                 <div key={key} className="flex flex-col gap-1 p-4 sm:flex-row sm:items-center sm:gap-4 sm:px-5">
                   <dt className="text-base text-muted sm:w-48 sm:shrink-0">{t(`step3.summary.${key}`)}</dt>
-                  <dd className="flex-1 break-words text-lg font-semibold">{value}</dd>
+                  <dd className="flex-1 break-words text-lg font-bold text-forest-deep">{value}</dd>
                   <dd>
                     <button
                       type="button"
                       onClick={() => goTo(target)}
-                      className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-3 font-semibold text-brand-dark hover:bg-accent-soft hover:text-brand-darker"
+                      className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-3 font-bold text-forest hover:bg-sage hover:text-forest-deep"
                     >
                       <Pencil aria-hidden="true" className="size-4" />
                       {t("step3.edit")}
@@ -383,10 +383,10 @@ export function BookingForm() {
               ))}
             </dl>
 
-            <p className="mt-6 rounded-2xl bg-success/10 p-5 text-ink">{t("step3.priceNote")}</p>
+            <p className="mt-6 rounded-2xl bg-lime-soft p-5 font-semibold text-forest-deep">{t("step3.priceNote")}</p>
 
             <fieldset className="mt-8 space-y-5">
-              <legend className="mb-4 font-sans text-xl font-semibold">{t("step3.consentTitle")}</legend>
+              <legend className="mb-4 font-display text-xl font-extrabold text-forest-deep">{t("step3.consentTitle")}</legend>
               {isRelative ? (
                 <CheckboxField
                   id="calleeConsent"
@@ -405,7 +405,7 @@ export function BookingForm() {
               >
                 {t.rich("step3.privacy", {
                   link: (chunks) => (
-                    <Link href="/datenschutz" target="_blank" className="font-semibold text-brand-dark underline underline-offset-2">
+                    <Link href="/datenschutz" target="_blank" className="font-bold text-forest underline underline-offset-2">
                       {chunks}
                     </Link>
                   ),
@@ -419,12 +419,12 @@ export function BookingForm() {
               >
                 {t.rich("step3.terms", {
                   terms: (chunks) => (
-                    <Link href="/agb" target="_blank" className="font-semibold text-brand-dark underline underline-offset-2">
+                    <Link href="/agb" target="_blank" className="font-bold text-forest underline underline-offset-2">
                       {chunks}
                     </Link>
                   ),
                   withdrawal: (chunks) => (
-                    <Link href="/widerruf" target="_blank" className="font-semibold text-brand-dark underline underline-offset-2">
+                    <Link href="/widerruf" target="_blank" className="font-bold text-forest underline underline-offset-2">
                       {chunks}
                     </Link>
                   ),
@@ -433,7 +433,7 @@ export function BookingForm() {
             </fieldset>
 
             {formError ? (
-              <p role="alert" className="mt-6 rounded-2xl border-2 border-brand-dark bg-accent-soft/60 p-5 font-medium">
+              <p role="alert" className="mt-6 rounded-2xl border-2 border-danger bg-danger-soft p-5 font-semibold text-ink">
                 {formError}
               </p>
             ) : null}

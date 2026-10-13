@@ -17,7 +17,7 @@ export function LanguageSwitcher({
 
   return (
     <nav aria-label={t("language")} className={className}>
-      <ul className="flex items-center rounded-full border border-line bg-surface p-1">
+      <ul className="flex items-center rounded-full border border-line bg-sage p-1">
         {routing.locales.map((l) => {
           const active = l === locale;
           return (
@@ -29,10 +29,10 @@ export function LanguageSwitcher({
                 lang={l}
                 onClick={onNavigate}
                 aria-current={active ? "true" : undefined}
-                className={`flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 text-sm font-semibold transition-colors ${
+                className={`flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 text-sm font-extrabold transition-colors ${
                   active
-                    ? "bg-ink text-white"
-                    : "text-muted hover:text-brand-dark"
+                    ? "bg-forest text-white"
+                    : "text-muted hover:text-forest"
                 }`}
               >
                 <span aria-hidden="true">{l.toUpperCase()}</span>

@@ -24,7 +24,7 @@ export default async function ContactPage({ params }: Props) {
   const messages = await getMessages();
 
   const rowClass = "flex gap-4";
-  const iconClass = "mt-1 size-6 shrink-0 text-brand-darker";
+  const iconClass = "mt-1 size-6 shrink-0 text-forest";
 
   return (
     <>
@@ -32,14 +32,14 @@ export default async function ContactPage({ params }: Props) {
       <section className="pb-20 sm:pb-28">
         <Container className="grid items-start gap-10 lg:grid-cols-[1fr_1.4fr]">
           {/* TODO(chris): E-Mail, Telefonnummer und Erreichbarkeit eintragen (lib/site.ts, contact.details.hours). */}
-          <div className="rounded-[1.75rem] bg-accent-soft/60 p-7 sm:p-9">
-            <h2 className="text-2xl font-semibold">{t("details.title")}</h2>
+          <div className="rounded-[1.75rem] bg-sage p-7 sm:p-9">
+            <h2 className="text-2xl">{t("details.title")}</h2>
             <ul className="mt-6 space-y-6 text-lg">
               <li className={rowClass}>
                 <Mail aria-hidden="true" className={iconClass} />
                 <div>
                   <p className="text-base text-muted">{t("details.email")}</p>
-                  <a href={`mailto:${company.email}`} className="font-semibold text-brand-darker underline-offset-4 hover:underline">
+                  <a href={`mailto:${company.email}`} className="font-bold text-forest underline-offset-4 hover:underline">
                     {company.email}
                   </a>
                 </div>
@@ -48,7 +48,7 @@ export default async function ContactPage({ params }: Props) {
                 <Phone aria-hidden="true" className={iconClass} />
                 <div>
                   <p className="text-base text-muted">{t("details.phone")}</p>
-                  <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="font-semibold text-brand-darker underline-offset-4 hover:underline">
+                  <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="font-bold text-forest underline-offset-4 hover:underline">
                     {company.phoneDisplay}
                   </a>
                 </div>

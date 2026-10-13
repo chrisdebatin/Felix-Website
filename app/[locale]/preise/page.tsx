@@ -36,28 +36,28 @@ export default async function PricingPage({ params }: Props) {
           <FadeIn>
             <article
               aria-labelledby="price-card-title"
-              className="relative overflow-hidden rounded-[2rem] border border-line bg-surface p-8 shadow-lift sm:p-12"
+              className="relative overflow-hidden rounded-[2rem] border border-line bg-surface p-6 shadow-lift sm:p-12"
             >
-              <div aria-hidden="true" className="absolute -right-20 -top-20 size-56 rounded-full bg-accent/40" />
+              <div aria-hidden="true" className="absolute -right-20 -top-20 size-56 rounded-full border-[1.75rem] border-lime-soft" />
               <div className="relative">
-                <p className="inline-flex rounded-full bg-success/12 px-4 py-1.5 text-base font-semibold text-[#1F6E4A]">
+                <p className="inline-flex rounded-full bg-lime px-4 py-1.5 text-base font-extrabold text-forest-deep">
                   {t("card.badge")}
                 </p>
-                <h2 id="price-card-title" className="mt-6 text-4xl font-semibold">
+                <h2 id="price-card-title" className="mt-6 text-4xl">
                   {t("card.name")}
                 </h2>
                 <p className="mt-1 text-lg text-muted">{t("card.tagline")}</p>
-                <p className="mt-8 flex items-baseline gap-3">
-                  <span className="font-serif text-7xl font-semibold leading-none">{common("price")}</span>
+                <p className="mt-8 flex flex-wrap items-baseline gap-x-3">
+                  <span className="whitespace-nowrap font-display text-7xl font-extrabold leading-none text-forest-deep">{common("price")}</span>
                   <span className="text-xl text-muted">{common("perMonth")}</span>
                 </p>
-                <p className="mt-3 flex items-center gap-2 font-semibold">
-                  <Check aria-hidden="true" className="size-5 text-success" strokeWidth={3} />
+                <p className="mt-3 flex items-center gap-2 font-bold">
+                  <Check aria-hidden="true" className="size-5 text-forest" strokeWidth={3.5} />
                   {t("card.cancel")}
                 </p>
                 <p className="mt-6 text-muted">{t("card.afterTrial")}</p>
                 <ButtonLink href="/buchen" className="mt-8 w-full">
-                  <Phone aria-hidden="true" className="size-5" />
+                  <Phone aria-hidden="true" className="hidden size-5 sm:block" />
                   {common("bookCta")}
                 </ButtonLink>
                 <p className="mt-4 text-center text-sm text-muted">{t("card.vat")}</p>
@@ -66,11 +66,11 @@ export default async function PricingPage({ params }: Props) {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <h2 className="text-3xl font-semibold">{t("card.includedTitle")}</h2>
+            <h2 className="text-3xl">{t("card.includedTitle")}</h2>
             <CheckList items={t.raw("card.included") as string[]} className="mt-6 text-lg" />
 
             {/* TODO(chris): Zahlungsablauf nach dem Gratismonat festlegen (aktuell: "wir melden uns"). Später Stripe, siehe app/actions/checkout.ts. */}
-            <h2 className="mt-14 text-3xl font-semibold">{t("notes.title")}</h2>
+            <h2 className="mt-14 text-3xl">{t("notes.title")}</h2>
             <div className="mt-6 space-y-4">
               {notes.map((n) => (
                 <AccordionItem key={n.q} question={n.q} answer={n.a} />

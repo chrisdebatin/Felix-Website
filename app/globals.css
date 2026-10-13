@@ -1,34 +1,42 @@
 @import "tailwindcss";
 
 /*
- * Felix Corporate Identity – Design-Tokens.
+ * Felix Corporate Identity – Design-Tokens (angelehnt an die CI der Pflegeunion).
  * Tailwind v4 liest das Theme direkt aus @theme (ersetzt tailwind.config.js).
- * Nutzbar z. B. als bg-brand, text-ink, text-muted, rounded-card, shadow-soft.
+ * Nutzbar z. B. als bg-forest, bg-lime, text-forest-deep, bg-sage, text-muted, shadow-soft.
+ *
+ * Kontraste (WCAG AA):
+ * - Weiß auf forest (#00633A): 7,4:1
+ * - forest-deep (#003820) auf lime (#AFCA0B): 7,1:1 – so sehen die Haupt-Buttons aus
+ * - Weiß auf lime: nur 1,9:1 → niemals weiße Schrift auf Lime, Lime nie als Textfarbe
  */
 @theme {
-  --color-brand: #e8512f;
-  --color-brand-dark: #c73e20;
-  --color-brand-darker: #a5321a;
-  --color-accent: #ffb38a;
-  --color-accent-soft: #ffe6d8;
-  --color-cream: #fff9f5;
+  --color-forest: #00633a;
+  --color-forest-dark: #004d2c;
+  --color-forest-deep: #003820;
+  --color-lime: #afca0b;
+  --color-lime-dark: #a0b90a;
+  --color-lime-soft: #e7f1c6;
+  --color-sage: #f3f7e3;
   --color-surface: #ffffff;
-  --color-ink: #1f1a17;
-  --color-muted: #6b625c;
-  --color-line: #f0e4dc;
-  --color-success: #2e9e6b;
+  --color-ink: #1c2420;
+  --color-muted: #55605a;
+  --color-line: #dde5cf;
+  --color-danger: #b42318;
+  --color-danger-soft: #fef3f2;
 
-  --font-serif: var(--font-fraunces), "Georgia", "Times New Roman", serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", sans-serif;
+  --font-display: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
 
   --radius-card: 1.25rem;
-  --radius-bubble: 1.5rem;
+  --radius-bubble: 1.4rem;
 
-  --shadow-soft: 0 1px 2px rgb(31 26 23 / 0.04),
-    0 8px 24px -6px rgb(31 26 23 / 0.08);
-  --shadow-lift: 0 2px 4px rgb(31 26 23 / 0.05),
-    0 18px 40px -12px rgb(199 62 32 / 0.25);
+  --shadow-soft: 0 1px 2px rgb(0 56 32 / 0.04),
+    0 8px 24px -10px rgb(0 56 32 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(0 56 32 / 0.05),
+    0 18px 40px -16px rgb(0 56 32 / 0.28);
+  --shadow-cta: 0 10px 24px -10px rgb(112 139 14 / 0.6);
 }
 
 @layer base {
@@ -47,7 +55,7 @@
   }
 
   body {
-    background-color: var(--color-cream);
+    background-color: var(--color-surface);
     color: var(--color-ink);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -59,7 +67,9 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--color-forest-deep);
     line-height: 1.15;
     letter-spacing: -0.01em;
     text-wrap: balance;
@@ -69,15 +79,16 @@
     text-wrap: pretty;
   }
 
+  /* Auf dunklen Flächen setzt der Container --focus-color auf Lime. */
   :focus-visible {
-    outline: 3px solid var(--color-brand-dark);
+    outline: 3px solid var(--focus-color, var(--color-forest));
     outline-offset: 3px;
     border-radius: 0.375rem;
   }
 
   ::selection {
-    background-color: var(--color-accent);
-    color: var(--color-ink);
+    background-color: var(--color-lime);
+    color: var(--color-forest-deep);
   }
 
   summary::-webkit-details-marker {
@@ -93,8 +104,7 @@
     margin-bottom: 0.75rem;
   }
   .prose-legal h3 {
-    font-family: var(--font-sans);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.05rem;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
@@ -108,7 +118,8 @@
     padding-left: 1.5rem;
   }
   .prose-legal a {
-    color: var(--color-brand-dark);
+    color: var(--color-forest);
+    font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 3px;
   }

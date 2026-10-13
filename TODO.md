@@ -42,7 +42,11 @@ Inhalte stehen in `messages/de.json` und `messages/en.json` – bei Textänderun
 | Team: Namen, Rollen, Beschreibung | `about.team` |
 | Kann jeder Felix buchen oder nur Kundinnen und Kunden der Pflegeunion? Falls nur Pflegeunion: Feld im Buchungsformular ergänzen | `components/forms/BookingForm.tsx` |
 
-## 3. Bilder
+## 3. CI und Bilder
+
+- [ ] **Pflegeunion-Logo und -CI:** Felix nutzt jetzt Farben, Schrift und Logo-Formen der Pflegeunion, und das Pflegeunion-Logo erscheint als Partner-Hinweis (Startseite, Footer, Über uns; im Vorschaubild für geteilte Links nur als Text). Die ursprüngliche Vorgabe war „eigenständig, nicht an die Pflegeunion anlehnen“. Nutzung schriftlich von der Pflegeunion (IGS Management GmbH) freigeben lassen. → `components/ui/PartnerBadge.tsx`, `public/brand/pflegeunion-logo.png`
+- [ ] Optional: Script-Schrift der Pflegeunion („Nifty Script“) für einzelne Akzentwörter – nur mit Lizenz; Schriftdateien bitte bereitstellen.
+- [ ] Optional: Pflegeunion-Logo als Hauptlogo im Header statt des Felix-Zeichens (`components/Logo.tsx`, `components/layout/Header.tsx`).
 
 - [ ] Platzhalter-Illustrationen durch echte Fotos ersetzen (`components/ui/PhotoPlaceholder.tsx`, Prop `photo` beschreibt das gewünschte Motiv):
   „So funktioniert’s“ (Seniorin am Telefon), „Über uns“ (Teamfoto + 3 Porträts).

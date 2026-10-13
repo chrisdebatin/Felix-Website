@@ -71,8 +71,8 @@ export function ContactForm() {
   if (sent) {
     return (
       <div ref={successRef} tabIndex={-1} role="status" className="rounded-[1.75rem] bg-surface p-8 text-center shadow-soft focus:outline-none sm:p-10">
-        <CheckCircle2 aria-hidden="true" className="mx-auto size-14 text-success" />
-        <h2 className="mt-4 text-3xl font-semibold">{t("successTitle")}</h2>
+        <CheckCircle2 aria-hidden="true" className="mx-auto size-14 text-forest" />
+        <h2 className="mt-4 text-3xl">{t("successTitle")}</h2>
         <p className="mt-3 text-lg text-muted">{t("successText")}</p>
       </div>
     );
@@ -89,7 +89,7 @@ export function ContactForm() {
       }}
       className="relative space-y-7 rounded-[1.75rem] border border-line bg-surface p-6 shadow-soft sm:p-10"
     >
-      <h2 className="text-3xl font-semibold">{t("title")}</h2>
+      <h2 className="text-3xl">{t("title")}</h2>
       <ErrorSummary
         title={tErr("summaryTitle")}
         summaryRef={summaryRef}
@@ -103,14 +103,14 @@ export function ContactForm() {
       <CheckboxField id="acceptPrivacy" checked={values.acceptPrivacy} onChange={(v) => update("acceptPrivacy", v)} error={err("acceptPrivacy")}>
         {t.rich("privacy", {
           link: (chunks) => (
-            <Link href="/datenschutz" target="_blank" className="font-semibold text-brand-dark underline underline-offset-2">
+            <Link href="/datenschutz" target="_blank" className="font-bold text-forest underline underline-offset-2">
               {chunks}
             </Link>
           ),
         })}
       </CheckboxField>
       {formError ? (
-        <p role="alert" className="rounded-2xl border-2 border-brand-dark bg-accent-soft/60 p-5 font-medium">
+        <p role="alert" className="rounded-2xl border-2 border-danger bg-danger-soft p-5 font-semibold text-ink">
           {formError}
         </p>
       ) : null}

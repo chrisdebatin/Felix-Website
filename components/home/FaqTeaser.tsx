@@ -13,13 +13,13 @@ export async function FaqTeaser() {
   const faq = await getTranslations("faq.items");
 
   return (
-    <section className="bg-surface py-20 sm:py-28">
+    <section className="bg-sage py-20 sm:py-28">
       <Container className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
         <FadeIn>
           <SectionHeader eyebrow={t("eyebrow")} title={t("title")} />
           <Link
             href="/faq"
-            className="mt-6 inline-flex min-h-12 items-center gap-2 text-lg font-semibold text-brand-dark underline-offset-4 hover:underline"
+            className="mt-6 inline-flex min-h-12 items-center gap-2 text-lg font-extrabold text-forest underline-offset-4 hover:underline"
           >
             {t("more")}
             <ArrowRight aria-hidden="true" className="size-5" />

@@ -28,12 +28,12 @@ export async function LegalPage({ doc, children }: { doc: LegalDoc; children?: R
     <section className="py-12 sm:py-20">
       <Container size="narrow">
         <LegalDraftNotice />
-        <h1 className="text-4xl font-semibold sm:text-5xl">{t("title")}</h1>
+        <h1 className="text-4xl sm:text-5xl">{t("title")}</h1>
         <p className="mt-3 text-muted">
           {legal("updated", { date: format.dateTime(legalLastUpdated, { dateStyle: "long" }) })}
         </p>
         {languageNote ? (
-          <p className="mt-4 rounded-card bg-surface p-4 text-base text-muted">{languageNote}</p>
+          <p className="mt-4 rounded-card bg-sage p-4 text-base text-muted">{languageNote}</p>
         ) : null}
         <div className="prose-legal mt-8 text-lg">
           {intro ? <p>{intro}</p> : null}

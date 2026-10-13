@@ -15,8 +15,8 @@ export default function NotFound() {
             {t("bubble")}
           </Bubble>
         </div>
-        <p className="font-serif text-7xl font-semibold text-brand">404</p>
-        <h1 className="mt-4 text-3xl font-semibold sm:text-4xl">{t("title")}</h1>
+        <p className="font-display text-7xl font-extrabold text-forest">404</p>
+        <h1 className="mt-4 text-3xl sm:text-4xl">{t("title")}</h1>
         <p className="mt-4 text-lg text-muted">{t("text")}</p>
         <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
           <ButtonLink href="/">{common("backHome")}</ButtonLink>

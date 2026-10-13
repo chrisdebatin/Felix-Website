@@ -2,7 +2,7 @@ import { LogoMark } from "@/components/Logo";
 
 type Speaker = "felix" | "customer";
 
-/** Eine Sprechblase aus einem Gespräch mit Felix. */
+/** Eine Sprechblase aus einem Gespräch: Felix in Waldgrün, die angerufene Person in Weiß. */
 export function Bubble({
   who,
   speakerName,
@@ -18,15 +18,15 @@ export function Bubble({
   const text = size === "lg" ? "text-lg sm:text-xl" : "text-base sm:text-lg";
   return (
     <div className={`flex max-w-[92%] flex-col ${isFelix ? "items-start self-start" : "items-end self-end"}`}>
-      <span className="mb-1.5 flex items-center gap-1.5 px-1 text-sm font-semibold text-muted">
+      <span className="mb-1.5 flex items-center gap-1.5 px-1 text-sm font-bold text-muted">
         {isFelix ? <LogoMark className="size-5" /> : null}
         {speakerName}
       </span>
       <p
         className={`rounded-bubble px-5 py-3.5 leading-snug ${text} ${
           isFelix
-            ? "rounded-tl-md border border-line bg-surface text-ink shadow-soft"
-            : "rounded-tr-md bg-accent-soft text-ink"
+            ? "rounded-tl-md bg-forest text-white shadow-soft"
+            : "rounded-tr-md border border-line bg-surface text-ink"
         }`}
       >
         {children}

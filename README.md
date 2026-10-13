@@ -72,11 +72,24 @@ Englische URLs sind übersetzt (`/en/how-it-works`, `/en/pricing`, …) – Zuor
 
 ## Design-System
 
-Die CI-Tokens stehen in `app/globals.css` im `@theme`-Block (Tailwind v4 ersetzt damit die frühere `tailwind.config.js`). Beispiele: `bg-brand`, `bg-brand-dark`, `text-ink`, `text-muted`, `bg-cream`, `bg-accent-soft`, `text-success`, `font-serif`, `rounded-card`, `shadow-soft`.
+Felix nutzt die CI der **Pflegeunion** (Farben, Schrift, Formen) mit einem eigenen Felix-Zeichen in derselben Bildsprache. Die Tokens stehen in `app/globals.css` im `@theme`-Block (Tailwind v4 ersetzt damit die frühere `tailwind.config.js`).
 
-**Barrierefreiheit:** Weißer Text auf `#E8512F` erreicht nur 3,7:1 und ist für normale Schriftgrößen nicht WCAG-AA-konform. Buttons und Links nutzen daher `#C73E20` (5:1) als Grundfarbe und `#A5321A` für Hover. `#E8512F` wird für Logo, Icons, große Ziffern und Flächen verwendet.
+| Token | Wert | Einsatz |
+| --- | --- | --- |
+| `forest` | `#00633A` | Waldgrün aus dem Logo: Flächen, Links, Icons, Felix-Sprechblasen |
+| `forest-dark` / `forest-deep` | `#004D2C` / `#003820` | Hover, Überschriften, Footer, Schrift auf Lime |
+| `lime` | `#AFCA0B` | Haupt-Buttons (mit `forest-deep`-Schrift), Akzente, Hügel |
+| `lime-soft`, `sage` | `#E7F1C6`, `#F3F7E3` | Badges, helle Abschnitte |
+| `ink`, `muted`, `line` | `#1C2420`, `#55605A`, `#DDE5CF` | Fließtext, Nebentext, Rahmen |
+| `danger` / `danger-soft` | `#B42318` / `#FEF3F2` | Fehlermeldungen, Notruf-Hinweis |
 
-Grundschrift ist 18 px (`html { font-size: 112.5% }`), Zeilenhöhe 1.6. Animationen respektieren „Bewegung reduzieren“.
+- **Schrift:** Nunito Sans (Google Fonts, über `next/font`), Überschriften in 800. Die Script-Schrift der Pflegeunion („Nifty Script“) ist bewusst nicht eingebunden (Lizenz unklar, schwerer lesbar).
+- **Formen:** Ringe und „Hügel“ aus dem Pflegeunion-Logo in `components/ui/BrandShapes.tsx`.
+- **Logo:** `components/Logo.tsx` (Felix-Zeichen: grüner Ring, Lime-Ring, Hügel, Telefonhörer als Lächeln). Gleiche Geometrie in `app/icon.svg` und `lib/og/mark.tsx`. Das Pflegeunion-Logo liegt in `public/brand/pflegeunion-logo.png` und erscheint als Partner-Hinweis (`components/ui/PartnerBadge.tsx`).
+
+**Barrierefreiheit:** Weiße Schrift auf Lime erreicht nur 1,9:1. Lime-Buttons haben deshalb immer dunkelgrüne Schrift (`forest-deep`, 7,1:1), und Lime wird nie als Textfarbe auf Weiß verwendet. Weiß auf `forest` hat 7,4:1. Auf dunkelgrünen Flächen wird der Fokusrahmen per `[--focus-color:var(--color-lime)]` auf Lime umgestellt.
+
+Grundschrift ist 18 px (`html { font-size: 112.5% }`), Zeilenhöhe 1.6. Animationen respektieren „Bewegung reduzieren“. Inhalte im ersten sichtbaren Bereich werden nicht eingeblendet (sonst leidet der LCP-Wert).
 
 ## Bezahlung (später)
 
@@ -115,6 +128,6 @@ Die Domain bleibt bei United Domains; dort werden nur zwei DNS-Einträge gesetzt
 ## Qualität
 
 - `npm run lint` und `npm run build` laufen fehlerfrei.
-- Lighthouse (mobil, lokal gemessen): Barrierefreiheit 100, Best Practices 100, Performance 94–98, SEO 100 (lokal 92, weil die Canonical-URL bewusst auf die Live-Domain zeigt).
+- Lighthouse (mobil, lokal gemessen): Barrierefreiheit 100, Best Practices 100, Performance 95–98, SEO lokal 92 (die Canonical-URL zeigt bewusst auf die Live-Domain; live sollte es 100 sein).
 - Keine Cookies, deshalb kein Cookie-Banner. Die Sprache steckt in der URL.
 - Offene Punkte und Annahmen: siehe [`TODO.md`](./TODO.md).

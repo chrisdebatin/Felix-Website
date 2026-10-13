@@ -5,7 +5,7 @@ import type { ReactNode, RefObject } from "react";
 import { HONEYPOT_FIELD } from "@/lib/spam";
 
 const inputBase =
-  "block w-full min-h-14 rounded-2xl border-2 bg-surface px-5 py-3 text-lg text-ink placeholder:text-muted/70 transition-colors focus:border-brand-dark focus:outline-none focus-visible:outline-none focus:ring-4 focus:ring-brand/20";
+  "block w-full min-h-14 rounded-2xl border-2 bg-surface px-5 py-3 text-lg text-ink placeholder:text-muted/70 transition-colors focus:border-forest focus:outline-none focus-visible:outline-none focus:ring-4 focus:ring-lime/40";
 
 function describedBy(id: string, hint?: ReactNode, error?: string) {
   return [hint ? `${id}-hint` : null, error ? `${id}-error` : null].filter(Boolean).join(" ") || undefined;
@@ -14,7 +14,7 @@ function describedBy(id: string, hint?: ReactNode, error?: string) {
 export function FieldError({ id, message }: { id: string; message?: string }) {
   if (!message) return null;
   return (
-    <p id={`${id}-error`} className="mt-2 flex items-start gap-2 font-medium text-brand-darker">
+    <p id={`${id}-error`} className="mt-2 flex items-start gap-2 font-semibold text-danger">
       <AlertCircle aria-hidden="true" className="mt-1 size-5 shrink-0" />
       {message}
     </p>
@@ -58,12 +58,12 @@ export function TextField({
     required,
     "aria-invalid": error ? true : undefined,
     "aria-describedby": describedBy(id, hint, error),
-    className: `${inputBase} ${error ? "border-brand-dark" : "border-line"}`,
+    className: `${inputBase} ${error ? "border-danger" : "border-line"}`,
   } as const;
 
   return (
     <div>
-      <label htmlFor={id} className="mb-2 block text-lg font-semibold text-ink">
+      <label htmlFor={id} className="mb-2 block text-lg font-bold text-forest-deep">
         {label}
         {optionalLabel ? <span className="ml-2 text-base font-normal text-muted">({optionalLabel})</span> : null}
       </label>
@@ -96,7 +96,7 @@ export function ChoiceCards<T extends string>({
   onChange,
   error,
   columns = 3,
-  legendClassName = "mb-3 text-lg font-semibold text-ink",
+  legendClassName = "mb-3 text-lg font-bold text-forest-deep",
 }: {
   name: string;
   legend: ReactNode;
@@ -121,8 +121,8 @@ export function ChoiceCards<T extends string>({
         {options.map((opt) => (
           <label
             key={opt.value}
-            className={`relative flex min-h-16 cursor-pointer items-start gap-3 rounded-2xl border-2 bg-surface p-4 transition-colors hover:border-brand/60 has-checked:border-brand-dark has-checked:bg-accent-soft/50 has-focus-visible:outline-3 has-focus-visible:outline-offset-2 has-focus-visible:outline-brand-dark ${
-              error ? "border-brand-dark/60" : "border-line"
+            className={`relative flex min-h-16 cursor-pointer items-start gap-3 rounded-2xl border-2 bg-surface p-4 transition-colors hover:border-forest/50 has-checked:border-forest has-checked:bg-lime-soft/60 has-focus-visible:outline-3 has-focus-visible:outline-offset-2 has-focus-visible:outline-forest ${
+              error ? "border-danger/70" : "border-line"
             }`}
           >
             <input
@@ -131,10 +131,10 @@ export function ChoiceCards<T extends string>({
               value={opt.value}
               checked={value === opt.value}
               onChange={() => onChange(opt.value)}
-              className="mt-1 size-5 shrink-0 accent-brand-dark"
+              className="mt-1 size-5 shrink-0 accent-forest"
             />
             <span className="flex flex-col">
-              <span className="flex items-center gap-2 text-lg font-semibold text-ink">
+              <span className="flex items-center gap-2 text-lg font-bold text-forest-deep">
                 {opt.icon}
                 {opt.label}
               </span>
@@ -172,7 +172,7 @@ export function CheckboxField({
           onChange={(e) => onChange(e.target.checked)}
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? `${id}-error` : undefined}
-          className="mt-1 size-6 shrink-0 cursor-pointer accent-brand-dark"
+          className="mt-1 size-6 shrink-0 cursor-pointer accent-forest"
         />
         <label htmlFor={id} className="cursor-pointer text-base text-ink sm:text-lg">
           {children}
@@ -198,13 +198,13 @@ export function ErrorSummary({
       ref={summaryRef}
       tabIndex={-1}
       role="alert"
-      className="mb-8 rounded-2xl border-2 border-brand-dark bg-accent-soft/60 p-5 focus:outline-none"
+      className="mb-8 rounded-2xl border-2 border-danger bg-danger-soft p-5 focus:outline-none"
     >
-      <p className="font-semibold">{title}</p>
+      <p className="font-bold text-ink">{title}</p>
       <ul className="mt-2 list-disc space-y-1 pl-6">
         {errors.map(({ field, message }) => (
           <li key={field}>
-            <a href={`#${field}`} className="text-brand-darker underline underline-offset-2">
+            <a href={`#${field}`} className="font-semibold text-danger underline underline-offset-2">
               {message}
             </a>
           </li>

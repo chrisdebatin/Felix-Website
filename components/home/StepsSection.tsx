@@ -12,7 +12,7 @@ export async function StepsSection() {
   const items = t.raw("items") as { title: string; text: string }[];
 
   return (
-    <section className="bg-surface py-20 sm:py-28">
+    <section className="bg-sage py-20 sm:py-28">
       <Container>
         <FadeIn>
           <SectionHeader eyebrow={t("eyebrow")} title={t("title")} />
@@ -23,19 +23,19 @@ export async function StepsSection() {
             return (
               <li key={item.title}>
                 <FadeIn delay={i * 0.08} className="h-full">
-                  <div className="relative h-full rounded-[1.75rem] bg-cream p-7 sm:p-8">
+                  <div className="relative h-full rounded-[1.75rem] bg-surface p-7 shadow-soft sm:p-8">
                     <div className="flex items-center justify-between">
                       <span
                         aria-hidden="true"
-                        className="font-serif text-6xl font-semibold leading-none text-brand"
+                        className="flex size-14 items-center justify-center rounded-full bg-lime font-display text-2xl font-extrabold text-forest-deep"
                       >
                         {i + 1}
                       </span>
-                      <span className="flex size-14 items-center justify-center rounded-2xl bg-surface text-brand-dark shadow-soft">
+                      <span className="flex size-14 items-center justify-center rounded-2xl bg-sage text-forest">
                         <Icon aria-hidden="true" className="size-7" />
                       </span>
                     </div>
-                    <h3 className="mt-6 text-2xl font-semibold">{item.title}</h3>
+                    <h3 className="mt-6 text-2xl">{item.title}</h3>
                     <p className="mt-3 text-muted">{item.text}</p>
                   </div>
                 </FadeIn>
@@ -46,7 +46,7 @@ export async function StepsSection() {
         <div className="mt-10">
           <Link
             href="/so-funktionierts"
-            className="inline-flex min-h-12 items-center gap-2 text-lg font-semibold text-brand-dark underline-offset-4 hover:underline"
+            className="inline-flex min-h-12 items-center gap-2 text-lg font-extrabold text-forest underline-offset-4 hover:underline"
           >
             {t("cta")}
             <ArrowRight aria-hidden="true" className="size-5" />

@@ -40,7 +40,7 @@ export function MobileMenu() {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-controls={panelId}
-        className="flex size-12 items-center justify-center rounded-full border border-line bg-surface text-ink"
+        className="flex size-12 items-center justify-center rounded-full border border-line bg-sage text-forest-deep"
       >
         {open ? (
           <X aria-hidden="true" className="size-6" />
@@ -53,7 +53,7 @@ export function MobileMenu() {
       <div
         id={panelId}
         hidden={!open}
-        className="fixed inset-x-0 bottom-0 top-20 z-40 overflow-y-auto bg-cream px-5 pb-10 pt-4"
+        className="fixed inset-x-0 bottom-0 top-20 z-40 overflow-y-auto bg-surface px-5 pb-10 pt-4"
       >
         <nav aria-label={t("mobileLabel")}>
           <ul className="divide-y divide-line border-y border-line">
@@ -61,7 +61,7 @@ export function MobileMenu() {
               <NavLink
                 href="/"
                 onClick={close}
-                className="flex min-h-16 items-center font-serif text-2xl font-semibold"
+                className="flex min-h-16 items-center font-display text-2xl font-extrabold text-forest-deep"
               >
                 {t("home")}
               </NavLink>
@@ -71,7 +71,7 @@ export function MobileMenu() {
                 <NavLink
                   href={item.href}
                   onClick={close}
-                  className="flex min-h-16 items-center font-serif text-2xl font-semibold"
+                  className="flex min-h-16 items-center font-display text-2xl font-extrabold text-forest-deep"
                 >
                   {t(item.key)}
                 </NavLink>
@@ -81,7 +81,7 @@ export function MobileMenu() {
               <NavLink
                 href="/kontakt"
                 onClick={close}
-                className="flex min-h-16 items-center font-serif text-2xl font-semibold"
+                className="flex min-h-16 items-center font-display text-2xl font-extrabold text-forest-deep"
               >
                 {t("contact")}
               </NavLink>

@@ -11,7 +11,7 @@ import { mainNav } from "./navItems";
 export async function Header() {
   const t = await getTranslations("nav");
   return (
-    <header className="sticky top-0 z-40 border-b border-line/80 bg-cream/90 backdrop-blur-md supports-[backdrop-filter]:bg-cream/80">
+    <header className="sticky top-0 z-40 border-b border-line/80 bg-surface/90 backdrop-blur-md supports-[backdrop-filter]:bg-surface/80">
       <Container className="flex h-20 items-center justify-between gap-4">
         <Link href="/" aria-label={t("homeLink")} className="rounded-lg">
           <Logo />
@@ -23,7 +23,8 @@ export async function Header() {
               <li key={item.href}>
                 <NavLink
                   href={item.href}
-                  className="flex min-h-12 items-center rounded-full px-4 font-medium text-ink transition-colors hover:text-brand-dark"
+                  activeClassName="bg-sage text-forest"
+                  className="flex min-h-12 items-center rounded-full px-4 font-bold text-forest-deep transition-colors hover:bg-sage hover:text-forest"
                 >
                   {t(item.key)}
                 </NavLink>

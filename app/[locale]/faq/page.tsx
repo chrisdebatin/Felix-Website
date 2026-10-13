@@ -60,8 +60,8 @@ export default async function FaqPage({ params }: Props) {
             ))}
           </div>
 
-          <div className="mt-16 rounded-[1.75rem] bg-surface p-8 text-center shadow-soft sm:p-10">
-            <h2 className="text-3xl font-semibold">{t("stillQuestions.title")}</h2>
+          <div className="mt-16 rounded-[1.75rem] bg-sage p-8 text-center sm:p-10">
+            <h2 className="text-3xl">{t("stillQuestions.title")}</h2>
             <p className="mt-3 text-lg text-muted">{t("stillQuestions.text")}</p>
             <div className="mt-7 flex flex-col justify-center gap-4 sm:flex-row">
               <ButtonLink href="/kontakt" variant="secondary">

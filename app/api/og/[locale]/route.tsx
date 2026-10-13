@@ -16,16 +16,15 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
   const { locale: requested } = await params;
   const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "og" });
+  const common = await getTranslations({ locale, namespace: "common" });
   const title = t("title");
-  const [serif, sans, sansBold] = await Promise.all([
-    loadGoogleFont("Fraunces", 600, `Felix${title}`),
-    loadGoogleFont("Inter", 500, t("subtitle")),
-    loadGoogleFont("Inter", 700, t("badge")),
+  const [heavy, regular] = await Promise.all([
+    loadGoogleFont("Nunito Sans", 800, `Felix${title}${t("badge")}`),
+    loadGoogleFont("Nunito Sans", 600, `${t("subtitle")}${common("partner")}`),
   ]);
   const fonts = [
-    sans && { name: "Inter", data: sans, weight: 500 as const, style: "normal" as const },
-    sansBold && { name: "Inter", data: sansBold, weight: 700 as const, style: "normal" as const },
-    serif && { name: "Fraunces", data: serif, weight: 600 as const, style: "normal" as const },
+    heavy && { name: "Nunito Sans", data: heavy, weight: 800 as const, style: "normal" as const },
+    regular && { name: "Nunito Sans", data: regular, weight: 600 as const, style: "normal" as const },
   ].filter((f) => !!f);
 
   return new ImageResponse(
@@ -35,75 +34,69 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#FFF9F5",
+          background: "#FFFFFF",
           position: "relative",
-          fontFamily: "Inter",
+          fontFamily: "Nunito Sans",
         }}
       >
+        {/* Doppelter Ring wie im Logo, angeschnitten oben rechts */}
         <div
           style={{
             position: "absolute",
-            right: -160,
-            top: -160,
-            width: 620,
-            height: 620,
+            right: -170,
+            top: -170,
+            width: 600,
+            height: 600,
             borderRadius: 9999,
-            background: "#FFB38A",
-            opacity: 0.55,
+            border: "64px solid #00633A",
             display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            right: 120,
-            bottom: -140,
-            width: 300,
-            height: 300,
-            borderRadius: 9999,
-            background: "#E8512F",
-            opacity: 0.18,
-            display: "flex",
-          }}
-        />
-        <div style={{ display: "flex", flexDirection: "column", padding: "72px 80px", width: "100%" }}>
+        >
+          <div style={{ width: 400, height: 400, borderRadius: 9999, border: "36px solid #AFCA0B", display: "flex" }} />
+        </div>
+        {/* Lime-Hügel unten */}
+        <svg width="1200" height="120" viewBox="0 0 1200 120" style={{ position: "absolute", left: 0, bottom: 0 }}>
+          <path d="M0 120V70C240 4 960 4 1200 70V120Z" fill="#F3F7E3" />
+        </svg>
+        <div style={{ display: "flex", flexDirection: "column", padding: "64px 80px", width: "100%" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <OgMark size={84} />
-            <span style={{ fontSize: 64, fontWeight: 600, color: "#1F1A17", fontFamily: "Fraunces" }}>
-              Felix
-            </span>
+            <OgMark size={88} />
+            <span style={{ fontSize: 64, fontWeight: 800, color: "#003820" }}>Felix</span>
           </div>
           <div
             style={{
               display: "flex",
-              marginTop: 70,
-              fontSize: 86,
+              marginTop: 56,
+              fontSize: 84,
               lineHeight: 1.05,
-              fontWeight: 600,
-              color: "#1F1A17",
-              maxWidth: 900,
-              fontFamily: "Fraunces",
+              fontWeight: 800,
+              color: "#003820",
+              maxWidth: 820,
+              letterSpacing: -1,
             }}
           >
             {title}
           </div>
-          <div style={{ display: "flex", marginTop: 28, fontSize: 32, lineHeight: 1.4, fontWeight: 500, color: "#6B625C", maxWidth: 820 }}>
+          <div style={{ display: "flex", marginTop: 26, fontSize: 32, lineHeight: 1.4, fontWeight: 600, color: "#55605A", maxWidth: 780 }}>
             {t("subtitle")}
           </div>
-          <div style={{ display: "flex", marginTop: "auto" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: "auto" }}>
             <div
               style={{
                 display: "flex",
-                background: "#C73E20",
-                color: "#FFFFFF",
+                background: "#AFCA0B",
+                color: "#003820",
                 fontSize: 28,
-                fontWeight: 700,
+                fontWeight: 800,
                 padding: "14px 28px",
                 borderRadius: 9999,
               }}
             >
               {t("badge")}
             </div>
+            <div style={{ display: "flex", fontSize: 24, fontWeight: 600, color: "#00633A" }}>{common("partner")}</div>
           </div>
         </div>
       </div>

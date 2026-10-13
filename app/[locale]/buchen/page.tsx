@@ -38,13 +38,13 @@ export default async function BookingPage({ params }: Props) {
           </div>
         </div>
         <aside className="lg:pt-48">
-          <div className="rounded-[1.75rem] bg-accent-soft/70 p-7 lg:sticky lg:top-28">
-            <h2 className="font-sans text-xl font-semibold">{t("aside.title")}</h2>
+          <div className="rounded-[1.75rem] bg-sage p-7 lg:sticky lg:top-28">
+            <h2 className="text-xl">{t("aside.title")}</h2>
             <CheckList items={t.raw("aside.items") as string[]} className="mt-5" />
-            <p className="mt-6 border-t border-brand/20 pt-5 text-muted">{t("aside.help")}</p>
+            <p className="mt-6 border-t border-forest/15 pt-5 text-muted">{t("aside.help")}</p>
             <a
               href={`tel:${company.phone.replace(/\s/g, "")}`}
-              className="mt-1 inline-flex min-h-12 items-center gap-2 text-xl font-semibold text-brand-darker underline-offset-4 hover:underline"
+              className="mt-1 inline-flex min-h-12 items-center gap-2 text-xl font-extrabold text-forest underline-offset-4 hover:underline"
             >
               <Phone aria-hidden="true" className="size-5" />
               {company.phoneDisplay}

@@ -16,7 +16,7 @@ export async function VoiceSection() {
   const conversations = t.raw("conversations") as ConversationData[];
 
   return (
-    <section className="py-20 sm:py-28">
+    <section className="bg-surface py-20 sm:py-28">
       <Container>
         <FadeIn>
           <SectionHeader eyebrow={t("eyebrow")} title={t("title")} intro={t("intro")} />
@@ -24,8 +24,8 @@ export async function VoiceSection() {
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {conversations.map((c, i) => (
             <FadeIn key={c.label} delay={i * 0.08} className="h-full">
-              <article className="flex h-full flex-col rounded-[1.75rem] border border-line bg-cream p-6 sm:p-7">
-                <h3 className="mb-6 self-start rounded-full bg-accent-soft px-4 py-1.5 font-sans text-base font-semibold text-brand-darker">
+              <article className="flex h-full flex-col rounded-[1.75rem] bg-sage p-6 sm:p-7">
+                <h3 className="mb-6 self-start rounded-full bg-surface px-4 py-1.5 text-base text-forest-deep shadow-soft">
                   {c.label}
                 </h3>
                 <Conversation

@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { Fraunces, Inter } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -14,17 +14,10 @@ import { organizationJsonLd } from "@/lib/jsonld";
 import { resolveLocale } from "@/lib/locale";
 import { siteUrl } from "@/lib/site";
 
-const fraunces = Fraunces({
+// Hausschrift der Pflegeunion-CI: Nunito Sans (variabel, Überschriften in 800).
+const nunito = Nunito_Sans({
   subsets: ["latin"],
-  // Nur der Schnitt 600 wird genutzt – spart Ladezeit gegenüber der variablen Schrift.
-  weight: "600",
-  variable: "--font-fraunces",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-nunito",
   display: "swap",
 });
 
@@ -33,7 +26,7 @@ export function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#FFF9F5",
+  themeColor: "#FFFFFF",
   width: "device-width",
   initialScale: 1,
 };
@@ -70,7 +63,7 @@ export default async function LocaleLayout({
   const clientMessages = { nav: messages.nav, common: messages.common };
 
   return (
-    <html lang={locale} className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang={locale} className={nunito.variable}>
       <body className="flex min-h-dvh flex-col">
         {/* Ohne JavaScript bleiben eingeblendete Abschnitte sonst unsichtbar. */}
         <noscript>
@@ -78,7 +71,7 @@ export default async function LocaleLayout({
         </noscript>
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-white"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-forest-deep focus:px-5 focus:py-3 focus:text-white"
         >
           {t("skipToContent")}
         </a>

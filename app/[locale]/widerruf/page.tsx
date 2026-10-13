@@ -20,7 +20,7 @@ export default async function WithdrawalPage({ params }: Props) {
   return (
     <LegalPage doc="withdrawal">
       <p className="font-semibold">{t("end")}</p>
-      <div className="mt-12 rounded-card border-2 border-dashed border-line bg-surface p-6 sm:p-8">
+      <div className="mt-12 rounded-card border-2 border-dashed border-forest/25 bg-sage p-6 sm:p-8">
         <h2 className="!mt-0">{t("form.title")}</h2>
         <p className="text-muted">{t("form.intro")}</p>
         <ul className="!list-none !pl-0">

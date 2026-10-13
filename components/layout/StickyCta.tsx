@@ -12,7 +12,7 @@ export function StickyCta() {
   if (pathname.startsWith("/buchen")) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-8px_24px_-12px_rgb(0_56_32/0.18)] backdrop-blur md:hidden">
       <ButtonLink href="/buchen" className="w-full">
         <Phone aria-hidden="true" className="size-5" />
         {t("bookCta")}
