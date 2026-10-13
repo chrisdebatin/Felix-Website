@@ -10,13 +10,21 @@ type Section = {
   after?: string[];
 };
 
-export type LegalDoc = "imprint" | "privacy" | "terms" | "withdrawal";
+export type LegalDoc = "imprint" | "privacy";
 
 /**
  * Rendert einen Rechtstext aus messages/*.json (legal.<doc>).
- * TODO(chris): Alle Rechtstexte sind Vorlagen und müssen juristisch geprüft werden; Platzhalter in [eckigen Klammern] ersetzen.
+ * `lead` steht vor den Abschnitten aus den Texten (z. B. Firmenangaben aus lib/site.ts).
  */
-export async function LegalPage({ doc, children }: { doc: LegalDoc; children?: React.ReactNode }) {
+export async function LegalPage({
+  doc,
+  lead,
+  children,
+}: {
+  doc: LegalDoc;
+  lead?: React.ReactNode;
+  children?: React.ReactNode;
+}) {
   const t = await getTranslations(`legal.${doc}`);
   const legal = await getTranslations("legal");
   const format = await getFormatter();
@@ -37,6 +45,7 @@ export async function LegalPage({ doc, children }: { doc: LegalDoc; children?: R
         ) : null}
         <div className="prose-legal mt-8 text-lg">
           {intro ? <p>{intro}</p> : null}
+          {lead}
           {sections.map((s) => (
             <div key={s.heading}>
               <h2>{s.heading}</h2>

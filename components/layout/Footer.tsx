@@ -16,21 +16,22 @@ export async function Footer() {
   const nav = await getTranslations("nav");
   const common = await getTranslations("common");
   const year = new Date().getFullYear();
+  const { address, email, phone } = company;
 
   return (
     // --focus-color: Auf dem dunklen Grün ist ein Lime-Fokusrahmen besser sichtbar.
-    <footer className="mt-auto [--focus-color:var(--color-lime)]">
+    <footer className="[--focus-color:var(--color-lime)]">
       <Hill className="fill-forest-deep" />
-      <div className="bg-forest-deep pb-28 pt-10 text-white md:pb-12">
+      <div className="bg-forest-deep pb-12 pt-10 text-white">
         <Container>
           <div className="grid gap-12 md:grid-cols-12">
-            <div className="md:col-span-4">
+            <div className="md:col-span-5">
               <Link href="/" className="inline-flex items-center gap-2.5 rounded-lg" aria-label={nav("homeLink")}>
                 <LogoMark className="size-11" />
                 <span className="font-display text-3xl font-extrabold text-white">Felix</span>
               </Link>
-              <p className="mt-4 max-w-xs text-white/85">{t("tagline")}</p>
-              <p className="mt-4 max-w-xs text-sm text-white/85">{common("emergencyNote")}</p>
+              <p className="mt-4 max-w-sm text-white/85">{t("tagline")}</p>
+              <p className="mt-4 max-w-sm text-sm text-white/85">{common("emergencyNote")}</p>
               <PartnerBadge tone="dark" className="mt-6 text-base" />
             </div>
 
@@ -44,16 +45,6 @@ export async function Footer() {
                     </Link>
                   </li>
                 ))}
-                <li>
-                  <Link href="/kontakt" className={linkClass}>
-                    {nav("contact")}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/buchen" className={linkClass}>
-                    {nav("book")}
-                  </Link>
-                </li>
               </ul>
             </nav>
 
@@ -62,37 +53,45 @@ export async function Footer() {
               <ul className="mt-3">
                 <li><Link href="/impressum" className={linkClass}>{t("imprint")}</Link></li>
                 <li><Link href="/datenschutz" className={linkClass}>{t("privacy")}</Link></li>
-                <li><Link href="/agb" className={linkClass}>{t("terms")}</Link></li>
-                <li><Link href="/widerruf" className={linkClass}>{t("withdrawal")}</Link></li>
               </ul>
             </nav>
 
-            <div className="md:col-span-3">
+            <div className="md:col-span-2">
               <h2 className={headingClass}>{t("contactTitle")}</h2>
-              <address className="mt-4 not-italic text-white/85">
-                {company.shortName}
-                <br />
-                {company.street}
-                <br />
-                {company.postalCode} {company.city}
-              </address>
+              <p className="mt-4 text-white/85">{company.shortName}</p>
+              {/* TODO PLATZHALTER: Anschrift, E-Mail und Telefon erscheinen hier, sobald sie in lib/site.ts eingetragen sind. */}
+              {address ? (
+                <address className="not-italic text-white/85">
+                  {address.street}
+                  <br />
+                  {address.postalCode} {address.city}
+                </address>
+              ) : null}
               <ul className="mt-2">
+                {email ? (
+                  <li>
+                    <a href={`mailto:${email}`} className={linkClass}>
+                      {email}
+                    </a>
+                  </li>
+                ) : null}
+                {phone ? (
+                  <li>
+                    <a href={`tel:${phone.dial}`} className={linkClass}>
+                      {phone.display}
+                    </a>
+                  </li>
+                ) : null}
                 <li>
-                  <a href={`mailto:${company.email}`} className={linkClass}>
-                    {company.email}
-                  </a>
-                </li>
-                <li>
-                  <a href={`tel:${company.phone.replace(/\s/g, "")}`} className={linkClass}>
-                    {company.phoneDisplay}
-                  </a>
+                  <Link href="/kontakt" className={linkClass}>
+                    {t("contactLink")}
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="mt-14 flex flex-col gap-3 border-t border-white/15 pt-8 text-sm text-white/85 md:flex-row md:justify-between">
-            {/* TODO(chris): Formulierung zur Zusammenarbeit mit der Pflegeunion bestätigen (footer.disclaimer). */}
             <p className="max-w-2xl">{t("disclaimer")}</p>
             <p className="shrink-0">{t("copyright", { year })}</p>
           </div>

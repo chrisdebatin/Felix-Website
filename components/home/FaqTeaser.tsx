@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
-const teaserIds = ["human", "landline", "relative", "emergency"] as const;
+const teaserIds = ["human", "emergency", "recording", "stop"] as const;
 
 export async function FaqTeaser() {
   const t = await getTranslations("home.faqTeaser");
@@ -16,7 +16,7 @@ export async function FaqTeaser() {
     <section className="bg-sage py-20 sm:py-28">
       <Container className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
         <FadeIn>
-          <SectionHeader eyebrow={t("eyebrow")} title={t("title")} />
+          <SectionHeader title={t("title")} />
           <Link
             href="/faq"
             className="mt-6 inline-flex min-h-12 items-center gap-2 text-lg font-extrabold text-forest underline-offset-4 hover:underline"

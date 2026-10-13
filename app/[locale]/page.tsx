@@ -3,16 +3,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BenefitsSection } from "@/components/home/BenefitsSection";
 import { FaqTeaser } from "@/components/home/FaqTeaser";
 import { Hero } from "@/components/home/Hero";
-import { PricingTeaser } from "@/components/home/PricingTeaser";
 import { ProblemSection } from "@/components/home/ProblemSection";
 import { StepsSection } from "@/components/home/StepsSection";
 import { TrustSection } from "@/components/home/TrustSection";
 import { VoiceSection } from "@/components/home/VoiceSection";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { JsonLd } from "@/components/ui/JsonLd";
-import { productJsonLd } from "@/lib/jsonld";
 import { resolveLocale } from "@/lib/locale";
-import { buildMetadata, localizedUrl } from "@/lib/metadata";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -32,7 +29,6 @@ export default async function HomePage({ params }: Props) {
   const locale = await resolveLocale(params);
   setRequestLocale(locale);
   const t = await getTranslations("home.finalCta");
-  const meta = await getTranslations("meta");
 
   return (
     <>
@@ -42,16 +38,8 @@ export default async function HomePage({ params }: Props) {
       <StepsSection />
       <BenefitsSection />
       <TrustSection />
-      <PricingTeaser />
       <FaqTeaser />
-      <CtaBanner title={t("title")} text={t("text")} bubble={t("bubble")} />
-      <JsonLd
-        data={productJsonLd({
-          name: "Felix",
-          description: meta("description"),
-          url: localizedUrl(locale, "/"),
-        })}
-      />
+      <CtaBanner title={t("title")} text={t("text")} note={t("note")} />
     </>
   );
 }

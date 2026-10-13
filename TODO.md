@@ -1,61 +1,40 @@
-# TODO – offene Punkte für Chris
+# TODO: offene Punkte
 
-Alle Stellen im Code sind mit `TODO(chris):` markiert (`grep -rn "TODO(chris)" app components lib`).
-Inhalte stehen in `messages/de.json` und `messages/en.json` – bei Textänderungen immer beide Dateien anpassen.
+Inhaltliche Grundlage ist das Briefing Version 3 vom 13.10.2026.
+Fehlende Angaben werden auf der Website nicht angezeigt. Im Code sind sie mit `TODO PLATZHALTER` markiert:
+`grep -rn "TODO PLATZHALTER" app components lib`
 
-## 1. Vor dem Livegang zwingend
+## 1. Platzhalter (werden nachgeliefert)
 
-- [ ] **Rechtstexte prüfen lassen** (Impressum, Datenschutz, AGB, Widerruf). Alle sind Vorlagen.
-  Danach das jeweilige Dokument aus `legalDraftDocs` entfernen und `legalLastUpdated` in `lib/site.ts` setzen. Beim Impressum ist der Hinweis „Entwurf“ bereits entfernt – dort stehen aber noch Platzhalter.
-  → `components/sections/LegalPage.tsx`, `lib/site.ts`
-- [ ] **Platzhalter in eckigen Klammern ersetzen** (in `messages/de.json` und `en.json` unter `legal.*`):
-  Geschäftsführung, Telefon, E-Mail, HRB-Nummer (nach Eintragung; dann auch „i. G.“ überall entfernen), USt-IdNr., Verantwortlicher nach § 18 MStV, Datenschutzbeauftragte/r (falls benannt), Dienstleister für Telefonie/Spracherkennung/KI-Modell, Löschfrist für Gesprächszusammenfassungen, Zahlungsart in den AGB.
-- [ ] **Kontaktdaten** (E-Mail, Telefon) in `lib/site.ts` eintragen. Sie erscheinen in Footer, Kontaktseite, Buchungsseite und JSON-LD. Erreichbarkeit unter `contact.details.hours`.
-- [ ] **Kündigungsbutton nach § 312k BGB:** Bei Abo-Verträgen, die online abgeschlossen werden, ist eine Kündigungsschaltfläche („Verträge hier kündigen“) auf der Website Pflicht. Noch nicht umgesetzt.
-- [ ] **Widerruf und früher Leistungsbeginn:** Der erste Anruf kommt innerhalb der 14-tägigen Widerrufsfrist. Mit der Anwältin bzw. dem Anwalt klären, ob im Buchungsformular eine ausdrückliche Zustimmung zum vorzeitigen Beginn nötig ist (§ 356 Abs. 4, § 357a BGB). Weil der erste Monat kostenlos ist, entsteht praktisch kein Wertersatz.
-- [ ] **OS-Plattform:** Die EU-Plattform zur Online-Streitbeilegung wurde zum 20.07.2025 eingestellt. Deshalb steht im Impressum statt des Links ein Hinweis darauf und die VSBG-Erklärung. Bitte juristisch bestätigen.
-- [ ] **Gesundheitsdaten (Art. 9 DSGVO):** Die Einwilligung steht in der Datenschutz-Checkbox im Buchungsformular. Prüfen, ob das reicht oder ob eine eigene Checkbox bzw. die mündliche Einwilligung im ersten Gespräch nötig ist. Außerdem klären: Vertrag mit der Pflegeunion (Auftragsverarbeitung oder gemeinsame Verantwortung) für die Weitergabe des Feedbacks.
-- [ ] **„Server in der EU“** stimmt nur, wenn alle Dienstleister (Telefonie, Sprach-KI, Datenbank, Resend-Region) in der EU verarbeiten. Hosting-Funktionen laufen über `vercel.json` in Frankfurt. → `components/home/TrustSection.tsx`, FAQ `data`, Datenschutz Abschnitt 7
-- [ ] **Domain, Resend und Env-Variablen** einrichten (siehe README, Abschnitt „Domain verbinden“).
+Alle Werte kommen in `lib/site.ts`. Sobald ein Wert eingetragen ist, erscheint er automatisch an den richtigen Stellen.
 
-## 2. Inhaltliche Annahmen bestätigen
+| # | Platzhalter | Feld in `lib/site.ts` | Erscheint in |
+| --- | --- | --- | --- |
+| 1 | Rufnummer von Felix | `felixPhone` | FAQ „Welche Nummer ruft an?“ (bis dahin ausgeblendet) |
+| 2 | Kontakt-E-Mail, Telefon, Erreichbarkeit | `company.email`, `company.phone`, `company.hours` | Footer, Kontakt, Impressum, Datenschutz |
+| 3 | Anschrift der IGS Social Tech UG bestätigen (bisher Kruppstraße 108, 40227 Düsseldorf) | `company.address` | Footer, Kontakt, Impressum, Datenschutz, JSON-LD |
+| 4 | Geschäftsführung, USt-ID, Verantwortlich nach § 18 Abs. 2 MStV | `company.managingDirector`, `company.vatId`, `company.responsibleForContent` | Impressum |
+| 5 | Datenschutzbeauftragte/r | `company.dataProtectionOfficer` | Datenschutz, Abschnitt 1 |
+| 6 | Ort für die Seite „Über uns“ | Text `about.hero.text` in `messages/*.json` | Über uns, Einleitung |
 
-| Annahme | Wo |
-| --- | --- |
-| Preis 10 €/Monat inkl. MwSt., erster Monat kostenlos, monatlich zum Monatsende kündbar | `lib/site.ts`, `messages/*` (`pricing`, `common.price`, `faq.items.costs`, `emails`) |
-| Bezahlung: keine Zahlungsdaten bei Buchung, „wir melden uns vor Ende des Gratismonats“ | `pricing.notes`, AGB § 4, `app/[locale]/preise/page.tsx` |
-| Erster Anruf **innerhalb von 2 Werktagen** | `bookingSuccess`, `howItWorks.flow`, `emails.booking` |
-| Anrufdauer **ca. 5–10 Minuten** | `howItWorks.duration` |
-| Zeitfenster: vormittags 9–12, nachmittags 14–17, abends 17–19 Uhr | `common.timeWindows` |
-| Rhythmen: täglich / mehrmals pro Woche / wöchentlich | `common.rhythms` |
-| Feste Rufnummer von Felix: **[Rufnummer folgt]** | `faq.items.number`, `bookingSuccess.next` |
-| Nicht abgehoben → zweiter Versuch nach ca. 30 Minuten, dann nächster Termin | `faq.items.missed` |
-| **Keine Tonaufnahme**, nur schriftliche Zusammenfassung; kein Mensch hört live mit | `faq.items.recording`, Datenschutz Abschnitt 7 |
-| Notfall: Felix rät zur 112 bzw. zum Anruf beim Pflegedienst | `faq.items.emergency` |
-| Felix spricht zurzeit nur Deutsch | `faq.items.languages` |
-| Weitergabe an den Pflegedienst nur nach ausdrücklicher Zustimmung im Gespräch | `howItWorks.feedback`, `faq.items.careService`, Datenschutz Abschnitt 8 |
-| Kündigen und Pausieren per E-Mail, Telefon oder Kontaktformular; Uhrzeit auch im Gespräch änderbar | `faq.items.cancel`, `changeTime`, `pause`, `howItWorks.pause` |
-| Angehörige bekommen „auf Wunsch eine kurze Rückmeldung“ (mit Zustimmung) – geplant? | `home.benefits.forFamily.items[3]` |
-| Beispielfragen von Felix entsprechen dem echten Gesprächsleitfaden | `howItWorks.topics` |
-| Felix nutzt „er“ als Pronomen (DE); im Englischen meist neutral formuliert | gesamte Texte |
-| Formulierung zur Pflegeunion (Footer, Über uns, Impressum) | `footer.disclaimer`, `about.partner`, `legal.imprint` |
-| Team: Namen, Rollen, Beschreibung | `about.team` |
-| Kann jeder Felix buchen oder nur Kundinnen und Kunden der Pflegeunion? Falls nur Pflegeunion: Feld im Buchungsformular ergänzen | `components/forms/BookingForm.tsx` |
+## 2. Rechtliches
 
-## 3. CI und Bilder
+- [ ] **Impressum ist derzeit unvollständig.** Ohne Anschrift, Vertretung und Kontaktdaten erfüllt es § 5 DDG nicht. Die Platzhalter 2 bis 4 haben deshalb Vorrang.
+- [ ] Datenschutzerklärung rechtlich prüfen lassen. Danach in `lib/site.ts` `"privacy"` aus `legalDraftDocs` entfernen und `legalLastUpdated` setzen.
+- [ ] Prüfen, ob ein Vertrag zur Auftragsverarbeitung mit Vercel und Resend abgeschlossen bzw. akzeptiert ist (so steht es in der Datenschutzerklärung).
+- [ ] Aufsichtsbehörde (derzeit LDI NRW) bestätigen, sobald die Anschrift feststeht.
+- [ ] Abschnitt „Verbraucherstreitbeilegung“ ist entfernt. Nach der Rechtsprüfung entscheiden, ob er wieder nötig ist.
+- [ ] Nutzung des Pflegeunion-Logos und der CI schriftlich freigeben lassen (Pflegeunion bzw. IGS Management GmbH).
 
-- [ ] **Pflegeunion-Logo und -CI:** Felix nutzt jetzt Farben, Schrift und Logo-Formen der Pflegeunion, und das Pflegeunion-Logo erscheint als Partner-Hinweis (Startseite, Footer, Über uns; im Vorschaubild für geteilte Links nur als Text). Die ursprüngliche Vorgabe war „eigenständig, nicht an die Pflegeunion anlehnen“. Nutzung schriftlich von der Pflegeunion (IGS Management GmbH) freigeben lassen. → `components/ui/PartnerBadge.tsx`, `public/brand/pflegeunion-logo.png`
-- [ ] Optional: Script-Schrift der Pflegeunion („Nifty Script“) für einzelne Akzentwörter – nur mit Lizenz; Schriftdateien bitte bereitstellen.
-- [ ] Optional: Pflegeunion-Logo als Hauptlogo im Header statt des Felix-Zeichens (`components/Logo.tsx`, `components/layout/Header.tsx`).
+## 3. Technik und Betrieb
 
-- [ ] Platzhalter-Illustrationen durch echte Fotos ersetzen (`components/ui/PhotoPlaceholder.tsx`, Prop `photo` beschreibt das gewünschte Motiv):
-  „So funktioniert’s“ (Seniorin am Telefon), „Über uns“ (Teamfoto + 3 Porträts).
-- [ ] Optional: Foto im Hero hinter der Gesprächskarte (`components/home/Hero.tsx`).
+- [ ] **Kontaktformular aktivieren:** Resend-Konto anlegen, Domain `felix-ruft-an.de` verifizieren, `RESEND_API_KEY` und `RESEND_FROM_EMAIL` in Vercel setzen, neu deployen (Anleitung im README). Ohne das zeigt das Formular auf der Live-Seite eine Fehlermeldung. Anfragen gehen an `info@felix-ruft-an.de`.
+- [ ] Vercel Web Analytics ist nicht aktiv. Falls es eingeschaltet wird: `NEXT_PUBLIC_VERCEL_ANALYTICS=1` setzen und die Datenschutzerklärung um einen Abschnitt zur Reichweitenmessung ergänzen.
+- [ ] Spam-Schutz: Honeypot und Mindest-Ausfüllzeit sind aktiv. Bei Bedarf Rate-Limiting ergänzen (z. B. Vercel Firewall).
+- [ ] Nach dem Livegang Google Search Console einrichten (Sitemap: `/sitemap.xml`).
 
-## 4. Technik und Betrieb
+## 4. Bilder und CI (optional)
 
-- [ ] Buchungen kommen derzeit nur per E-Mail an. Später an Telefonie-System bzw. Datenbank anbinden (`app/actions/booking.ts`).
-- [ ] Stripe Checkout (Abo mit 30-Tage-Trial) nach Anleitung in `app/actions/checkout.ts`.
-- [ ] Spam-Schutz: Honeypot und Mindest-Ausfüllzeit sind aktiv. Bei Bedarf Rate-Limiting ergänzen (z. B. Vercel Firewall oder Upstash).
-- [ ] Vercel Web Analytics: im Vercel-Projekt aktivieren und `NEXT_PUBLIC_VERCEL_ANALYTICS=1` setzen. Der Abschnitt in der Datenschutzerklärung ist schon da; ohne Analytics den Abschnitt 4 entfernen.
-- [ ] Nach dem Livegang Lighthouse und die Google Search Console prüfen (Sitemap: `/sitemap.xml`).
+- [ ] Platzhalter-Illustrationen durch echte Fotos ersetzen (`components/ui/PhotoPlaceholder.tsx`), z. B. auf „So funktioniert’s“ und „Über uns“.
+- [ ] Optional: Script-Schrift der Pflegeunion („Nifty Script“) für einzelne Akzentwörter, nur mit Lizenz.
+- [ ] Optional: Pflegeunion-Logo als Hauptlogo im Header statt des Felix-Zeichens.

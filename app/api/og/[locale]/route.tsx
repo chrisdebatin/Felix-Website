@@ -19,7 +19,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
   const common = await getTranslations({ locale, namespace: "common" });
   const title = t("title");
   const [heavy, regular] = await Promise.all([
-    loadGoogleFont("Nunito Sans", 800, `Felix${title}${t("badge")}`),
+    loadGoogleFont("Nunito Sans", 800, `Felix${title}`),
     loadGoogleFont("Nunito Sans", 600, `${t("subtitle")}${common("partner")}`),
   ]);
   const fonts = [
@@ -82,21 +82,8 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
           <div style={{ display: "flex", marginTop: 26, fontSize: 32, lineHeight: 1.4, fontWeight: 600, color: "#55605A", maxWidth: 780 }}>
             {t("subtitle")}
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: "auto" }}>
-            <div
-              style={{
-                display: "flex",
-                background: "#AFCA0B",
-                color: "#003820",
-                fontSize: 28,
-                fontWeight: 800,
-                padding: "14px 28px",
-                borderRadius: 9999,
-              }}
-            >
-              {t("badge")}
-            </div>
-            <div style={{ display: "flex", fontSize: 24, fontWeight: 600, color: "#00633A" }}>{common("partner")}</div>
+          <div style={{ display: "flex", alignItems: "center", marginTop: "auto" }}>
+            <div style={{ display: "flex", fontSize: 28, fontWeight: 600, color: "#00633A" }}>{common("partner")}</div>
           </div>
         </div>
       </div>

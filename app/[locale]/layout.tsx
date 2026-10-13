@@ -7,7 +7,6 @@ import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MotionProvider } from "@/components/layout/MotionProvider";
-import { StickyCta } from "@/components/layout/StickyCta";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { routing } from "@/i18n/routing";
 import { organizationJsonLd } from "@/lib/jsonld";
@@ -82,7 +81,6 @@ export default async function LocaleLayout({
               {children}
             </main>
             <Footer />
-            <StickyCta />
           </MotionProvider>
         </NextIntlClientProvider>
         <JsonLd data={organizationJsonLd()} />

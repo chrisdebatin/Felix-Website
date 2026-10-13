@@ -73,6 +73,17 @@
     line-height: 1.15;
     letter-spacing: -0.01em;
     text-wrap: balance;
+    /* Lange Wörter wie „Datenschutzerklärung“ dürfen nie über den Rand laufen. */
+    overflow-wrap: break-word;
+  }
+
+  /* Auf schmalen Bildschirmen lange deutsche Wörter in Überschriften trennen. */
+  @media (max-width: 40rem) {
+    h1,
+    h2,
+    h3 {
+      hyphens: auto;
+    }
   }
 
   p {

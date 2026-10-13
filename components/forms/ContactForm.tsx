@@ -8,7 +8,6 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { contactSchema, type ContactData } from "@/lib/schemas/contact";
 import { toFieldErrors, type FieldErrors } from "@/lib/schemas/shared";
-import { company } from "@/lib/site";
 import { CheckboxField, ErrorSummary, Honeypot, TextField } from "./fields";
 
 type Values = Omit<ContactData, "acceptPrivacy"> & { acceptPrivacy: boolean };
@@ -61,9 +60,9 @@ export function ContactForm() {
         const res = await submitContact({ ...result.data, website: honeypot, startedAt: startedAt.current, locale });
         if (res.ok) return setSent(true);
         if (res.fieldErrors && Object.keys(res.fieldErrors).length > 0) return showErrors(res.fieldErrors);
-        setFormError(tErr("generic", { phone: company.phoneDisplay }));
+        setFormError(tErr("generic"));
       } catch {
-        setFormError(tErr("generic", { phone: company.phoneDisplay }));
+        setFormError(tErr("generic"));
       }
     });
   }

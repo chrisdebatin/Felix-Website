@@ -1,11 +1,11 @@
-import { ArrowRight, CalendarCheck, MessageSquareHeart, PhoneIncoming } from "lucide-react";
+import { ArrowRight, CircleCheck, HeartHandshake, PhoneIncoming } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
-const icons = [CalendarCheck, PhoneIncoming, MessageSquareHeart];
+const icons = [HeartHandshake, CircleCheck, PhoneIncoming];
 
 export async function StepsSection() {
   const t = await getTranslations("home.steps");
@@ -15,7 +15,7 @@ export async function StepsSection() {
     <section className="bg-sage py-20 sm:py-28">
       <Container>
         <FadeIn>
-          <SectionHeader eyebrow={t("eyebrow")} title={t("title")} />
+          <SectionHeader title={t("title")} />
         </FadeIn>
         <ol className="mt-14 grid gap-6 md:grid-cols-3">
           {items.map((item, i) => {

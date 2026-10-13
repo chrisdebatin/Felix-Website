@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useId, useState } from "react";
 import { usePathname } from "@/i18n/navigation";
-import { ButtonLink } from "@/components/ui/Button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { NavLink } from "./NavLink";
 import { mainNav } from "./navItems";
@@ -77,20 +76,8 @@ export function MobileMenu() {
                 </NavLink>
               </li>
             ))}
-            <li>
-              <NavLink
-                href="/kontakt"
-                onClick={close}
-                className="flex min-h-16 items-center font-display text-2xl font-extrabold text-forest-deep"
-              >
-                {t("contact")}
-              </NavLink>
-            </li>
           </ul>
         </nav>
-        <ButtonLink href="/buchen" onClick={close} className="mt-8 w-full">
-          {t("book")}
-        </ButtonLink>
         <div className="mt-8 flex items-center justify-between gap-4">
           <span className="text-muted">{t("language")}</span>
           <LanguageSwitcher onNavigate={close} />

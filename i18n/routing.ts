@@ -12,16 +12,11 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/so-funktionierts": { de: "/so-funktionierts", en: "/how-it-works" },
-    "/preise": { de: "/preise", en: "/pricing" },
     "/faq": { de: "/faq", en: "/faq" },
     "/ueber-uns": { de: "/ueber-uns", en: "/about" },
-    "/buchen": { de: "/buchen", en: "/book" },
-    "/buchen/danke": { de: "/buchen/danke", en: "/book/thank-you" },
     "/kontakt": { de: "/kontakt", en: "/contact" },
     "/impressum": { de: "/impressum", en: "/imprint" },
     "/datenschutz": { de: "/datenschutz", en: "/privacy" },
-    "/agb": { de: "/agb", en: "/terms" },
-    "/widerruf": { de: "/widerruf", en: "/withdrawal" },
   },
 });
 

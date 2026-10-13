@@ -88,66 +88,6 @@ export function TextField({
   );
 }
 
-export function ChoiceCards<T extends string>({
-  name,
-  legend,
-  options,
-  value,
-  onChange,
-  error,
-  columns = 3,
-  legendClassName = "mb-3 text-lg font-bold text-forest-deep",
-}: {
-  name: string;
-  legend: ReactNode;
-  options: { value: T; label: string; description?: string; icon?: ReactNode }[];
-  value: T | "";
-  onChange: (v: T) => void;
-  error?: string;
-  columns?: 2 | 3;
-  legendClassName?: string;
-}) {
-  const grid = columns === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3";
-  return (
-    <fieldset
-      id={name}
-      tabIndex={-1}
-      aria-invalid={error ? true : undefined}
-      aria-describedby={error ? `${name}-error` : undefined}
-      className="focus:outline-none"
-    >
-      <legend className={legendClassName}>{legend}</legend>
-      <div className={`grid gap-3 ${grid}`}>
-        {options.map((opt) => (
-          <label
-            key={opt.value}
-            className={`relative flex min-h-16 cursor-pointer items-start gap-3 rounded-2xl border-2 bg-surface p-4 transition-colors hover:border-forest/50 has-checked:border-forest has-checked:bg-lime-soft/60 has-focus-visible:outline-3 has-focus-visible:outline-offset-2 has-focus-visible:outline-forest ${
-              error ? "border-danger/70" : "border-line"
-            }`}
-          >
-            <input
-              type="radio"
-              name={name}
-              value={opt.value}
-              checked={value === opt.value}
-              onChange={() => onChange(opt.value)}
-              className="mt-1 size-5 shrink-0 accent-forest"
-            />
-            <span className="flex flex-col">
-              <span className="flex items-center gap-2 text-lg font-bold text-forest-deep">
-                {opt.icon}
-                {opt.label}
-              </span>
-              {opt.description ? <span className="text-base text-muted">{opt.description}</span> : null}
-            </span>
-          </label>
-        ))}
-      </div>
-      <FieldError id={name} message={error} />
-    </fieldset>
-  );
-}
-
 export function CheckboxField({
   id,
   checked,

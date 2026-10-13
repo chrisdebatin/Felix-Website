@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/Logo";
-import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileMenu } from "./MobileMenu";
@@ -35,11 +34,6 @@ export async function Header() {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher className="hidden sm:block" />
-          <div className="hidden md:block">
-            <ButtonLink href="/buchen" size="sm">
-              {t("book")}
-            </ButtonLink>
-          </div>
           <MobileMenu />
         </div>
       </Container>

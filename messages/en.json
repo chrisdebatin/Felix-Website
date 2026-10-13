@@ -1,84 +1,44 @@
 {
   "meta": {
     "siteName": "Felix",
-    "homeTitle": "Felix – A call that does you good",
-    "description": "Felix calls regularly, listens and passes your feedback on to your home-care service. No app, no technology – just your phone. First month free.",
-    "ogAlt": "Felix – A call that does you good"
+    "homeTitle": "Felix · Once a week, Felix checks in",
+    "description": "Felix is an AI phone assistant for clients of Pflegeunion. He calls once a week, checks in and passes on what your care team should know.",
+    "ogAlt": "Felix: Once a week, Felix checks in."
   },
   "og": {
-    "title": "A call that does you good.",
-    "subtitle": "Felix calls regularly, listens and passes your feedback on to your home-care service.",
-    "badge": "First month free"
+    "title": "Once a week, Felix checks in.",
+    "subtitle": "Felix is an AI phone assistant for clients of Pflegeunion."
   },
   "common": {
     "skipToContent": "Skip to content",
-    "bookCta": "Book a call from Felix",
-    "bookShort": "Book a call",
     "howItWorksCta": "How it works",
     "contactCta": "Get in touch",
     "backHome": "Back to the home page",
     "felix": "Felix",
-    "you": "You",
-    "aiDisclosure": "Felix is an AI – and says so.",
+    "exampleTag": "Example",
     "emergencyNote": "Felix is not an emergency service. In an emergency, please call 112 straight away.",
-    "partner": "In partnership with Pflegeunion",
-    "price": "€10",
-    "perMonth": "per month",
-    "trust": {
-      "trial": "First month free",
-      "cancel": "cancel monthly",
-      "eu": "Data stored in the EU"
-    },
-    "timeWindows": {
-      "morning": {
-        "label": "Mornings",
-        "hours": "9 am to 12 pm"
-      },
-      "afternoon": {
-        "label": "Afternoons",
-        "hours": "2 pm to 5 pm"
-      },
-      "evening": {
-        "label": "Evenings",
-        "hours": "5 pm to 7 pm"
-      }
-    },
-    "rhythms": {
-      "daily": {
-        "label": "Every day",
-        "text": "A short chat every day. Nice if you spend a lot of time on your own."
-      },
-      "severalWeekly": {
-        "label": "Several times a week",
-        "text": "For example on Mondays, Wednesdays and Fridays."
-      },
-      "weekly": {
-        "label": "Once a week",
-        "text": "One regular call a week, for example every Tuesday."
-      }
-    },
-    "bookingFor": {
-      "self": "For myself",
-      "relative": "For a relative"
+    "partner": "In cooperation with Pflegeunion",
+    "badges": {
+      "voluntary": "Voluntary",
+      "stopAnytime": "Stop at any time",
+      "isAi": "Felix is an AI"
     },
     "legalDraft": {
       "title": "Draft",
-      "text": "This text is a template. It will be checked by a legal and data protection expert before launch and may still change."
+      "text": "This text will be legally reviewed before launch."
     }
   },
   "nav": {
     "home": "Home",
     "howItWorks": "How it works",
-    "pricing": "Pricing",
     "faq": "FAQ",
     "about": "About us",
     "contact": "Contact",
-    "book": "Book a call",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mainLabel": "Main navigation",
     "mobileLabel": "Menu",
-    "homeLink": "Felix – go to the home page",
+    "homeLink": "Felix, go to the home page",
     "language": "Language",
     "languageNames": {
       "de": "Deutsch",
@@ -86,76 +46,81 @@
     }
   },
   "footer": {
-    "tagline": "Felix calls regularly, listens and passes your feedback on to your home-care service.",
+    "tagline": "Felix is an AI phone assistant. He calls once a week, listens and passes on what your care team should know.",
     "navTitle": "Felix",
     "legalTitle": "Legal",
     "contactTitle": "Contact",
+    "contactLink": "Go to the contact form",
     "imprint": "Legal notice",
     "privacy": "Privacy",
-    "terms": "Terms and conditions",
-    "withdrawal": "Right of withdrawal",
-    "disclaimer": "Felix is a service of IGS Social Tech UG i. G. Pflegeunion is a brand of the home-care service that Felix works with.",
+    "disclaimer": "Felix is a service provided by IGS Social Tech UG i. G. Pflegeunion is a brand of the care services that Felix works with.",
     "copyright": "© {year} IGS Social Tech UG (haftungsbeschränkt) i. G."
   },
   "home": {
     "hero": {
-      "eyebrow": "Your companion on the phone",
-      "title": "A call that does you good.",
-      "subtitle": "Felix calls you regularly, listens and passes your feedback on to your home-care service. No app and no technology – just your phone.",
-      "callStatus": "Felix is calling …",
-      "callTime": "Tuesday, 10:30 am",
-      "felix1": "Hello Mrs Müller, it’s Felix. How are you today?",
-      "customer1": "Not bad, thank you. My knee has been twinging since yesterday, though.",
-      "felix2": "I’m sorry to hear that. Shall I pass that on to your home-care service?",
+      "eyebrow": "For clients of Pflegeunion",
+      "title": "Once a week, Felix checks in.",
+      "subtitle": "Felix is an AI phone assistant. He calls you once a week. He asks how you are and whether everything with your care is going as agreed. He passes on what your care team should know. All you need is your phone.",
+      "hint": "Interested? Speak to your carer.",
+      "callStatus": "Felix is calling",
+      "exampleLabel": "Example, shortened",
+      "illustrationLabel": "Example conversation with Felix, shortened",
       "customerName": "Mrs Müller",
-      "illustrationLabel": "Example of a conversation with Felix"
+      "lines": [
+        {
+          "who": "felix",
+          "text": "Hello, this is Felix. Am I speaking to Mrs Müller?"
+        },
+        {
+          "who": "customer",
+          "text": "Yes, speaking."
+        },
+        {
+          "who": "felix",
+          "text": "I’m calling from Pflegeunion. Is now a good time for a short chat?"
+        },
+        {
+          "who": "customer",
+          "text": "Yes, happy to."
+        },
+        {
+          "who": "felix",
+          "text": "Did everything with your care go as agreed this week?"
+        },
+        {
+          "who": "customer",
+          "text": "In the mornings they often come later than arranged."
+        },
+        {
+          "who": "felix",
+          "text": "Thank you for telling me."
+        }
+      ],
+      "aiNote": "Felix is an AI and never pretends to be human."
     },
     "problem": {
       "eyebrow": "The gap",
-      "title": "Between two care visits, it’s often quiet.",
-      "text": "The carers come, help – and have to move on. After that, many people are on their own. Small things go unsaid: a new pain, annoyance about a visit time, a worry. They never reach the home-care service.",
-      "solutionTitle": "Felix closes this gap.",
-      "solutionText": "Felix calls between visits, asks how you are and listens. Whatever matters to you, Felix passes on to your home-care service – if you want that. That way, a small thing doesn’t turn into a big problem.",
-      "weekTitle": "A week with Felix",
-      "weekCaption": "Example: Felix calls on the days when nobody comes round.",
-      "legendVisit": "Care visit",
-      "legendCall": "Call from Felix",
-      "days": {
-        "mon": "Mon",
-        "tue": "Tue",
-        "wed": "Wed",
-        "thu": "Thu",
-        "fri": "Fri",
-        "sat": "Sat",
-        "sun": "Sun"
-      },
-      "daysLong": {
-        "mon": "Monday",
-        "tue": "Tuesday",
-        "wed": "Wednesday",
-        "thu": "Thursday",
-        "fri": "Friday",
-        "sat": "Saturday",
-        "sun": "Sunday"
-      },
-      "nothing": "nothing planned"
+      "title": "Between two care appointments, some things go unsaid.",
+      "text": "Whether after a care visit or after a day at day care, small things often go unsaid. A question, a worry, an appointment that did not go as agreed.",
+      "solutionTitle": "Felix checks in once a week.",
+      "solutionText": "Felix calls and listens. He passes on what your care team should know. The team decides what happens next."
     },
     "voice": {
       "eyebrow": "What Felix sounds like",
-      "title": "Friendly, patient and always honest.",
-      "intro": "Felix speaks calmly and clearly and gives you time. Here are three short extracts from typical conversations.",
+      "title": "Friendly, honest and with clear limits.",
+      "intro": "Felix speaks German. He is not human, and he will tell you so if you ask. Three examples:",
       "conversations": [
         {
-          "label": "Saying hello",
+          "label": "When asked",
           "customer": "Mr Schneider",
           "lines": [
             {
-              "who": "felix",
-              "text": "Good morning, Mr Schneider! It’s Felix, your companion on the phone. I’m an artificial intelligence. Do you have a few minutes for me?"
+              "who": "customer",
+              "text": "Are you actually a real person?"
             },
             {
-              "who": "customer",
-              "text": "Oh, Felix! Yes, I always have time for you."
+              "who": "felix",
+              "text": "No. I’m an AI assistant for Pflegeunion, in other words a computer program."
             }
           ]
         },
@@ -165,15 +130,15 @@
           "lines": [
             {
               "who": "felix",
-              "text": "How did you sleep last night, Mrs Yılmaz?"
+              "text": "How are you this week?"
             },
             {
               "who": "customer",
-              "text": "Not so well. I’m worried about my grandson."
+              "text": "Not so good. I’m worried about my grandson."
             },
             {
               "who": "felix",
-              "text": "I understand. Would you like to tell me what’s on your mind?"
+              "text": "I’m sorry to hear that. Would you like to talk about it, or would you rather talk about something else?"
             }
           ]
         },
@@ -183,493 +148,312 @@
           "lines": [
             {
               "who": "felix",
-              "text": "Were you happy with your home-care service this week?"
+              "text": "Did everything with your care go as agreed this week?"
             },
             {
               "who": "customer",
-              "text": "Mostly, yes. But in the mornings they often come very late."
+              "text": "Basically, yes. But in the mornings they often come late."
             },
             {
               "who": "felix",
-              "text": "Thank you for telling me. May I pass that on to your home-care service?"
-            },
-            {
-              "who": "customer",
-              "text": "Yes, please do."
+              "text": "Thank you for telling me."
             }
           ]
         }
       ]
     },
     "steps": {
-      "eyebrow": "In three steps",
       "title": "It’s that simple",
       "items": [
         {
-          "title": "Book",
-          "text": "You fill in a short form – for yourself or for a relative. It takes about two minutes."
+          "title": "Your carer introduces Felix",
+          "text": "They explain what Felix is and what he is not. You get all the documents in advance, including the consent form."
         },
         {
-          "title": "Felix calls",
-          "text": "At the time you choose, the phone rings. Felix has a chat with you and asks how you are. Landline or mobile – both work."
+          "title": "You decide",
+          "text": "You decide whether you want Felix. Saying no is fine. This does not change your care."
         },
         {
-          "title": "Your feedback gets through",
-          "text": "Whatever matters to you, Felix passes on to your home-care service. You decide what gets passed on."
+          "title": "One call a week",
+          "text": "Felix asks how you are and how your care is going. He passes on what your care team should know."
         }
       ],
-      "cta": "More about how it works"
+      "cta": "How it works"
     },
     "benefits": {
-      "eyebrow": "What Felix offers",
-      "title": "Good for you. Reassuring for your family.",
+      "eyebrow": "What Felix brings",
+      "title": "Good for you. Good for your family to know.",
       "forYou": {
         "title": "For you",
         "items": [
-          "A friendly chat, even on quiet days",
           "Someone regularly asks how you are",
-          "A chance to get worries and annoyances off your chest",
-          "Your wishes reach your home-care service",
-          "No app, no technology – just your phone"
+          "You can say how your care is going",
+          "You can also call Felix yourself",
+          "No app, no technology, just your phone"
         ]
       },
       "forFamily": {
-        "title": "For families",
+        "title": "For relatives",
         "items": [
-          "Peace of mind that someone calls regularly",
-          "Problems with care are spotted sooner",
-          "Better care thanks to honest feedback",
-          "A short update for you if you’d like one – only with your relative’s consent",
-          "Booked for your mother or father in two minutes"
+          "Someone checks in regularly",
+          "Felix is a check-in, not surveillance",
+          "Please keep calling as before"
         ]
       }
     },
     "trust": {
       "eyebrow": "Trust",
-      "title": "Safe, honest and with clear limits.",
+      "title": "Honest and with clear limits.",
       "items": {
-        "gdpr": {
-          "title": "GDPR-compliant data protection",
-          "text": "We only process what is needed for the calls. You can have your data deleted at any time."
-        },
-        "eu": {
-          "title": "Servers in the EU",
-          "text": "Your data is stored and processed in the European Union."
-        },
-        "noSale": {
-          "title": "We never sell data",
-          "text": "Your data belongs to you. We don’t sell it and we don’t use it for advertising."
-        },
         "ai": {
-          "title": "Felix is open about being an AI",
-          "text": "Felix is not a person and never pretends to be one. Felix says so at the start of every call."
+          "title": "Felix is an AI",
+          "text": "Felix is not a human and never pretends to be one. He will tell you so whenever you ask."
         },
         "emergency": {
-          "title": "No emergency service, no medical advice",
-          "text": "Felix does not replace an emergency service or medical advice. In an emergency, please call 112 straight away."
+          "title": "Not an emergency service",
+          "text": "Felix cannot call anyone for you. In an emergency, please call 112 straight away or press your emergency call button."
+        },
+        "advice": {
+          "title": "No advice",
+          "text": "Felix does not give advice on health, medication, money or benefits. He tells you who to contact."
+        },
+        "recording": {
+          "title": "No audio recording",
+          "text": "No human listens in live, and no audio is recorded."
+        },
+        "voluntary": {
+          "title": "Voluntary",
+          "text": "You can stop at any time. This does not change your care."
         }
       }
     },
-    "pricingTeaser": {
-      "eyebrow": "Price",
-      "title": "A fair price. No catch.",
-      "text": "One price for everything. No set-up fee, no hidden costs.",
-      "points": [
-        "First month free",
-        "All calls included",
-        "Cancel monthly"
-      ],
-      "link": "Full pricing details"
-    },
     "faqTeaser": {
-      "eyebrow": "Questions & answers",
-      "title": "What people often ask us",
+      "title": "Frequently asked questions",
       "more": "See all questions"
     },
     "finalCta": {
-      "title": "Ready for your first call?",
-      "text": "Book Felix in two minutes. The first month is free – and you can cancel at any time.",
-      "bubble": "I’m looking forward to meeting you!"
+      "title": "Would you like to get to know Felix?",
+      "text": "Speak to your carer at your next appointment.",
+      "note": "Voluntary · stop at any time · Felix is an AI"
     }
   },
   "howItWorks": {
     "meta": {
       "title": "How it works",
-      "description": "How Felix calls, what Felix talks about, how often Felix calls and what happens to your feedback. Explained simply."
+      "description": "How Felix works: your carer introduces Felix, you decide, and Felix calls once a week."
     },
     "hero": {
       "eyebrow": "How it works",
-      "title": "From the first click to the first call",
-      "text": "Felix is really simple. All you need is a phone – landline or mobile. We take care of everything else."
+      "title": "How Felix works",
+      "text": "All you need is a phone. Your carer will explain everything else to you."
     },
-    "flow": {
-      "title": "Step by step",
+    "start": {
+      "title": "Getting started",
       "steps": [
+        "Your carer introduces Felix to you in person.",
+        "Before Felix calls you for the first time, you get all the documents: information about Felix and about privacy, and the consent form.",
+        "You decide whether you want Felix. You can also say no. This does not change your care."
+      ]
+    },
+    "call": {
+      "title": "The call",
+      "text": "First, Felix checks that he is speaking to the right person and asks whether now is a good time. Then he asks how you are and how your care is going. He can pick up where your last conversation left off. He does not talk about topics you do not want to talk about."
+    },
+    "frequency": {
+      "title": "How often?",
+      "text": "Once a week. If you do not answer, Felix will try again 24 hours later."
+    },
+    "callYourself": {
+      "title": "Calling Felix yourself",
+      "text": "You can call Felix on the same number he calls from. For example, if you have missed a call."
+    },
+    "after": {
+      "title": "After the call",
+      "text": "Felix passes on what your care team should know. The team decides what happens next. Felix himself cannot promise you anything."
+    },
+    "not": {
+      "title": "What Felix does not do",
+      "items": [
         {
-          "title": "You book",
-          "text": "In the form, you tell us who Felix should call, their phone number, a good time of day and how often Felix should call. You can also book for a relative."
+          "title": "Not an emergency service",
+          "text": "Felix cannot call anyone for you. In an emergency, call 112 straight away or press your emergency call button. If you mention an emergency, Felix will tell you to call 112."
         },
         {
-          "title": "We confirm",
-          "text": "If you’ve given us an email address, you’ll get a confirmation by email. Felix makes the first call within two working days."
+          "title": "No advice",
+          "text": "Felix does not give advice on health, medication, nutrition, money, legal matters or benefits from the long-term care insurance fund. He tells you who to contact, for example your doctor or your care service’s office."
         },
         {
-          "title": "The first conversation",
-          "text": "On the first call, Felix says hello and is open about being an AI. Felix asks whether you’re happy to go ahead and gets to know you a little."
+          "title": "No assessment of symptoms",
+          "text": "Felix also does not give instructions on first aid or medication."
         },
         {
-          "title": "Regular calls",
-          "text": "After that, Felix calls as often as you like – always in the time window you chose."
+          "title": "No monitoring",
+          "text": "Felix is a check-in."
         },
         {
-          "title": "Your feedback gets through",
-          "text": "Felix sums up what matters to you in a few words and passes it on to your home-care service. But only if you agree."
+          "title": "Not a replacement",
+          "text": "Felix does not replace your care or your contact with family and friends."
+        },
+        {
+          "title": "No selling",
+          "text": "Felix does not offer you anything and makes no decisions about your care."
         }
       ]
     },
-    "topics": {
-      "title": "What Felix talks about",
-      "intro": "Felix doesn’t follow a fixed script. Felix follows your lead. Typical questions are:",
-      "items": [
-        "How are you today? How did you sleep?",
-        "Are you in any pain, or do you feel different from usual?",
-        "How was the last visit from your home-care service?",
-        "Is there anything that could be better?",
-        "What are your plans for the rest of the day? What made you happy?"
-      ],
-      "note": "You’re in charge of the conversation. If there’s something you’d rather not talk about, just say so."
+    "stop": {
+      "title": "Stopping Felix",
+      "text": "Tell Felix during a call, or tell your carer or the office. Then you will not get any more calls. This does not change your care."
     },
-    "duration": {
-      "title": "How long does a call last?",
-      "value": "about 5–10 minutes",
-      "text": "If you’re short of time, just say so – and Felix will keep it brief. And if you feel like a good chat, Felix is happy to listen a little longer."
-    },
-    "rhythm": {
-      "title": "You decide how often Felix calls",
-      "intro": "When you book, choose how often and at what time of day. You can change both at any time.",
-      "timeTitle": "What time of day?"
-    },
-    "feedback": {
-      "title": "What happens to your feedback",
-      "items": [
-        "After each call, Felix writes a short summary.",
-        "Only what you agree to goes to your home-care service. Felix always asks first.",
-        "That way, your home-care service can act early – for example by changing a visit time or checking on your knee at the next visit.",
-        "Anything personal you tell Felix stays between you."
-      ]
-    },
-    "pause": {
-      "title": "Pause or cancel – at any time",
-      "text": "Going away or in hospital? We’ll simply pause the calls. And if you no longer want Felix, you can cancel at the end of the month – by email, by phone or through our contact form."
-    },
-    "photoAlt": "Placeholder for a photo: older woman smiling while on the phone",
     "cta": {
-      "title": "Would you like to get to know Felix?",
-      "text": "The first month is free. There’s no risk for you."
-    }
-  },
-  "pricing": {
-    "meta": {
-      "title": "Pricing",
-      "description": "Felix costs €10 a month, including all calls. The first month is free, after that you can cancel monthly."
+      "title": "Speak to your carer."
     },
-    "hero": {
-      "eyebrow": "Pricing",
-      "title": "One price. Everything included.",
-      "text": "No tiers, no small print. Felix costs €10 a month – and the first month is free."
-    },
-    "card": {
-      "name": "Felix",
-      "tagline": "Your companion on the phone",
-      "badge": "First month free",
-      "cancel": "Cancel monthly",
-      "includedTitle": "What’s included",
-      "included": [
-        "All calls as often as you like – even every day",
-        "Feedback to your home-care service, if you want it",
-        "Choose your preferred time and change it whenever you like",
-        "Pause the calls, for example when you’re on holiday",
-        "Personal help by email and phone",
-        "No set-up fee, no technology needed"
-      ],
-      "vat": "Price includes VAT.",
-      "afterTrial": "After the free month, Felix costs €10 a month. If you cancel before then, you pay nothing."
-    },
-    "notes": {
-      "title": "Good to know",
-      "items": [
-        {
-          "q": "Do I have to pay anything now?",
-          "a": "No. You don’t need bank or card details to book. Before the free month ends, we’ll get in touch with you to talk about payment."
-        },
-        {
-          "q": "Do the calls cost me anything?",
-          "a": "No. Felix calls you. You have no phone costs."
-        },
-        {
-          "q": "What happens after the free month?",
-          "a": "If you’d like to keep Felix, it costs €10 a month. If not, just let us know before then. You won’t be charged anything."
-        }
-      ]
-    }
+    "photoAlt": "Space for a photo"
   },
   "faq": {
     "meta": {
-      "title": "FAQ",
-      "description": "Answers to common questions about Felix: Is Felix a real person? Which number will call? What about emergencies? How do I cancel?"
+      "title": "Frequently asked questions",
+      "description": "Answers to common questions about Felix, the AI phone assistant for clients of Pflegeunion."
     },
     "hero": {
-      "eyebrow": "FAQ",
+      "eyebrow": "Frequently asked questions",
       "title": "Questions and answers",
-      "text": "Here you’ll find answers to the questions we’re asked most often."
+      "text": "Answers to common questions about Felix."
     },
     "items": {
+      "forWhom": {
+        "q": "Who is Felix for?",
+        "a": "For clients of Pflegeunion, in home care and in day care."
+      },
       "human": {
         "q": "Is Felix a real person?",
-        "a": "No. Felix is an artificial intelligence (AI) – a computer program that can talk and listen. Felix says this openly at the start of every call. Behind Felix is a team in Düsseldorf that you can reach at any time."
+        "a": "No. Felix is an AI phone assistant, in other words a computer program that can speak and listen. Your carer will explain this to you before you start, and Felix will tell you whenever you ask."
+      },
+      "howToGet": {
+        "q": "How do I get Felix?",
+        "a": "Speak to your carer. They will explain Felix to you. Before Felix calls you for the first time, you get all the documents."
       },
       "number": {
-        "q": "Which number will call me?",
-        "a": "Felix always calls from the same Düsseldorf number: [number to follow]. It’s best to save the number as “Felix” in your phone. Then you’ll know straight away who’s calling."
+        "q": "Which number does Felix call from?",
+        "a": "Felix always calls from the same number: {number}. It is best to save the number as “Felix”."
+      },
+      "callYourself": {
+        "q": "Can I also call Felix myself?",
+        "a": "Yes, on the same number. If you need something from your care service, please continue to call the office."
+      },
+      "howOften": {
+        "q": "How often does Felix call?",
+        "a": "Once a week."
       },
       "missed": {
         "q": "What happens if I don’t answer?",
-        "a": "That’s no problem. Felix tries again after about 30 minutes. If you don’t answer then either, Felix will call at the next planned time."
-      },
-      "relative": {
-        "q": "Can a relative book Felix for me?",
-        "a": "Yes, of course. Many sons and daughters book Felix for their parents. The only important thing is that the person being called agrees. Felix checks again on the first call."
-      },
-      "recording": {
-        "q": "Is anyone listening? Are the calls recorded?",
-        "a": "No person listens in live. So that Felix can understand you, the conversation is processed automatically during the call. Only a short written summary is stored – no audio recording. You can ask us to delete your data at any time."
+        "a": "Felix will try again 24 hours later. If that is not a good time either, just tell him when to call."
       },
       "emergency": {
         "q": "What happens in an emergency?",
-        "a": "Felix is not an emergency service. In an emergency, please call 112 straight away. If Felix notices during a call that you’re feeling very unwell, Felix will advise you to call 112 or your home-care service."
+        "a": "Always call 112 straight away or press your emergency call button. Felix is not an emergency service and cannot call anyone for you. If you mention an emergency, Felix will tell you to call 112."
       },
-      "landline": {
-        "q": "Does Felix work with my landline?",
-        "a": "Yes. Felix calls like anyone else – on your landline or your mobile. You don’t need the internet, an app or a smartphone."
+      "recording": {
+        "q": "Is the conversation recorded?",
+        "a": "There is no audio recording, and no human listens in live. What you say is saved as text. You will find all the details in your privacy information."
       },
-      "cancel": {
-        "q": "How do I cancel?",
-        "a": "It’s easy: by email, by phone or through our contact form. Your cancellation takes effect at the end of the current month. If you cancel in the first month, you pay nothing at all."
+      "careTeam": {
+        "q": "What does my care team find out?",
+        "a": "Not your whole conversation. Felix passes on what your care team should know. The team decides what happens next."
       },
-      "changeTime": {
-        "q": "Can I change the time or how often Felix calls?",
-        "a": "Yes, at any time. Write to us or give us a call. You can also tell Felix during a call that another time would suit you better."
-      },
-      "languages": {
-        "q": "Does Felix speak other languages?",
-        "a": "At the moment, Felix speaks German. More languages are planned. Feel free to ask us if you need a particular language."
-      },
-      "costs": {
-        "q": "How much does Felix cost?",
-        "a": "Felix costs €10 a month, including all calls. The first month is free. You have no phone costs."
-      },
-      "careService": {
-        "q": "What does my home-care service find out?",
-        "a": "Only what you agree to. Felix asks before passing anything on. For example: “Mrs Müller would like the carers to come earlier in the morning.”"
-      },
-      "hearing": {
-        "q": "My hearing isn’t what it used to be. Is that a problem?",
-        "a": "Felix speaks slowly and clearly. If you didn’t catch something, just say “Sorry?” – Felix is happy to repeat it. You can also ask Felix to speak more slowly."
-      },
-      "pause": {
-        "q": "Can I pause the calls?",
-        "a": "Yes, for example if you’re going away or are in hospital. Just tell us for how long."
+      "advice": {
+        "q": "Does Felix give me advice on health or medication?",
+        "a": "No. Felix tells you who to contact, for example your doctor or your care service’s office."
       },
       "replace": {
-        "q": "Does Felix replace contact with people?",
-        "a": "No, and that’s not the idea. Felix is an addition – for the time between visits from your carers, family and friends."
+        "q": "Does Felix replace my care?",
+        "a": "No. Your care stays exactly as it is. Felix is an extra check-in."
       },
-      "data": {
-        "q": "Where is my data stored?",
-        "a": "On servers in the European Union. We don’t sell data and we don’t use it for advertising. You can read more in our privacy policy."
+      "sales": {
+        "q": "Does Felix want to sell me something?",
+        "a": "No. Felix only asks how you are and how your care is going."
+      },
+      "noComputer": {
+        "q": "I don’t want to talk to a computer.",
+        "a": "That is perfectly fine. It is your decision."
+      },
+      "hearing": {
+        "q": "I don’t hear well, or I don’t like talking on the phone.",
+        "a": "Then Felix may not be right for you, and that is not a problem. Feel free to speak to your carer."
+      },
+      "stop": {
+        "q": "How do I stop?",
+        "a": "Just tell Felix during a call. You can also tell your carer or the office. This does not change your care."
+      },
+      "languages": {
+        "q": "Does Felix speak other languages too?",
+        "a": "Felix speaks German."
       }
     },
     "stillQuestions": {
       "title": "Didn’t find your question?",
-      "text": "Write to us or give us a call. We’re happy to help."
+      "text": "Write to us using the contact form. For questions about your care, please contact your care service’s office as usual."
     }
   },
   "about": {
     "meta": {
       "title": "About us",
-      "description": "Felix is a service of IGS Social Tech UG i. G. in Düsseldorf. Why Felix exists and how we think about artificial intelligence."
+      "description": "Felix is a service provided by IGS Social Tech UG (haftungsbeschränkt) i. G., in cooperation with Pflegeunion."
     },
     "hero": {
       "eyebrow": "About us",
-      "title": "Nobody should be forgotten between two visits.",
-      "text": "Felix is a service of IGS Social Tech UG i. G. in Düsseldorf. We build technology that brings people together – not technology that replaces them."
+      "title": "No one should be forgotten between two care appointments.",
+      "text": "Felix is a service provided by IGS Social Tech UG (haftungsbeschränkt) i. G., in cooperation with Pflegeunion."
     },
     "motivation": {
       "title": "Why Felix exists",
       "paragraphs": [
-        "Many older people live alone. The carers come, but they have little time. Between visits, it’s often quiet. Loneliness in later life is common – and it affects health.",
-        "At the same time, home-care services often find out too late when something isn’t right. Who likes to complain to the friendly carer standing right in front of them? That’s how small worries become big problems.",
-        "That’s why we built Felix: a patient companion on the phone who listens, asks questions and passes on what matters."
+        "Many older people live alone. Carers have little time, and it is often quiet between appointments. At the same time, the care team only finds out about some things late. Who really likes to complain to the friendly carer standing right in front of them?",
+        "That is why Felix exists: one call a week that checks in, listens and passes on what the care team should know."
       ]
     },
     "stance": {
-      "title": "Our approach to artificial intelligence",
+      "title": "Our stance",
       "items": {
         "honest": {
           "title": "Honest",
-          "text": "Felix is always open about being an AI. Felix never pretends to be a person."
+          "text": "Felix is an AI and never pretends to be human."
         },
         "complement": {
           "title": "An addition, not a replacement",
-          "text": "Felix doesn’t replace carers, family, friends or doctors. Felix is there for the time in between."
+          "text": "Felix does not replace carers, family, friends or doctors."
         },
-        "control": {
-          "title": "You stay in control",
-          "text": "You decide what Felix passes on. You can pause, cancel and have your data deleted at any time."
+        "voluntary": {
+          "title": "Voluntary",
+          "text": "You decide whether you want Felix, and you can stop at any time."
         },
-        "data": {
-          "title": "Careful with data",
-          "text": "As little data as possible, stored in the EU and never sold."
+        "limits": {
+          "title": "Clear limits",
+          "text": "Felix is not an emergency service, gives no advice and makes no promises."
         }
       }
-    },
-    "team": {
-      "title": "The team behind Felix",
-      "text": "A small team in Düsseldorf with experience in care, technology and social work.",
-      "photoAlt": "Placeholder for a team photo",
-      "members": [
-        {
-          "name": "[Name]",
-          "role": "Founder & Managing Director"
-        },
-        {
-          "name": "[Name]",
-          "role": "Care & Quality"
-        },
-        {
-          "name": "[Name]",
-          "role": "Technology"
-        }
-      ]
     },
     "partner": {
-      "title": "Working with Pflegeunion",
-      "text": "Felix works with the home-care service Pflegeunion. That way, your feedback goes straight to where it can make a difference."
+      "title": "Working together with Pflegeunion",
+      "text": "Felix is there for clients of Pflegeunion, in home care and in day care."
     },
-    "location": {
-      "title": "At home in Düsseldorf",
-      "text": "You’ll find us at Kruppstraße 108 in Düsseldorf. We’d love to hear from you."
-    }
-  },
-  "booking": {
-    "meta": {
-      "title": "Book a call from Felix",
-      "description": "Book Felix in three short steps – for yourself or for a relative. The first month is free."
-    },
-    "title": "Book a call from Felix",
-    "intro": "Three short steps. The first month is free.",
-    "progress": "Step {current} of {total}",
-    "stepNames": {
-      "who": "Who for?",
-      "details": "Your details",
-      "confirm": "Check & send"
-    },
-    "step1": {
-      "title": "Who are you booking Felix for?",
-      "self": {
-        "title": "For myself",
-        "text": "Felix will call me."
-      },
-      "relative": {
-        "title": "For a relative",
-        "text": "For example, my mother or father."
-      }
-    },
-    "step2": {
-      "title": "Who should Felix call – and when?",
-      "calleeNameSelf": "Your name",
-      "calleeNameRelative": "Name of the person Felix should call",
-      "calleeNameHint": "This is how Felix will address the person, for example “Mrs Müller” or “Hans Müller”.",
-      "phone": "Phone number",
-      "phoneHint": "Landline or mobile, for example 0211 1234567",
-      "timeWindow": "When is the best time to call?",
-      "rhythm": "How often should Felix call?",
-      "bookerTitleRelative": "Your contact details",
-      "bookerIntroRelative": "So that we can confirm the booking and reach you if we have any questions.",
-      "bookerTitleSelf": "Confirmation by email",
-      "bookerIntroSelf": "If you like, we’ll send you a confirmation by email. This is optional.",
-      "bookerName": "Your name",
-      "bookerEmail": "Your email address",
-      "optional": "optional"
-    },
-    "step3": {
-      "title": "Please check your details",
-      "edit": "Change",
-      "summary": {
-        "bookingFor": "Booking",
-        "calleeName": "Felix will call",
-        "phone": "Phone number",
-        "timeWindow": "Time of day",
-        "rhythm": "How often",
-        "bookerName": "Your name",
-        "bookerEmail": "Your email address",
-        "notProvided": "not provided"
-      },
-      "consentTitle": "Your consent",
-      "calleeConsent": "{name} knows about this and agrees to Felix calling.",
-      "privacy": "I have read the <link>privacy policy</link>. I agree that my details and the content of the calls – including information about health – will be processed as described there.",
-      "terms": "I accept the <terms>terms and conditions</terms> and have read the <withdrawal>information on the right of withdrawal</withdrawal>.",
-      "priceNote": "The first month is free. After that, Felix costs €10 a month and you can cancel monthly. You don’t need to pay anything now."
-    },
-    "buttons": {
-      "next": "Next",
-      "back": "Back",
-      "submit": "Book now for free",
-      "submitting": "Sending …"
-    },
-    "aside": {
-      "title": "Good to know",
-      "items": [
-        "First month free",
-        "No bank or card details needed",
-        "Cancel monthly",
-        "Felix is always open about being an AI"
-      ],
-      "help": "Questions? Give us a call:"
-    },
-    "honeypot": "Please leave this field empty."
-  },
-  "bookingSuccess": {
-    "meta": {
-      "title": "Thank you for your booking"
-    },
-    "title": "Felix will be in touch!",
-    "text": "Thank you for your booking. Your first call will come within 2 working days.",
-    "bubble": "I’m looking forward to our first chat!",
-    "nextTitle": "What happens next",
-    "next": [
-      "If you gave us an email address, you’ll receive a confirmation shortly.",
-      "Felix will call in the time window you chose and say hello.",
-      "It’s best to save Felix’s number: [number to follow]."
-    ]
+    "photoAlt": "Space for a photo"
   },
   "contact": {
     "meta": {
       "title": "Contact",
-      "description": "Questions about Felix? Write to us or give us a call. We’re happy to help."
+      "description": "Get in touch with Felix. For questions about your care, please contact your care service’s office as usual."
     },
     "hero": {
       "eyebrow": "Contact",
-      "title": "We’re here for you",
-      "text": "Do you have questions about Felix? Write to us using the form, send us an email or give us a call."
+      "title": "We are here for you"
     },
     "details": {
-      "title": "How to reach us",
       "email": "Email",
       "phone": "Phone",
-      "hours": "Monday to Friday, 9 am to 5 pm",
+      "hours": "Availability",
       "address": "Address"
     },
+    "careHint": "For questions about your care, please contact your care service’s office as usual.",
     "form": {
       "title": "Write to us",
       "name": "Your name",
@@ -677,29 +461,23 @@
       "phone": "Phone number",
       "message": "Your message",
       "optional": "optional",
-      "privacy": "I have read the <link>privacy policy</link>. My details will only be used to deal with my enquiry.",
+      "privacy": "I have read the <link>privacy policy</link>. My details will only be used to process my enquiry.",
       "submit": "Send message",
-      "submitting": "Sending …",
-      "successTitle": "Thank you!",
-      "successText": "Your message has arrived. We’ll get back to you as soon as possible – usually within one working day."
+      "submitting": "Sending…",
+      "successTitle": "Thank you very much!",
+      "successText": "Your message has been received. We will get back to you."
     }
   },
   "formErrors": {
     "summaryTitle": "Please check your details:",
-    "bookingForRequired": "Please choose who you are booking for.",
     "nameRequired": "Please enter a name.",
     "tooLong": "This text is too long.",
-    "phoneRequired": "Please enter a phone number.",
-    "phoneInvalid": "This phone number doesn’t look right. Please check it again.",
-    "timeWindowRequired": "Please choose a time of day.",
-    "rhythmRequired": "Please choose how often Felix should call.",
+    "phoneInvalid": "This phone number does not seem to be correct. Please check it again.",
     "emailRequired": "Please enter your email address.",
     "emailInvalid": "Please enter a valid email address, for example name@example.com.",
     "messageRequired": "Please write us a short message.",
     "privacyRequired": "Please confirm that you have read the privacy policy.",
-    "termsRequired": "Please confirm the terms and conditions and the information on the right of withdrawal.",
-    "calleeConsentRequired": "Please confirm that the person being called agrees.",
-    "generic": "Sorry, something went wrong. Please try again or give us a call: {phone}"
+    "generic": "Sorry, something went wrong. Please try again later."
   },
   "legal": {
     "updated": "Last updated: {date}",
@@ -710,66 +488,27 @@
         "description": "Legal notice of IGS Social Tech UG (haftungsbeschränkt) i. G., the provider of Felix."
       },
       "title": "Legal notice",
+      "labels": {
+        "provider": "Information in accordance with § 5 DDG",
+        "representedBy": "Represented by",
+        "contact": "Contact",
+        "phone": "Phone",
+        "email": "Email",
+        "vatId": "VAT ID",
+        "vatIdText": "VAT identification number in accordance with § 27a of the German VAT Act (UStG):",
+        "responsible": "Responsible for the content in accordance with § 18 (2) MStV"
+      },
       "sections": [
-        {
-          "heading": "Information pursuant to § 5 DDG",
-          "paragraphs": [
-            "IGS Social Tech UG (haftungsbeschränkt) i. G.\nKruppstraße 108\n40227 Düsseldorf\nGermany"
-          ]
-        },
-        {
-          "heading": "Represented by",
-          "paragraphs": [
-            "Managing director: [First name Last name]"
-          ]
-        },
-        {
-          "heading": "Contact",
-          "paragraphs": [
-            "Phone: [phone number]\nEmail: [email address]"
-          ]
-        },
-        {
-          "heading": "Register entry",
-          "paragraphs": [
-            "The company is in the process of being founded (i. G. = in formation). Registration in the commercial register at Amtsgericht Düsseldorf has been applied for. We will add the register number once it is registered."
-          ]
-        },
-        {
-          "heading": "VAT ID",
-          "paragraphs": [
-            "VAT identification number pursuant to § 27a of the German VAT Act (Umsatzsteuergesetz):\nDE [number]"
-          ]
-        },
-        {
-          "heading": "Responsible for content pursuant to § 18 Abs. 2 MStV",
-          "paragraphs": [
-            "[First name Last name]\nKruppstraße 108\n40227 Düsseldorf"
-          ]
-        },
-        {
-          "heading": "Consumer dispute resolution",
-          "paragraphs": [
-            "The European Commission’s online dispute resolution platform (ODR platform) was discontinued on 20 July 2025.",
-            "We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board."
-          ]
-        },
         {
           "heading": "Liability for content",
           "paragraphs": [
-            "We create the content of this website with great care. However, we cannot guarantee that it is correct, complete and up to date. As a service provider, we are responsible for our own content under general law. However, we are not obliged to monitor third-party information that is transmitted or stored. As soon as we become aware of an infringement of the law, we will remove the content concerned immediately."
+            "We create the content of this website with great care. However, we cannot guarantee that it is correct, complete and up to date. As a service provider, we are responsible for our own content under general law. We are not, however, obliged to check third-party information that has been transmitted or stored. As soon as we become aware of an infringement of the law, we will remove the content concerned without delay."
           ]
         },
         {
-          "heading": "Liability for links",
+          "heading": "Brand notice",
           "paragraphs": [
-            "Our website contains links to external websites. We have no control over their content. The respective provider is always responsible for that content. No infringements of the law were apparent at the time the links were set. If we become aware of any infringements, we will remove such links immediately."
-          ]
-        },
-        {
-          "heading": "Trademark notice",
-          "paragraphs": [
-            "Felix is a service of IGS Social Tech UG i. G. Pflegeunion is a brand of the home-care service that Felix works with."
+            "Felix is a service provided by IGS Social Tech UG i. G. Pflegeunion is a brand of the care services that Felix works with."
           ]
         }
       ]
@@ -777,248 +516,91 @@
     "privacy": {
       "meta": {
         "title": "Privacy policy",
-        "description": "How Felix and IGS Social Tech UG i. G. handle your data: booking, phone calls, speech processing, hosting and your rights."
+        "description": "Privacy policy for the Felix website: hosting, cookies, contact form and your rights."
       },
       "title": "Privacy policy",
-      "intro": "Protecting your data matters to us. Here we explain in plain words which data we process, why we do it and what rights you have.",
+      "intro": "This privacy policy applies to this website. Here we explain which data is processed when you visit the website and when you send an enquiry using the contact form, and what rights you have.",
+      "controller": {
+        "heading": "1. Who is responsible?",
+        "text": "The party responsible for processing your data on this website is:",
+        "phone": "Phone",
+        "email": "Email",
+        "dpo": "Data protection officer"
+      },
       "sections": [
         {
-          "heading": "1. Who is responsible?",
+          "heading": "2. Visiting this website and hosting (Vercel)",
           "paragraphs": [
-            "The controller responsible for processing your data is:\nIGS Social Tech UG (haftungsbeschränkt) i. G.\nKruppstraße 108, 40227 Düsseldorf\nEmail: [email address]\nPhone: [phone number]",
-            "Data protection officer: [name and contact – if appointed]"
+            "This website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. When you visit the website, technical data sent by your browser is processed automatically: IP address, date and time, the page you opened, browser type and operating system. This data is needed to deliver the website securely and reliably.",
+            "The legal basis is Art. 6(1)(f) GDPR (legitimate interest in secure operation). A data processing agreement is in place with Vercel. Vercel is certified under the EU-US Data Privacy Framework. In addition, the EU standard contractual clauses apply."
           ]
         },
         {
-          "heading": "2. Overview",
+          "heading": "3. Cookies",
           "paragraphs": [
-            "We only process personal data to the extent that this is necessary to run this website and the Felix service, or where you have given your consent. We do not sell data and we do not use it for advertising."
+            "This website does not set any cookies for advertising or analytics purposes. That is why you do not see a cookie banner."
           ]
         },
         {
-          "heading": "3. Visiting this website and hosting (Vercel)",
+          "heading": "4. The Felix service",
           "paragraphs": [
-            "This website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. When you visit the website, technical data sent by your browser is processed automatically: IP address, date and time, the page visited, browser type and operating system. This data is needed to deliver the website securely and reliably.",
-            "The legal basis is Art. 6(1)(f) GDPR (legitimate interest in secure operation). We have a data processing agreement with Vercel. Vercel is certified under the EU-US Data Privacy Framework; the EU Standard Contractual Clauses also apply. Server log data is deleted after a short time."
+            "If you use Felix, we process personal data for this purpose, including information about your health. Our separate privacy information explains which data this is, what we use it for and on what legal basis, who receives it, how long we store it and what rights you have. You will receive it together with the consent form before Felix calls you for the first time."
           ]
         },
         {
-          "heading": "4. Audience measurement (Vercel Web Analytics)",
+          "heading": "5. Contact form and email",
           "paragraphs": [
-            "To understand how our website is used, we use Vercel Web Analytics. No cookies are set and no user profiles are created. Only aggregated, anonymised data is analysed, for example which pages were visited and how often. The legal basis is Art. 6(1)(f) GDPR."
+            "If you write to us using the contact form or by email, we process your details (name, email address, phone number if provided, and your message) to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR if it relates to a contract, otherwise Art. 6(1)(f) GDPR."
           ]
         },
         {
-          "heading": "5. Cookies",
+          "heading": "6. Sending emails (Resend)",
           "paragraphs": [
-            "This website does not set any cookies for advertising or analytics purposes. That is why you don’t see a cookie banner."
+            "We use the Resend service (Resend, Inc., 2261 Market Street #5039, San Francisco, CA 94114, USA) to forward enquiries from the contact form. This involves processing the details you entered in the form. A data processing agreement is in place with Resend. The transfer to the USA is safeguarded by EU standard contractual clauses. The legal basis is the same as for the contact form."
           ]
         },
         {
-          "heading": "6. Booking Felix",
+          "heading": "7. How long we store data",
           "paragraphs": [
-            "When you book Felix, we process: the name of the person being called, their phone number, the preferred time window and how often they should be called, and – if provided – the name and email address of the person making the booking.",
-            "We use this data to fulfil the contract, to plan the calls and to contact you. The legal basis is Art. 6(1)(b) GDPR (contract). If a relative books for another person, that person’s consent is also required; Felix asks for it on the first call."
+            "We only store your data for as long as is necessary for the purpose in question. After that, we delete it, unless we are required by law to keep it."
           ]
         },
         {
-          "heading": "7. Phone calls and speech processing",
-          "paragraphs": [
-            "Felix is an artificial intelligence. Felix says so at the start of every call. So that Felix can understand you and reply, the conversation is processed automatically during the call: your speech is converted into text, processed by an AI language model, and the reply is converted back into speech.",
-            "For this, we use the following service providers as processors: [telephony provider, location], [speech recognition/speech output provider, location], [AI language model provider, location]. Processing takes place on servers in the European Union.",
-            "No audio recording of the conversation is stored. What is stored is a written summary and technical data about the call (time, duration, whether the call was answered). No person listens in live.",
-            "Information about your health may come up in the conversations, for example about pain or how you are feeling. This is specially protected data. We only process it with your explicit consent (Art. 9(2)(a) GDPR in conjunction with Art. 6(1)(a) GDPR). You can withdraw this consent at any time with effect for the future."
-          ]
-        },
-        {
-          "heading": "8. Passing information on to your home-care service",
-          "paragraphs": [
-            "Felix only passes feedback on to your home-care service if you have agreed to this during the call. Only the content you have approved is passed on, for example: “Mrs Müller would like the carers to come earlier in the morning.” The legal basis is your consent (Art. 6(1)(a) and Art. 9(2)(a) GDPR)."
-          ]
-        },
-        {
-          "heading": "9. Contact form and email",
-          "paragraphs": [
-            "If you write to us using the contact form or by email, we process your details (name, email address, phone number if provided, and your message) in order to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR where a contract is concerned, otherwise Art. 6(1)(f) GDPR."
-          ]
-        },
-        {
-          "heading": "10. Sending emails (Resend)",
-          "paragraphs": [
-            "To send confirmation emails and to forward enquiries, we use the Resend service (Resend, Inc., 2261 Market Street #5039, San Francisco, CA 94114, USA). This involves processing your email address and the content of the email. We have a data processing agreement with Resend; the transfer to the USA is safeguarded by the EU Standard Contractual Clauses. The legal basis is Art. 6(1)(b) GDPR."
-          ]
-        },
-        {
-          "heading": "11. How long we keep data",
-          "paragraphs": [
-            "We only keep your data for as long as is necessary for the purpose in question. We delete contract data once the contract has ended, unless we are legally required to keep it (for example 6 to 10 years for invoices). We delete call summaries no later than [period] after the call, or immediately if you ask us to."
-          ]
-        },
-        {
-          "heading": "12. Your rights",
-          "paragraphs": [
-            "You have the following rights at any time:"
-          ],
+          "heading": "8. Your rights",
+          "paragraphs": ["You have the following rights at any time:"],
           "list": [
-            "Access to the data we hold about you (Art. 15 GDPR)",
-            "Rectification of incorrect data (Art. 16 GDPR)",
-            "Erasure of your data (Art. 17 GDPR)",
+            "Information about your stored data (Art. 15 GDPR)",
+            "Correction of incorrect data (Art. 16 GDPR)",
+            "Deletion of your data (Art. 17 GDPR)",
             "Restriction of processing (Art. 18 GDPR)",
             "Data portability (Art. 20 GDPR)",
             "Objection to processing (Art. 21 GDPR)",
             "Withdrawal of consent with effect for the future (Art. 7(3) GDPR)"
           ],
           "after": [
-            "You can also lodge a complaint with a data protection supervisory authority. The authority responsible for us is: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (the data protection authority of North Rhine-Westphalia), Kavalleriestraße 2–4, 40213 Düsseldorf."
+            "You can also complain to a data protection supervisory authority. The authority responsible for us is: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2-4, 40213 Düsseldorf."
           ]
         },
         {
-          "heading": "13. Data security",
+          "heading": "9. Data security",
           "paragraphs": [
-            "This website uses an encrypted connection (TLS). You can tell by the padlock symbol in your browser. We protect your data with technical and organisational measures."
+            "This website uses an encrypted connection (TLS). You can see this from the padlock symbol in your browser. We protect your data with technical and organisational measures."
           ]
         },
         {
-          "heading": "14. Changes",
+          "heading": "10. Changes",
           "paragraphs": [
-            "We update this privacy policy when our service or the law changes. The current version on this page always applies."
+            "We update this privacy policy when our service or the legal situation changes. The version currently on this page applies."
           ]
         }
       ]
-    },
-    "terms": {
-      "meta": {
-        "title": "Terms and conditions",
-        "description": "General terms and conditions for the Felix service of IGS Social Tech UG i. G."
-      },
-      "title": "Terms and conditions",
-      "sections": [
-        {
-          "heading": "§ 1 Scope",
-          "paragraphs": [
-            "These general terms and conditions apply to all contracts for the “Felix” service between IGS Social Tech UG (haftungsbeschränkt) i. G., Kruppstraße 108, 40227 Düsseldorf (“we”) and our customers (“you”)."
-          ]
-        },
-        {
-          "heading": "§ 2 Service",
-          "paragraphs": [
-            "Felix is a telephone companion service. An artificial intelligence calls the named person at the agreed frequency and time window, has a short conversation and collects feedback about their care. With the consent of the person being called, we pass this feedback on to their home-care service.",
-            "Felix is not an emergency service, not a home emergency alarm system and does not provide medical or nursing advice. Felix does not make diagnoses or give treatment recommendations. In an emergency, always call 112.",
-            "We aim for high availability. Individual calls may be moved or may not take place for technical reasons."
-          ]
-        },
-        {
-          "heading": "§ 3 Conclusion of the contract",
-          "paragraphs": [
-            "By submitting the booking form, you make an offer to enter into a contract. The contract is concluded when we confirm the booking by email or by phone, or when Felix calls for the first time."
-          ]
-        },
-        {
-          "heading": "§ 4 Free month and price",
-          "paragraphs": [
-            "The first month from the first call is free of charge. After that, the price is €10 per month including statutory VAT. The price includes all calls at the agreed frequency. The person being called has no phone costs.",
-            "You will be informed of the payment method before the free month ends. [Add payment method and due date.]"
-          ]
-        },
-        {
-          "heading": "§ 5 Term and cancellation",
-          "paragraphs": [
-            "The contract runs for an indefinite period. You can cancel it at any time with effect from the end of the current month – by email, by phone, in writing or through our website. If you cancel during the free month, you will not be charged anything.",
-            "Our right to terminate for good cause without notice remains unaffected."
-          ]
-        },
-        {
-          "heading": "§ 6 Your obligations",
-          "paragraphs": [
-            "You make sure that the phone number given is correct. If you book for another person, you confirm that this person agrees to the calls. Please let us know promptly about any changes."
-          ]
-        },
-        {
-          "heading": "§ 7 Liability",
-          "paragraphs": [
-            "We are liable without limitation for intent and gross negligence and for injury to life, body or health. In cases of slight negligence, we are only liable for breach of essential contractual obligations, and only up to the foreseeable damage typical for this type of contract. Liability under the German Product Liability Act (Produkthaftungsgesetz) remains unaffected."
-          ]
-        },
-        {
-          "heading": "§ 8 Data protection",
-          "paragraphs": [
-            "You can read how we handle your data in our privacy policy."
-          ]
-        },
-        {
-          "heading": "§ 9 Right of withdrawal",
-          "paragraphs": [
-            "As a consumer, you have a statutory right of withdrawal. You can find the details in our information on the right of withdrawal."
-          ]
-        },
-        {
-          "heading": "§ 10 Final provisions",
-          "paragraphs": [
-            "The law of the Federal Republic of Germany applies. Mandatory consumer protection provisions of the country in which you have your habitual residence remain unaffected. If any provision is invalid, the remaining provisions remain valid."
-          ]
-        }
-      ]
-    },
-    "withdrawal": {
-      "meta": {
-        "title": "Right of withdrawal",
-        "description": "Information on the right of withdrawal for consumers and model withdrawal form for the Felix service."
-      },
-      "title": "Right of withdrawal",
-      "sections": [
-        {
-          "heading": "Right of withdrawal",
-          "paragraphs": [
-            "You have the right to withdraw from this contract within fourteen days without giving any reason.",
-            "The withdrawal period is fourteen days from the day the contract is concluded.",
-            "To exercise your right of withdrawal, you must inform us (IGS Social Tech UG (haftungsbeschränkt) i. G., Kruppstraße 108, 40227 Düsseldorf, phone: [phone number], email: [email address]) of your decision to withdraw from this contract by means of a clear statement (e.g. a letter sent by post or an email). You may use the attached model withdrawal form, but this is not obligatory.",
-            "To meet the withdrawal deadline, it is sufficient for you to send your notice that you are exercising your right of withdrawal before the withdrawal period has expired."
-          ]
-        },
-        {
-          "heading": "Effects of withdrawal",
-          "paragraphs": [
-            "If you withdraw from this contract, we shall reimburse all payments received from you without undue delay and in any event no later than fourteen days from the day on which we receive notice of your withdrawal from this contract. We will make this reimbursement using the same means of payment that you used for the original transaction, unless you have expressly agreed otherwise; in any event, you will not incur any fees as a result of this reimbursement.",
-            "If you requested that the services begin during the withdrawal period, you shall pay us a reasonable amount corresponding to the proportion of the services already provided up to the time you inform us that you are exercising your right of withdrawal from this contract, compared with the full scope of services provided for in the contract. As the first month is free, a withdrawal within that month will not cost you anything."
-          ]
-        }
-      ],
-      "form": {
-        "title": "Model withdrawal form",
-        "intro": "(If you want to withdraw from the contract, please fill in this form and send it back.)",
-        "lines": [
-          "To: IGS Social Tech UG (haftungsbeschränkt) i. G., Kruppstraße 108, 40227 Düsseldorf, email: [email address]",
-          "I/We (*) hereby give notice that I/we (*) withdraw from my/our (*) contract for the provision of the following service: telephone companion service “Felix”",
-          "Ordered on (*): ____________________",
-          "Name of consumer(s): ____________________",
-          "Address of consumer(s): ____________________",
-          "Signature of consumer(s) (only if this form is sent on paper): ____________________",
-          "Date: ____________________"
-        ],
-        "footnote": "(*) Delete as appropriate."
-      },
-      "end": "End of the information on the right of withdrawal"
-    }
-  },
-  "emails": {
-    "booking": {
-      "subject": "Your Felix booking",
-      "preheader": "Felix will be in touch within 2 working days.",
-      "greeting": "Dear {name},",
-      "introSelf": "Thank you for your booking! Felix will call you for the first time within 2 working days.",
-      "introRelative": "Thank you for your booking! Felix will call {callee} for the first time within 2 working days.",
-      "summaryTitle": "Your details",
-      "trialNote": "The first month is free. After that, Felix costs €10 a month and you can cancel monthly.",
-      "questions": "Do you have any questions or would you like to change something? Just reply to this email.",
-      "signoff": "Warm regards\nThe Felix team"
     }
   },
   "notFound": {
     "meta": {
       "title": "Page not found"
     },
-    "title": "Sorry, this page doesn’t exist.",
-    "text": "Perhaps there’s a typo in the address, or the page has moved.",
-    "bubble": "Hello? Is anyone there?"
+    "title": "Sorry, this page does not exist.",
+    "text": "Perhaps a typing error has crept in, or the page has been moved."
   }
 }

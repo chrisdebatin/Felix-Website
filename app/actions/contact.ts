@@ -25,7 +25,7 @@ export async function submitContact(input: ContactInput): Promise<ContactResult>
   }
   const data = parsed.data;
 
-  const to = process.env.CONTACT_NOTIFY_EMAIL || notifyAddress();
+  const to = notifyAddress();
 
   const table: [string, string][] = [
     ["Name", data.name],

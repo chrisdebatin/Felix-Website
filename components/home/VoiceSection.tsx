@@ -26,10 +26,10 @@ export async function VoiceSection() {
             <FadeIn key={c.label} delay={i * 0.08} className="h-full">
               <article className="flex h-full flex-col rounded-[1.75rem] bg-sage p-6 sm:p-7">
                 <h3 className="mb-6 self-start rounded-full bg-surface px-4 py-1.5 text-base text-forest-deep shadow-soft">
-                  {c.label}
+                  {common("exampleTag")}: {c.label}
                 </h3>
                 <Conversation
-                  label={c.label}
+                  label={`${common("exampleTag")}: ${c.label}`}
                   lines={c.lines}
                   felixName={common("felix")}
                   customerName={c.customer}

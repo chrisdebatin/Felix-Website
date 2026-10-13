@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
-import { Bubble } from "@/components/ui/Bubble";
 import { Container } from "@/components/ui/Container";
 
 export default function NotFound() {
@@ -10,11 +9,6 @@ export default function NotFound() {
     <section className="py-20 sm:py-28">
       <Container size="narrow" className="text-center">
         <title>{t("meta.title")}</title>
-        <div className="mx-auto mb-10 flex max-w-xs flex-col">
-          <Bubble who="felix" speakerName={common("felix")} size="lg">
-            {t("bubble")}
-          </Bubble>
-        </div>
         <p className="font-display text-7xl font-extrabold text-forest">404</p>
         <h1 className="mt-4 text-3xl sm:text-4xl">{t("title")}</h1>
         <p className="mt-4 text-lg text-muted">{t("text")}</p>

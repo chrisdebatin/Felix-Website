@@ -7,28 +7,29 @@ import { Container } from "@/components/ui/Container";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { resolveLocale } from "@/lib/locale";
 import { buildMetadata } from "@/lib/metadata";
+import { felixPhone } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
 
-// TODO(chris): Alle Antworten fachlich prüfen – besonders "number", "missed", "recording",
-// "emergency", "cancel", "languages" und "hearing" beschreiben angenommene Abläufe.
+// Reihenfolge wie im Briefing.
 const faqIds = [
+  "forWhom",
   "human",
+  "howToGet",
   "number",
+  "callYourself",
+  "howOften",
   "missed",
-  "relative",
-  "recording",
   "emergency",
-  "landline",
-  "costs",
-  "careService",
-  "cancel",
-  "changeTime",
-  "pause",
-  "languages",
-  "hearing",
+  "recording",
+  "careTeam",
+  "advice",
   "replace",
-  "data",
+  "sales",
+  "noComputer",
+  "hearing",
+  "stop",
+  "languages",
 ] as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -43,11 +44,14 @@ export default async function FaqPage({ params }: Props) {
   const t = await getTranslations("faq");
   const common = await getTranslations("common");
 
-  const items = faqIds.map((id) => ({
-    id,
-    q: t(`items.${id}.q`),
-    a: t(`items.${id}.a`),
-  }));
+  const items = faqIds
+    // TODO PLATZHALTER: Rufnummer von Felix. „Welche Nummer ruft an?“ erscheint erst, wenn felixPhone in lib/site.ts gesetzt ist.
+    .filter((id) => id !== "number" || felixPhone)
+    .map((id) => ({
+      id,
+      q: t(`items.${id}.q`),
+      a: id === "number" ? t("items.number.a", { number: felixPhone?.display ?? "" }) : t(`items.${id}.a`),
+    }));
 
   return (
     <>
@@ -62,12 +66,9 @@ export default async function FaqPage({ params }: Props) {
 
           <div className="mt-16 rounded-[1.75rem] bg-sage p-8 text-center sm:p-10">
             <h2 className="text-3xl">{t("stillQuestions.title")}</h2>
-            <p className="mt-3 text-lg text-muted">{t("stillQuestions.text")}</p>
-            <div className="mt-7 flex flex-col justify-center gap-4 sm:flex-row">
-              <ButtonLink href="/kontakt" variant="secondary">
-                {common("contactCta")}
-              </ButtonLink>
-              <ButtonLink href="/buchen">{common("bookCta")}</ButtonLink>
+            <p className="mx-auto mt-3 max-w-xl text-lg text-muted">{t("stillQuestions.text")}</p>
+            <div className="mt-7 flex justify-center">
+              <ButtonLink href="/kontakt">{common("contactCta")}</ButtonLink>
             </div>
           </div>
         </Container>

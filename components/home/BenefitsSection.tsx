@@ -34,7 +34,6 @@ export async function BenefitsSection() {
                 </span>
                 <h3 className="text-3xl">{t("forFamily.title")}</h3>
               </div>
-              {/* TODO(chris): Rückmeldung an Angehörige (4. Punkt "Für Angehörige") – ist das geplant? */}
               <CheckList items={t.raw("forFamily.items") as string[]} className="mt-8 text-lg" />
             </div>
           </FadeIn>

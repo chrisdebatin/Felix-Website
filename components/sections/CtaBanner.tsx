@@ -1,21 +1,21 @@
 import { ArrowRight } from "lucide-react";
-import { getTranslations } from "next-intl/server";
-import { LogoMark } from "@/components/Logo";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
+import type { AppPathname } from "@/i18n/routing";
 
-/** Abschließender Aufruf zum Buchen – grüne Fläche mit Lime-Hügel wie im Logo. */
-export async function CtaBanner({
+/** Abschluss-Block: grüne Fläche mit Lime-Hügel wie im Logo. Button nur, wenn `action` gesetzt ist. */
+export function CtaBanner({
   title,
   text,
-  bubble,
+  note,
+  action,
 }: {
   title: string;
-  text: string;
-  bubble?: string;
+  text?: string;
+  note?: string;
+  action?: { href: AppPathname; label: string };
 }) {
-  const t = await getTranslations("common");
   return (
     <section className="bg-surface py-16 sm:py-24">
       <Container>
@@ -33,31 +33,18 @@ export async function CtaBanner({
             >
               <path d="M0 160V96C220 18 980 18 1200 96V160Z" fill="#AFCA0B" />
             </svg>
-            <div className="relative grid items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
-              <div>
-                <h2 className="text-3xl text-white sm:text-[2.5rem]">{title}</h2>
-                <p className="mt-4 max-w-xl text-lg text-white sm:text-xl">{text}</p>
-                <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-                  <ButtonLink href="/buchen">
-                    {t("bookCta")}
+            <div className="relative max-w-2xl">
+              <h2 className="text-3xl text-white sm:text-[2.5rem]">{title}</h2>
+              {text ? <p className="mt-4 text-lg text-white sm:text-xl">{text}</p> : null}
+              {action ? (
+                <div className="mt-8">
+                  <ButtonLink href={action.href}>
+                    {action.label}
                     <ArrowRight aria-hidden="true" className="hidden size-5 sm:block" />
                   </ButtonLink>
                 </div>
-                <p className="mt-5 text-base font-semibold text-white">
-                  {t("trust.trial")} · {t("trust.cancel")} · {t("trust.eu")}
-                </p>
-              </div>
-              {bubble ? (
-                <div aria-hidden="true" className="hidden lg:block">
-                  <div className="ml-auto max-w-xs rounded-bubble rounded-bl-md bg-white p-6 text-ink shadow-lift">
-                    <div className="mb-2 flex items-center gap-2 text-sm font-bold text-muted">
-                      <LogoMark className="size-6" />
-                      {t("felix")}
-                    </div>
-                    <p className="font-display text-xl font-extrabold leading-snug text-forest-deep">„{bubble}“</p>
-                  </div>
-                </div>
               ) : null}
+              {note ? <p className="mt-6 text-base font-semibold text-white">{note}</p> : null}
             </div>
           </div>
         </FadeIn>
