@@ -33,8 +33,9 @@ export const pricing = {
   trialDays: 30,
 } as const;
 
-// TODO(chris): Auf false setzen, sobald Impressum, Datenschutz, AGB und Widerruf juristisch geprüft sind.
-export const showLegalDraftNotice = true;
+/** Rechtstexte, über denen noch der Hinweis „Entwurf“ steht (das Impressum nicht mehr). */
+// TODO(chris): Einträge entfernen, sobald Datenschutz, AGB und Widerruf juristisch geprüft sind.
+export const legalDraftDocs: readonly string[] = ["privacy", "terms", "withdrawal"];
 
 // TODO(chris): Datum aktualisieren, wenn die Rechtstexte geändert werden.
 export const legalLastUpdated = new Date("2026-10-12");

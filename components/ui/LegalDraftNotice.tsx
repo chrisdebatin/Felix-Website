@@ -1,9 +1,7 @@
 import { TriangleAlert } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { showLegalDraftNotice } from "@/lib/site";
 
 export async function LegalDraftNotice() {
-  if (!showLegalDraftNotice) return null;
   const t = await getTranslations("common.legalDraft");
   return (
     <div

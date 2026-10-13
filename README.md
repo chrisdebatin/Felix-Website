@@ -65,7 +65,7 @@ Alle Texte stehen in `messages/de.json` und `messages/en.json` – nichts ist im
 
 - Platzhalter wie `{name}` und Tags wie `<link>…</link>` nicht entfernen.
 - Apostrophe bitte typografisch (’) schreiben – ein einfaches `'` kann die Formatierung stören.
-- Rechtstexte liegen unter `legal.*`. Der Hinweis „Entwurf“ wird über `showLegalDraftNotice` in `lib/site.ts` gesteuert.
+- Rechtstexte liegen unter `legal.*`. Über welchen Texten der Hinweis „Entwurf“ steht, legt `legalDraftDocs` in `lib/site.ts` fest.
 - Kontaktdaten (E-Mail, Telefon) und Preis-Konstanten für JSON-LD stehen in `lib/site.ts`.
 
 Englische URLs sind übersetzt (`/en/how-it-works`, `/en/pricing`, …) – Zuordnung in `i18n/routing.ts`.

@@ -1,7 +1,7 @@
 import { getFormatter, getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { LegalDraftNotice } from "@/components/ui/LegalDraftNotice";
-import { legalLastUpdated } from "@/lib/site";
+import { legalDraftDocs, legalLastUpdated } from "@/lib/site";
 
 type Section = {
   heading: string;
@@ -27,7 +27,7 @@ export async function LegalPage({ doc, children }: { doc: LegalDoc; children?: R
   return (
     <section className="py-12 sm:py-20">
       <Container size="narrow">
-        <LegalDraftNotice />
+        {legalDraftDocs.includes(doc) ? <LegalDraftNotice /> : null}
         <h1 className="text-4xl sm:text-5xl">{t("title")}</h1>
         <p className="mt-3 text-muted">
           {legal("updated", { date: format.dateTime(legalLastUpdated, { dateStyle: "long" }) })}

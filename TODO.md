@@ -6,7 +6,7 @@ Inhalte stehen in `messages/de.json` und `messages/en.json` – bei Textänderun
 ## 1. Vor dem Livegang zwingend
 
 - [ ] **Rechtstexte prüfen lassen** (Impressum, Datenschutz, AGB, Widerruf). Alle sind Vorlagen.
-  Danach `showLegalDraftNotice = false` und `legalLastUpdated` in `lib/site.ts` setzen.
+  Danach das jeweilige Dokument aus `legalDraftDocs` entfernen und `legalLastUpdated` in `lib/site.ts` setzen. Beim Impressum ist der Hinweis „Entwurf“ bereits entfernt – dort stehen aber noch Platzhalter.
   → `components/sections/LegalPage.tsx`, `lib/site.ts`
 - [ ] **Platzhalter in eckigen Klammern ersetzen** (in `messages/de.json` und `en.json` unter `legal.*`):
   Geschäftsführung, Telefon, E-Mail, HRB-Nummer (nach Eintragung; dann auch „i. G.“ überall entfernen), USt-IdNr., Verantwortlicher nach § 18 MStV, Datenschutzbeauftragte/r (falls benannt), Dienstleister für Telefonie/Spracherkennung/KI-Modell, Löschfrist für Gesprächszusammenfassungen, Zahlungsart in den AGB.
